@@ -1,0 +1,218 @@
+.card-balance__{
+	&card{
+		background-color: @white;
+		border: 1px solid @white10;
+		padding: 25px 20px;
+	}
+	&heading{
+		font-size: @b-fs + 10;
+		line-height: @b-lh + 6;
+		font-weight: 700;
+		margin-bottom: 20px;
+	}
+	&heading-name{
+		padding-right: 10px;
+		display: inline-block;
+	}
+	&heading-cost{
+		display: inline-block;
+	}
+	&heading-ruble{
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+	}
+	&credit{
+		font-size: @b-fs + 2;
+		line-height: @b-lh + 0;
+		margin-bottom: 5px;
+	}
+	&credit-ruble{
+		display: inline-block;
+		width: 14px;
+		height: 14px;
+	}
+	&link{
+		font-size: @b-fs - 2;
+		line-height: @b-lh - 4;
+		margin-bottom: 20px;
+		a{
+			color: @red;
+			text-decoration: underline;
+			&:hover{
+				color: @b-color-a;
+			}
+		}
+	}
+}
+.card-services__{
+	&card{
+		background-color: @white;
+		border: 1px solid @white10;
+		padding: 20px 25px 30px;
+	}
+	&cols{
+		&.is--status{
+			@media @media-point-smart {
+				.makeCols(12, 12);
+			}
+		}
+		@media @media-point-screen {
+			&.is--status{
+				.makeCols(4.8, 12);
+			}
+			&.is--work{
+				.makeCols(2.8, 12);
+			}
+			&.is--time{				
+				//.makeCols(4.4, 12);
+			}
+		}
+	}
+	&heading{
+		text-transform: uppercase;
+		font-weight: 700;
+		margin-bottom: 17px;
+	}
+	&status{}
+	&status-heading{
+		font-size: @b-fs - 4;
+		line-height: @b-lh - 6;
+		margin-bottom: 5px;
+		@media @media-point-smart {
+			font-size: @b-fs - 6;
+			line-height: @b-lh - 8;
+		}
+	}
+	&status-inner{
+		display: flex;
+		align-items: flex-start;
+	}
+	&status-label{
+		display: block;
+		position: relative;
+	}
+	&status-input{
+		position: absolute;
+		top: 0;
+		left: 0;
+		visibility: hidden;
+		width: 0;
+		height: 0;
+		margin: -1px;
+		overflow: hidden;
+	}
+	&status-name{
+		display: block;
+		background-color: #d6d7d8;
+		color: #83868a;
+		font-weight: 700;
+		transition: @trs-site;
+		padding: 5px 10px;
+		cursor: pointer;
+		font-size: @b-fs;
+		line-height: @b-lh - 2;
+		@media @media-point-screen {
+			font-size: @b-fs - 2;
+			line-height: @b-lh - 6;
+		}
+		.card-services__status-input:checked + &{
+			cursor: default;
+			&.is--online{
+				background: @b-color-a;
+				color: @white;
+			}
+			&.is--offline{
+				color: @white;
+				background: @red;
+			}
+		}
+	}
+	&select-label{
+		display: block;
+		padding-top: 13px;
+	}
+	&select-icon{
+		width: 20px;
+		height: 20px;
+		margin-bottom: 10px;
+	}
+	&select-name{
+		font-size: @b-fs - 4;
+		line-height: @b-lh - 6;	
+		@media @media-point-smart {
+			font-size: @b-fs - 6;
+			line-height: @b-lh - 8;
+		}	
+	}
+	&{}
+	&{}
+	&{}
+
+}
+.card-message__{
+	&card{
+		background-color: @white;
+		border: 1px solid @white10;
+		padding: 13px 45px 20px;
+		position: relative;
+		display: none;
+		margin-top: 20px;
+		&.is--active{
+			display: block;
+		}
+		@media @media-point-notsmart {
+			margin: 0;
+			position: absolute;
+			z-index: 100;
+			right: 0;
+			top: 23.5%;
+			min-width: 435px;
+			box-shadow: 0px 3px 16px 3px fadeout(@black, 75%);
+		}
+	}
+	&close{
+		.btn-clearfix();
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		color: #d5d5d5;
+		width: 34px;
+		height: 34px;
+		padding: 10px;
+		svg{display: block;}
+		&:hover{
+			color: @red;
+		}
+	}
+	&heading{
+		font-weight: 700;
+		margin-bottom: 5px;
+		position: relative;
+	}
+	&heading-icon{
+		color: @red;
+		position: absolute;
+		top: 50%;
+		left: -30px;
+		transform: translateY(-50%);
+		width: 18px;
+		height: 18px;
+	}
+	&note{
+		font-size: @b-fs - 2;
+		line-height: @b-lh - 6;
+		margin-bottom: 25px;
+	}
+	&link{
+		font-size: @b-fs - 6;
+		line-height: @b-lh - 8;
+		a{
+			color: @red;
+			text-decoration: underline;
+			&:hover{
+				color: @b-color-a;
+			}
+		}
+	}
+}

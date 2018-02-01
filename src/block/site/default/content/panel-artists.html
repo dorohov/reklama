@@ -1,0 +1,52 @@
+<div class="{{block_prefix}}panel  {{block_mod}}"> 
+	<div class="{{block_prefix}}container container  {{block_mod}}">
+		<div class="{{block_prefix}}row row  is--wrap  is--gutter  {{block_mod}}">
+			<div class="{{block_prefix}}cols cols  {{block_mod}}  is--cols-screen-8  is--cols-left">
+				<div class="{{block_prefix}}row row  is--wrap  is--gutter  {{block_mod}}  is--aic">			
+					<div class="{{block_prefix}}cols cols  {{block_mod}}  is--heading">	
+						[[azbntple 
+							tpl="/src/block/site/default/page-header/heading.html" 
+							header_prefix="page-header__" 
+							header_level="h2"
+							header_mod="{{block_heading_mod}}"
+							header="{{block_heading}}"	 
+						]]	
+					</div>
+					<div class="{{block_prefix}}cols cols  {{block_mod}}  is--slick-btn">
+						<div class="work-artists"></div>
+					</div>			
+					<div class="{{block_prefix}}cols cols  {{block_mod}}  is--content">
+						[[azbntple 
+							tpl="/src/block/site/default/audio/panel-artists.html" 
+							block_prefix="content-block__"
+							block_mod="is--panel-artists" 
+						]]
+					</div>
+				</div>
+			</div>
+			<div class="{{block_prefix}}cols cols  {{block_mod}}  is--cols-screen-4  is--cols-right">
+				<div class="{{block_prefix}}row row  is--wrap  is--gutter  {{block_mod}}  is--aic">			
+					<div class="{{block_prefix}}cols cols  {{block_mod}}  is--heading">	
+						[[azbntple 
+							tpl="/src/block/site/default/page-header/heading.html" 
+							header_prefix="page-header__" 
+							header_level="h2"
+							header_mod="is--page-heading"
+							header="Рейтинг"	 
+						]]	
+					</div>
+					<div class="{{block_prefix}}cols cols  {{block_mod}}  is--slick-btn  is--right">
+						<div class="work-rating"></div>
+					</div>		
+					<div class="{{block_prefix}}cols cols  {{block_mod}}  is--content">
+						[[azbntple 
+							tpl="/src/block/site/default/audio/panel-rating.html" 
+							block_prefix="content-block__"
+							block_mod="is--panel-rating" 
+						]]
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+</div> 

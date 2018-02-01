@@ -1,0 +1,72 @@
+body {
+	font-family: @b-ff;	
+	font-size: @b-fs;
+	line-height: @b-lh;
+}
+h1, h2, h3, h4, h5, h6{ 
+	color: @b-color-h;
+	margin: 0 0 10px; 
+}
+//p{margin: 0 0 10px;}
+i, em{font-style: italic;}
+b, strong{font-weight: 700; color: @black}
+.heading1(){
+	.calcFontSize(22, 24, 320, 1680);
+	.calcLineHeight(25, 30, 320, 1680);	
+}
+.heading2(){
+	.calcFontSize(14, 16, 320, 1680);
+	.calcLineHeight(16, 18, 320, 1680);	
+}
+h1{
+	font-family: @b-ff-2;
+	.heading1();
+	font-weight: 700;
+	color: @page_header_color;
+}
+h2{
+	//font-weight: 400;
+	.heading1();
+}
+h3{
+	.heading1();
+	//font-weight: 400;
+}
+h4{
+	//font-weight: 400;
+	.heading2();
+}
+h5{
+	//font-weight: 400;
+	.heading2();	
+}
+h6{
+	font-weight: 400;
+	.heading2();
+}
+ol{
+	margin-left: 30px;
+	li{padding-left: 5px;}
+}
+ul{
+	margin-left: 20px;
+	&.ul-site{
+		li{
+			margin-bottom: 10px; 
+			&:last-child{margin-bottom: 0;}			
+		}
+	}
+}/*
+._tp__{
+	&panel{
+		@media @media-screen{max-width: 960px;}
+	}
+	&row{
+		@media @media-device {flex-wrap: wrap;}
+	}
+	&cols{
+		&.cols-6{
+			@media @media-device {.makeCols(12, 12);}
+		}
+	}
+}*/

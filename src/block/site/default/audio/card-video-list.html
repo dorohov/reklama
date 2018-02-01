@@ -1,0 +1,33 @@
+<div class="{{block_prefix}}card  {{block_mod}}">
+	<button type="button" class="{{block_prefix}}preview  {{block_mod}}  azbn__video-btn" data-toggle="modal" data-target="#{{block_modal}}">
+		<img src="{{block_poster}}" alt="" class="img-responsite">
+	</button>
+	<div class="{{block_prefix}}inner  {{block_mod}}">
+		<div class="{{block_prefix}}btn  {{block_mod}}">
+			[[azbntple 
+				tpl="/src/block/site/default/button/button-modal-icon-noname.html"
+				button_prefix="audio-btn__" 
+				button_mod="is--play  {{block_mod}}  azbn__video-btn"
+				button_icon="play"
+				button_attr="title='Воспроизвести {{block_heading}}'"
+				button_target="{{block_modal}}"
+			]]
+		</div> 
+		<div class="{{block_prefix}}desc  {{block_mod}}">
+			<div class="{{block_prefix}}heading  {{block_mod}}">{{block_heading}}</div>
+			<div class="{{block_prefix}}download  {{block_mod}}">				
+				[[azbntple 
+					tpl="/src/block/site/default/button/button-icon-noname.html"
+					button_prefix="audio-btn__" 
+					button_mod="is--download"
+					button_icon="download"
+				]]
+				245 Загрузок
+			</div>
+			<!--<div class="{{block_prefix}}progress-bar  {{block_mod}}">
+				<div class="{{block_prefix}}progress-line  {{block_mod}}" style="width: 25%;"></div>
+				<div class="{{block_prefix}}progress-slider  {{block_mod}}" style="left: 25%;"></div>
+			</div>-->
+		</div>	
+	</div>	
+</div>		

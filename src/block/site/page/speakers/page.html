@@ -1,0 +1,63 @@
+<div class="colorbg--green">
+	<div class="container {{content_prefix}}container  is--category">
+		[[azbntple 
+			tpl="/src/block/site/default/filter/panel-speakers.html" 
+			block_prefix="content-block__"
+			block_mod="is--category" 
+		]]
+	</div>
+</div>
+<main class="{{content_prefix}}panel  {{content_mod}}"  role="main">
+	<div class="{{content_prefix}}container container  {{content_mod}}">
+		[[azbntple 
+			tpl="/src/block/site/default/page-header/heading-icon.html" 
+			header_prefix="page-header__" 
+			header_level="h1"
+			header_mod="{{block_heading_mod}}"
+			header="{{block_heading}}"
+			header_icon="{{block_heading_icon}}"	 
+		]]	
+		<div class="{{content_prefix}}elem">
+			[[azbntple 
+				tpl="/src/block/site/default/filter/panel-speakers-filter.html" 
+				block_prefix="content-block__"
+				block_mod="is--filter-speakers" 
+				block_heading_mod="{{block_heading_mod}}"
+				block_heading="{{block_heading}}" 
+				block_icon="{{block_heading_icon}}"	
+			]]
+		</div>
+		<div class="{{content_prefix}}elem">
+			[[azbntple 
+				tpl="/src/block/site/default/filter/panel-speakers-tabs.html"
+				block_prefix="content-block__"
+				block_mod="is--filter-tabs" 
+			]]
+			[[azbntple 
+				tpl="/src/block/site/default/filter/panel-speakers-select.html"
+				block_prefix="content-block__"
+				block_mod="is--filter-select" 
+			]]
+			<div class="{{content_prefix}}search-result" style="display: block;">
+				<div class="{{content_prefix}}search-result-item">
+					<div class="btn-panel__block  is--download">	
+						[[azbntple 
+							tpl="/src/block/site/default/button/button-icon.html"
+							button_prefix="btn__" 
+							button_mod="is--black  is--sm  is--download"
+							button_icon="download"
+							button_name="Скачать все голоса" 
+						]]
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="{{content_prefix}}elem">
+			[[azbntple 
+				tpl="/src/block/site/default/content/panel-speakers.html"
+				block_prefix="content-block__" 
+				block_mod="is--speakers"
+			]] 
+		</div> 
+	</div>
+</main>

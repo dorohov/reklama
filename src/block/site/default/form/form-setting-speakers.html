@@ -1,0 +1,1120 @@
+<div class="row {{block_prefix}}row  is--wrap   is--mb3">
+	<div class="cols {{block_prefix}}cols  {{block_mod}}">
+		<div class="row {{block_prefix}}row  is--wrap  is--gutter10">
+			<div class="cols {{block_prefix}}cols  {{block_mod}}  is--avatar  is--left">
+				
+			</div>
+			<div class="cols {{block_prefix}}cols  {{block_mod}}  is--name  is--center">	
+				<div class="{{block_prefix}}label  {{block_mod}}  is--inline">Ваш голос</div>
+				<div class="row  is--wrap  is--gutter10">
+					<div class="cols">
+						<label class="{{block_prefix}}radio-block  {{block_mod}}">
+							<input type="radio" class="{{block_prefix}}radio-input  {{block_mod}}" name="f[Голос]" checked>
+							<div class="{{block_prefix}}radio-btn">
+								<div class="{{block_prefix}}radio-icon">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="filter-men" ]]</div>
+								Мужской
+							</div>
+						</label>
+					</div>
+					<div class="cols"> 
+						<label class="{{block_prefix}}radio-block  {{block_mod}}">
+							<input type="radio" class="{{block_prefix}}radio-input  {{block_mod}}" name="f[Голос]">
+							<div class="{{block_prefix}}radio-btn">
+								<div class="{{block_prefix}}radio-icon">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="filter-woman" ]]</div>
+								Женский
+							</div>
+						</label>							
+					</div>
+					<div class="cols"> 
+						<label class="{{block_prefix}}radio-block  {{block_mod}}">
+							<input type="radio" class="{{block_prefix}}radio-input  {{block_mod}}" name="f[Голос]">
+							<div class="{{block_prefix}}radio-btn">
+								<div class="{{block_prefix}}radio-icon">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="filter-child" ]]</div>
+								Детский
+							</div>
+						</label>							
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="{{block_prefix}}checkbox-group  {{block_mod}}   is--mb3">
+	<div class="{{block_prefix}}checkbox-elem  {{block_mod}}">
+		<div class="row {{block_prefix}}row  is--wrap">
+			<div class="cols {{block_prefix}}cols  {{block_mod}}">
+				<div class="row {{block_prefix}}row  is--wrap  is--gutter10">
+					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--avatar  is--left">
+						
+					</div>
+					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--name  is--center">																										
+						[[azbntple 
+							tpl="/src/block/site/default/form/elem-switch.html" 
+							form_id="{{form_id}}"
+							form_color="{{form_color}}"
+							block_prefix="{{block_prefix}}"
+							block_mod="{{block_mod}}" 
+							block_mod_elem="is--xl" 
+							block_label="Диктор"
+							block_name="Диктор"
+							block_id="speakers"
+							block_validate="  "
+							block_status="checked"
+						]]	
+					</div>
+				</div>									
+				<div class="{{block_prefix}}checkbox-panel  is--active  {{block_mod}}">
+					<div class="row {{block_prefix}}row  is--wrap">
+						<div class="cols {{block_prefix}}cols  {{block_mod}}">
+							[[azbntple 
+								tpl="/src/block/site/default/form/elem-label-input-cost-info.html" 
+								form_id="{{form_id}}"
+								form_color="{{form_color}}"
+								block_prefix="{{block_prefix}}"
+								block_mod="{{block_mod}}" 
+								block_mod_elem="  " 
+								block_id="speakers_cost"
+								block_required="required" 
+								block_required_symbol="<sup class='color--red'>*</sup>" 
+								block_type="number"
+								block_attr="min='0'"
+								block_label="Укажите стоимость"
+								block_placeholder="Стоимость"
+								block_bage="час."
+								block_bage_mod="  "
+								block_info="Ваш гонорар составит 50% от указанной ставки"
+								block_info_mod="  "
+							]]
+						</div>
+						<div class="cols {{block_prefix}}cols  {{block_mod}}">
+							<div class="row {{block_prefix}}row  is--wrap  is--gutter10">
+								<div class="cols {{block_prefix}}cols  {{block_mod}}  is--left">
+									<div class="{{block_prefix}}label  {{block_mod}}"><sup class="color--red">*</sup>Загрузить демо</div>
+								</div>
+								<div class="cols {{block_prefix}}cols  {{block_mod}}  is--speakers-proofing  is--center">
+									<div class="{{block_prefix}}item">
+										<div class="row  is--wrap  is--gutter  is--aic">
+											<div class="cols">
+												<div class="{{block_prefix}}control form-control  {{block_mod}}  {{form_color}}  is--box">
+													<div class="row  is--wrap  is--gutter10  is--aic">
+														<div class="cols">
+															[[azbntple 
+																tpl="/src/block/site/default/audio/card-audio-btn.html" 
+																block_prefix="audio-card__"
+																block_mod="is--btn" 
+																block_audio="{{url-path-audio}}/semin.mp3"
+															]]
+														</div>
+													</div>
+												</div>
+											</div>	
+											<div class="cols"> 
+												[[azbntple 
+													tpl="/src/block/site/default/button/button.html"
+													button_prefix="btn__" 
+													button_mod="  "
+													button_type="button"
+													button_name="Загрузить демо"
+												]]									
+											</div>
+										</div>	
+									</div>	
+								</div>
+								<div class="cols {{block_prefix}}cols  {{block_mod}}  is--tel  is--right">
+									<div class="{{block_prefix}}info  {{block_mod}}">Файл должен быть в формате mp3. моно и не более 20 мб
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="cols {{block_prefix}}cols  {{block_mod}}">
+							<div class="row {{block_prefix}}row  is--wrap  is--gutter10">
+								<div class="cols {{block_prefix}}cols  {{block_mod}}  is--center  is--offset-left">	
+									<div class="{{block_prefix}}item  {{block_mod}}  is--switch">																												
+										[[azbntple 
+											tpl="/src/block/site/default/form/elem-switch.html" 
+											form_id="{{form_id}}"
+											form_color="{{form_color}}"
+											block_prefix="{{block_prefix}}"
+											block_mod="{{block_mod}}" 
+											block_mod_elem="is--xxl" 
+											block_label="Добавить демо на другом языке"
+											block_name="Добавить демо на другом языке"
+											block_id="speakers_lang_checkbox"
+											block_validate="  "
+											block_status="checked"
+										]]
+									</div>															
+									<div class="{{block_prefix}}item  is--mb20">
+										<select class="{{block_prefix}}control form-control validate[required]  {{block_mod}}  {{form_color}}  is--dib" id="{{form_id}}[speakers_lang]" name="f[Язык демо]">
+											<option>Английский </option>
+											<option>Немецкий </option>
+											<option>Французский </option>
+											<option>Итальянский </option>
+											<option>Испанский </option>
+											<option>Казахский </option>
+											<option>Киргизский </option>
+											<option>Румынский </option>
+											<option>Украинский </option>
+											<option>Белорусский</option>
+										</select>
+									</div>	
+									<div class="{{block_prefix}}item  is--mb20">
+										<div class="row  is--wrap  is--gutter  is--aic">
+											<div class="cols">
+												<div class="{{block_prefix}}control form-control  {{block_mod}}  {{form_color}}  is--box">
+													<div class="row  is--wrap  is--gutter10  is--aic">
+														<div class="cols">
+															[[azbntple 
+																tpl="/src/block/site/default/audio/card-audio-btn.html" 
+																block_prefix="audio-card__"
+																block_mod="is--btn" 
+																block_audio="{{url-path-audio}}/semin.mp3"
+															]]
+														</div>
+													</div>
+												</div>
+											</div>	
+											<div class="cols"> 
+												[[azbntple 
+													tpl="/src/block/site/default/button/button.html"
+													button_prefix="btn__" 
+													button_mod="  "
+													button_type="button"
+													button_name="Загрузить демо"
+												]]									
+											</div>
+										</div>	
+									</div>
+									<div class="{{block_prefix}}item  is--mb20">
+										<div class="row  is--wrap  is--gutter  is--aic">
+											<div class="cols"> 
+												[[azbntple 
+													tpl="/src/block/site/default/button/button.html"
+													button_prefix="btn__" 
+													button_mod="  "
+													button_type="button"
+													button_name="Добавить ещё демо"
+												]]									
+											</div>
+										</div>	
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="{{block_prefix}}checkbox-elem  {{block_mod}}">
+		<div class="row {{block_prefix}}row  is--wrap">
+			<div class="cols {{block_prefix}}cols  {{block_mod}}">
+				<div class="row {{block_prefix}}row  is--wrap  is--gutter10">
+					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--left">
+						
+					</div>
+					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--center">
+						<div class="{{block_prefix}}switch-line  {{block_mod}}"></div>
+						[[azbntple 
+							tpl="/src/block/site/default/form/elem-switch.html" 
+							form_id="{{form_id}}"
+							form_color="{{form_color}}"
+							block_prefix="{{block_prefix}}"
+							block_mod="{{block_mod}}" 
+							block_mod_elem="is--xl" 
+							block_label="Вокалист"
+							block_name="Вокалист"
+							block_id="vocalist"
+							block_validate="  "
+							block_status="checked"
+						]]
+					</div>
+				</div>									
+				<div class="{{block_prefix}}checkbox-panel  is--active  {{block_mod}}">
+					<div class="row {{block_prefix}}row  is--wrap">
+						<div class="cols {{block_prefix}}cols  {{block_mod}}">
+							[[azbntple 
+								tpl="/src/block/site/default/form/elem-label-input-cost-info.html" 
+								form_id="{{form_id}}"
+								form_color="{{form_color}}"
+								block_prefix="{{block_prefix}}"
+								block_mod="{{block_mod}}" 
+								block_mod_elem="  " 
+								block_id="vocalist_cost"
+								block_required="required" 
+								block_required_symbol="<sup class='color--red'>*</sup>" 
+								block_type="number"
+								block_attr="min='0'"
+								block_label="Укажите стоимость"
+								block_placeholder="Стоимость"
+								block_bage="час."
+								block_bage_mod="  "
+								block_info="Ваш гонорар составит 60% от указанной ставки"
+								block_info_mod="  "
+							]]
+						</div>
+						<div class="cols {{block_prefix}}cols  {{block_mod}}">
+							<div class="row {{block_prefix}}row  is--wrap  is--gutter10">
+								<div class="cols {{block_prefix}}cols  {{block_mod}}  is--left">
+									<div class="{{block_prefix}}label  {{block_mod}}"><sup class="color--red">*</sup>Загрузить демо</div>
+								</div>
+								<div class="cols {{block_prefix}}cols  {{block_mod}}  is--center">
+									<div class="{{block_prefix}}item  is--mb20">
+										<div class="row  is--wrap  is--gutter  is--aic">
+											<div class="cols">
+												<div class="{{block_prefix}}control form-control  {{block_mod}}  {{form_color}}  is--box">
+													<div class="row  is--wrap  is--gutter10  is--aic">
+														<div class="cols">
+															[[azbntple 
+																tpl="/src/block/site/default/audio/card-audio-btn.html" 
+																block_prefix="audio-card__"
+																block_mod="is--btn" 
+																block_audio="{{url-path-audio}}/semin.mp3"
+															]]
+														</div>
+													</div>
+												</div>
+											</div>	
+											<div class="cols"> 
+												[[azbntple 
+													tpl="/src/block/site/default/button/button.html"
+													button_prefix="btn__" 
+													button_mod="  "
+													button_type="button"
+													button_name="Загрузить демо"
+												]]									
+											</div>
+										</div>	
+									</div>	
+								</div>
+								<div class="cols {{block_prefix}}cols  {{block_mod}}  is--tel  is--right">
+									<div class="{{block_prefix}}info  {{block_mod}}">Файл должен быть в формате mp3. моно и не более 20 мб
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="{{block_prefix}}checkbox-elem  {{block_mod}}">
+		<div class="row {{block_prefix}}row  is--wrap">
+			<div class="cols {{block_prefix}}cols  {{block_mod}}">
+				<div class="row {{block_prefix}}row  is--wrap  is--gutter10">
+					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--left">
+						
+					</div>
+					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--center">
+						<div class="{{block_prefix}}switch-line  {{block_mod}}"></div>
+						[[azbntple 
+							tpl="/src/block/site/default/form/elem-switch.html" 
+							form_id="{{form_id}}"
+							form_color="{{form_color}}"
+							block_prefix="{{block_prefix}}"
+							block_mod="{{block_mod}}" 
+							block_mod_elem="is--xl" 
+							block_label="Пародист"
+							block_name="Пародист"
+							block_id="parodist"
+							block_validate="  "
+							block_status="checked"
+						]]
+					</div>
+				</div>									
+				<div class="{{block_prefix}}checkbox-panel  is--active  {{block_mod}}">
+					<div class="row {{block_prefix}}row  is--wrap">
+						<div class="cols {{block_prefix}}cols  {{block_mod}}">
+							[[azbntple 
+								tpl="/src/block/site/default/form/elem-label-input-cost-info.html" 
+								form_id="{{form_id}}"
+								form_color="{{form_color}}"
+								block_prefix="{{block_prefix}}"
+								block_mod="{{block_mod}}" 
+								block_mod_elem="  " 
+								block_id="parodist_cost"
+								block_required="required" 
+								block_required_symbol="<sup class='color--red'>*</sup>" 
+								block_type="number"
+								block_attr="min='0'"
+								block_label="Укажите стоимость"
+								block_placeholder="Стоимость"
+								block_bage="час."
+								block_bage_mod="  "
+								block_info="Ваш гонорар составит 60% от указанной ставки"
+								block_info_mod="  "
+							]]
+						</div>
+						<div class="cols {{block_prefix}}cols  {{block_mod}}">
+							<div class="row {{block_prefix}}row  is--wrap  is--gutter10  is--aifs">
+								<div class="cols {{block_prefix}}cols  {{block_mod}}  is--left">
+									<div class="{{block_prefix}}label  {{block_mod}}"><sup class="color--red">*</sup>Демо-запись пародии</div>
+								</div>
+								<div class="cols {{block_prefix}}cols  {{block_mod}}  is--center">
+									<div class="{{block_prefix}}item  is--mb20">
+										<div class="row  is--wrap  is--gutter  is--aic">
+											<div class="cols">										
+												[[azbntple 
+													tpl="/src/block/site/default/audio/card-xs.html" 
+													block_prefix="audio-card__"
+													block_mod="is--list-xs" 
+													block_audio="{{url-path-audio}}/semin.mp3"
+												]] 
+											</div>	
+											<div class="cols"> 
+												<div class="{{block_prefix}}bage">Эдвард Радзинский</div>									
+											</div>
+										</div>	
+									</div>
+									<div class="{{block_prefix}}item  is--mb20">
+										<div class="row  is--wrap  is--gutter  is--aic">
+											<div class="cols">										
+												[[azbntple 
+													tpl="/src/block/site/default/audio/card-xs.html" 
+													block_prefix="audio-card__"
+													block_mod="is--list-xs" 
+													block_audio="{{url-path-audio}}/semin.mp3"
+												]] 
+											</div>	
+											<div class="cols"> 
+												<div class="{{block_prefix}}bage">Эдвард Радзинский</div>									
+											</div>
+										</div>	
+									</div>
+									<div class="{{block_prefix}}item  is--mb20">
+										[[azbntple 
+											tpl="/src/block/site/default/button/button.html"
+											button_prefix="btn__" 
+											button_mod="  "
+											button_type="button"
+											button_name="Загрузить пародию"
+										]]	
+									</div>	
+									<div class="{{block_prefix}}item  is--mb20">
+											<div class="{{block_prefix}}label  {{block_mod}}  is--inline">Персонаж пародии</div>
+											<ul class="{{block_prefix}}tabs">
+												<li class="{{block_prefix}}tabs-item  active">
+													[[azbntple 
+														tpl="/src/block/site/default/filter/card-tabs.html" 
+														block_prefix="filter-card__"
+														block_mod="is--btn  is--xl" 
+														block_heading="Выбрать из списка"
+														block_id="parodist-list"
+													]]
+												</li>
+												<li class="{{block_prefix}}tabs-item">
+													[[azbntple 
+														tpl="/src/block/site/default/filter/card-tabs.html" 
+														block_prefix="filter-card__"
+														block_mod="is--btn  is--xl" 
+														block_heading="Добавить вариант"
+														block_id="parodist-add"
+													]]
+												</li>
+											</ul>
+											<div class="{{block_prefix}}tabs-content">
+												<div class="{{block_prefix}}tabs-pane  active" id="parodist-list">
+													<div class="{{block_prefix}}item">
+														<select class="{{block_prefix}}control form-control validate[required]  {{block_mod}}  {{form_color}}" id="{{form_id}}[format]" name="f[Выбрать из списка пародистов]">
+															<option disabled selected>Выбрать из списка</option>
+															<option>Боря</option>
+															<option>Вова</option>
+															<option>Дима</option>
+														</select>
+													</div>
+												</div>
+												<div class="{{block_prefix}}tabs-pane" id="parodist-add">
+													<div class="{{block_prefix}}item">
+														<textarea class="{{block_prefix}}control form-control  {{block_mod}}  {{form_color}}  is--textarea" id="{{form_id}}[text]" name="f[Добавить свой вариант]" placeholder="Добавить свой вариант"></textarea>	
+													</div>
+												</div>
+											</div>
+									</div>
+									<div class="{{block_prefix}}item  is--mb20">
+										[[azbntple 
+											tpl="/src/block/site/default/button/button.html"
+											button_prefix="btn__" 
+											button_mod="  "
+											button_type="button"
+											button_name="Загрузить"
+										]]	
+									</div>
+									<div class="{{block_prefix}}item  is--mb20">
+										[[azbntple 
+											tpl="/src/block/site/default/button/button.html"
+											button_prefix="btn__" 
+											button_mod="  "
+											button_type="button"
+											button_name="Загрузить ещё пародию"
+										]]	
+									</div>		
+								</div>
+								<div class="cols {{block_prefix}}cols  {{block_mod}}  is--tel  is--right">
+									<div class="{{block_prefix}}info  {{block_mod}}">Файл должен быть в формате mp3. моно и не более 20 мб
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="{{block_prefix}}checkbox-elem  {{block_mod}}">
+		<div class="row {{block_prefix}}row  is--wrap">
+			<div class="cols {{block_prefix}}cols  {{block_mod}}">
+				<div class="row {{block_prefix}}row  is--wrap  is--gutter10">
+					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--left">
+						
+					</div>
+					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--center">
+						<div class="{{block_prefix}}switch-line  {{block_mod}}"></div>
+						[[azbntple 
+							tpl="/src/block/site/default/form/elem-switch.html" 
+							form_id="{{form_id}}"
+							form_color="{{form_color}}"
+							block_prefix="{{block_prefix}}"
+							block_mod="{{block_mod}}" 
+							block_mod_elem="is--xl" 
+							block_label="Я могу чистить свои начитки:"
+							block_name="Я могу чистить свои начитки"
+							block_id="clean_audio"
+							block_validate="  "
+							block_status="checked"
+						]]
+					</div>
+				</div>									
+				<div class="{{block_prefix}}checkbox-panel  is--active  {{block_mod}}">
+					<div class="row {{block_prefix}}row  is--wrap">
+						<div class="cols {{block_prefix}}cols  {{block_mod}}">
+							<div class="row {{block_prefix}}row  is--wrap  is--gutter10">
+								<div class="cols {{block_prefix}}cols  {{block_mod}}  is--left">
+									
+								</div>
+								<div class="cols {{block_prefix}}cols  {{block_mod}}  is--center">
+									<div class="{{block_prefix}}item">
+										<div class="row  is--wrap  is--gutter  is--aic">
+											<div class="cols">
+												<select class="{{block_prefix}}control form-control validate[required]  {{block_mod}}  {{form_color}}  is--red" id="{{form_id}}[clean-audio-select]" name="f[Тип аудиоролика]">
+													<option>20%</option>
+													<option>30%</option>
+													<option>40%</option>
+													<option>50%</option>
+												</select>
+											</div>	
+											<div class="cols"> 
+												<div class="{{block_prefix}}bage  {{block_mod}}  is--xl">От стоимости заказа!</div>
+											</div>
+										</div>
+									</div>	
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="{{block_prefix}}checkbox-group  {{block_mod}}">
+	<div class="{{block_prefix}}checkbox-elem  {{block_mod}}">
+		<div class="row {{block_prefix}}row  is--wrap">
+			<div class="cols {{block_prefix}}cols  {{block_mod}}">
+				<div class="row {{block_prefix}}row  is--wrap  is--gutter10">
+					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--left">
+						
+					</div>
+					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--center">
+						<div class="{{block_prefix}}item  is--mb20">
+							[[azbntple 
+								tpl="/src/block/site/default/button/button.html"
+								button_prefix="btn__" 
+								button_mod="  "
+								button_type="button"
+								button_name="Расширенные параметры"
+							]]	
+						</div>
+						<div class="{{block_prefix}}item  is--mb20">
+							<div class="{{block_prefix}}bage  is--lg">Установленные параметры помогут заказчику быстрее найти нужного диктора.
+							</div>
+						</div>
+					</div>
+				</div>									
+				<div class="{{block_prefix}}checkbox-panel  is--active  {{block_mod}}">
+					<div class="row {{block_prefix}}row  is--wrap">
+						<div class="cols {{block_prefix}}cols  {{block_mod}}">
+							<div class="row {{block_prefix}}row  is--wrap  is--gutter10  is--aifs">
+								<div class="cols {{block_prefix}}cols  {{block_mod}}  is--left">
+									<label for="{{form_id}}[age-voice]" class="{{block_prefix}}label  {{block_mod}}">Возраст голоса</label>
+								</div>
+								<div class="cols {{block_prefix}}cols  {{block_mod}}  is--center">
+										[[azbntple 
+											tpl="/src/block/site/default/form/elem-switch.html"
+											block_validate="  "
+											form_id="{{form_id}}"
+											block_prefix="{{block_prefix}}"
+											block_mod="{{block_mod}}" 
+											block_mod_elem="is--lg" 
+											block_label="Молодой"
+											block_name="Молодой"
+											block_id="age-voice"
+											block_status="checked"
+											form_color="{{form_color}}"
+										]]
+										[[azbntple 
+											tpl="/src/block/site/default/form/elem-switch.html"
+											block_validate="  "
+											form_id="{{form_id}}"
+											block_prefix="{{block_prefix}}"
+											block_mod="{{block_mod}}" 
+											block_mod_elem="is--lg" 
+											block_label="Подростковый"
+											block_name="Подростковый"
+											block_id="age-voice-2"
+											block_status="  "
+											form_color="{{form_color}}"
+										]]
+										[[azbntple 
+											tpl="/src/block/site/default/form/elem-switch.html"
+											block_validate="  "
+											form_id="{{form_id}}"
+											block_prefix="{{block_prefix}}"
+											block_mod="{{block_mod}}" 
+											block_mod_elem="is--lg" 
+											block_label="Средний"
+											block_name="Средний"
+											block_id="age-voice-3"
+											block_status="  "
+											form_color="{{form_color}}"
+										]]
+										[[azbntple 
+											tpl="/src/block/site/default/form/elem-switch.html"
+											block_validate="  "
+											form_id="{{form_id}}"
+											block_prefix="{{block_prefix}}"
+											block_mod="{{block_mod}}" 
+											block_mod_elem="is--lg" 
+											block_label="Взрослый"
+											block_name="Взрослый"
+											block_id="age-voice-4"
+											block_status="  "
+											form_color="{{form_color}}"
+										]]
+										[[azbntple 
+											tpl="/src/block/site/default/form/elem-switch.html"
+											block_validate="  "
+											form_id="{{form_id}}"
+											block_prefix="{{block_prefix}}"
+											block_mod="{{block_mod}}" 
+											block_mod_elem="is--lg" 
+											block_label="Пожилой"
+											block_name="Пожилой"
+											block_id="age-voice-5"
+											block_status="  "
+											form_color="{{form_color}}"
+										]] 
+								</div>
+							</div>
+						</div>
+						<div class="cols {{block_prefix}}cols  {{block_mod}}">
+							<div class="row {{block_prefix}}row  is--wrap  is--gutter10  is--aifs">
+								<div class="cols {{block_prefix}}cols  {{block_mod}}  is--left">
+									<label for="{{form_id}}[timbre-voice]" class="{{block_prefix}}label  {{block_mod}}">Ваш тембр</label>
+								</div>
+								<div class="cols {{block_prefix}}cols  {{block_mod}}  is--center">
+										[[azbntple 
+											tpl="/src/block/site/default/form/elem-switch.html"
+											block_validate="  "
+											form_id="{{form_id}}"
+											block_prefix="{{block_prefix}}"
+											block_mod="{{block_mod}}" 
+											block_mod_elem="is--lg" 
+											block_label="Молодой"
+											block_name="Молодой"
+											block_id="timbre-voice-1"
+											block_status="checked"
+											form_color="{{form_color}}"
+										]]
+										[[azbntple 
+											tpl="/src/block/site/default/form/elem-switch.html"
+											block_validate="  "
+											form_id="{{form_id}}"
+											block_prefix="{{block_prefix}}"
+											block_mod="{{block_mod}}" 
+											block_mod_elem="is--lg" 
+											block_label="Низкий"
+											block_name="Низкий"
+											block_id="timbre-voice-2"
+											block_status="  "
+											form_color="{{form_color}}"
+										]]
+										[[azbntple 
+											tpl="/src/block/site/default/form/elem-switch.html"
+											block_validate="  "
+											form_id="{{form_id}}"
+											block_prefix="{{block_prefix}}"
+											block_mod="{{block_mod}}" 
+											block_mod_elem="is--lg" 
+											block_label="Высокий"
+											block_name="Высокий"
+											block_id="timbre-voice-3"
+											block_status="  "
+											form_color="{{form_color}}"
+										]]
+										[[azbntple 
+											tpl="/src/block/site/default/form/elem-switch.html"
+											block_validate="  "
+											form_id="{{form_id}}"
+											block_prefix="{{block_prefix}}"
+											block_mod="{{block_mod}}" 
+											block_mod_elem="is--lg" 
+											block_label="Средний"
+											block_name="Средний"
+											block_id="timbre-voice-4"
+											block_status="  "
+											form_color="{{form_color}}"
+										]]
+										[[azbntple 
+											tpl="/src/block/site/default/form/elem-switch.html"
+											block_validate="  "
+											form_id="{{form_id}}"
+											block_prefix="{{block_prefix}}"
+											block_mod="{{block_mod}}" 
+											block_mod_elem="is--lg" 
+											block_label="Травести"
+											block_name="Травести"
+											block_id="timbre-voice-5"
+											block_status="  "
+											form_color="{{form_color}}"
+										]]
+								</div>
+							</div>
+						</div>
+						<div class="cols {{block_prefix}}cols  {{block_mod}}">
+							<div class="row {{block_prefix}}row  is--wrap  is--gutter10  is--aifs">
+								<div class="cols {{block_prefix}}cols  {{block_mod}}  is--left">
+									<label for="{{form_id}}[character-voice]" class="{{block_prefix}}label  {{block_mod}}">Характер голоса</label>
+								</div>
+								<div class="cols {{block_prefix}}cols  {{block_mod}}  is--center">
+										[[azbntple 
+											tpl="/src/block/site/default/form/elem-switch.html"
+											block_validate="  "
+											form_id="{{form_id}}"
+											block_prefix="{{block_prefix}}"
+											block_mod="{{block_mod}}" 
+											block_mod_elem="is--lg" 
+											block_label="Веселый"
+											block_name="Веселый"
+											block_id="character-voice-1"
+											block_status="checked"
+											form_color="{{form_color}}"
+										]]
+										[[azbntple 
+											tpl="/src/block/site/default/form/elem-switch.html"
+											block_validate="  "
+											form_id="{{form_id}}"
+											block_prefix="{{block_prefix}}"
+											block_mod="{{block_mod}}" 
+											block_mod_elem="is--lg" 
+											block_label="Информационный"
+											block_name="Информационный"
+											block_id="character-voice-2"
+											block_status="  "
+											form_color="{{form_color}}"
+										]]
+										[[azbntple 
+											tpl="/src/block/site/default/form/elem-switch.html"
+											block_validate="  "
+											form_id="{{form_id}}"
+											block_prefix="{{block_prefix}}"
+											block_mod="{{block_mod}}" 
+											block_mod_elem="is--lg" 
+											block_label="Вокальный"
+											block_name="Вокальный"
+											block_id="character-voice-3"
+											block_status="  "
+											form_color="{{form_color}}"
+										]]
+										[[azbntple 
+											tpl="/src/block/site/default/form/elem-switch.html"
+											block_validate="  "
+											form_id="{{form_id}}"
+											block_prefix="{{block_prefix}}"
+											block_mod="{{block_mod}}" 
+											block_mod_elem="is--lg" 
+											block_label="Рэп"
+											block_name="Рэп"
+											block_id="character-voice-4"
+											block_status="  "
+											form_color="{{form_color}}"
+										]]
+										[[azbntple 
+											tpl="/src/block/site/default/form/elem-switch.html"
+											block_validate="  "
+											form_id="{{form_id}}"
+											block_prefix="{{block_prefix}}"
+											block_mod="{{block_mod}}" 
+											block_mod_elem="is--lg" 
+											block_label="Серьезный"
+											block_name="Серьезный"
+											block_id="character-voice-5"
+											block_status="  "
+											form_color="{{form_color}}"
+										]]
+										[[azbntple 
+											tpl="/src/block/site/default/form/elem-switch.html"
+											block_validate="  "
+											form_id="{{form_id}}"
+											block_prefix="{{block_prefix}}"
+											block_mod="{{block_mod}}" 
+											block_mod_elem="is--lg" 
+											block_label="Игровой"
+											block_name="Игровой"
+											block_id="character-voice-6"
+											block_status="  "
+											form_color="{{form_color}}"
+										]]
+										[[azbntple 
+											tpl="/src/block/site/default/form/elem-switch.html"
+											block_validate="  "
+											form_id="{{form_id}}"
+											block_prefix="{{block_prefix}}"
+											block_mod="{{block_mod}}" 
+											block_mod_elem="is--lg" 
+											block_label="Сексуальный"
+											block_name="Сексуальный"
+											block_id="character-voice-7"
+											block_status="  "
+											form_color="{{form_color}}"
+										]]
+										[[azbntple 
+											tpl="/src/block/site/default/form/elem-switch.html"
+											block_validate="  "
+											form_id="{{form_id}}"
+											block_prefix="{{block_prefix}}"
+											block_mod="{{block_mod}}" 
+											block_mod_elem="is--lg" 
+											block_label="Клубный"
+											block_name="Клубный"
+											block_id="character-voice-8"
+											block_status="  "
+											form_color="{{form_color}}"
+										]]
+										[[azbntple 
+											tpl="/src/block/site/default/form/elem-switch.html"
+											block_validate="  "
+											form_id="{{form_id}}"
+											block_prefix="{{block_prefix}}"
+											block_mod="{{block_mod}}" 
+											block_mod_elem="is--lg" 
+											block_label="Брутальный"
+											block_name="Брутальный"
+											block_id="character-voice-9"
+											block_status="  "
+											form_color="{{form_color}}"
+										]]
+										[[azbntple 
+											tpl="/src/block/site/default/form/elem-switch.html"
+											block_validate="  "
+											form_id="{{form_id}}"
+											block_prefix="{{block_prefix}}"
+											block_mod="{{block_mod}}" 
+											block_mod_elem="is--lg" 
+											block_label="Зажигательный"
+											block_name="Зажигательный"
+											block_id="character-voice-10"
+											block_status="  "
+											form_color="{{form_color}}"
+										]]
+										[[azbntple 
+											tpl="/src/block/site/default/form/elem-switch.html"
+											block_validate="  "
+											form_id="{{form_id}}"
+											block_prefix="{{block_prefix}}"
+											block_mod="{{block_mod}}" 
+											block_mod_elem="is--lg" 
+											block_label="Хрипловатый"
+											block_name="Хрипловатый"
+											block_id="character-voice-11"
+											block_status="  "
+											form_color="{{form_color}}"
+										]]
+								</div>
+							</div>
+						</div>
+						<div class="cols {{block_prefix}}cols  {{block_mod}}">
+							<div class="row {{block_prefix}}row  is--wrap  is--gutter10  is--aifs">
+								<div class="cols {{block_prefix}}cols  {{block_mod}}  is--left">
+									<label for="{{form_id}}[lang-voice]" class="{{block_prefix}}label  {{block_mod}}">Дополнительный язык</label>
+								</div>
+								<div class="cols {{block_prefix}}cols  {{block_mod}}  is--center">
+										[[azbntple 
+											tpl="/src/block/site/default/form/elem-switch.html"
+											block_validate="  "
+											form_id="{{form_id}}"
+											block_prefix="{{block_prefix}}"
+											block_mod="{{block_mod}}" 
+											block_mod_elem="is--lg" 
+											block_label="Английский"
+											block_name="Английский"
+											block_id="lang-voice-1"
+											block_status="checked"
+											form_color="{{form_color}}"
+										]]
+										[[azbntple 
+											tpl="/src/block/site/default/form/elem-switch.html"
+											block_validate="  "
+											form_id="{{form_id}}"
+											block_prefix="{{block_prefix}}"
+											block_mod="{{block_mod}}" 
+											block_mod_elem="is--lg" 
+											block_label="Немецкий"
+											block_name="Немецкий"
+											block_id="lang-voice-2"
+											block_status="  "
+											form_color="{{form_color}}"
+										]]
+										[[azbntple 
+											tpl="/src/block/site/default/form/elem-switch.html"
+											block_validate="  "
+											form_id="{{form_id}}"
+											block_prefix="{{block_prefix}}"
+											block_mod="{{block_mod}}" 
+											block_mod_elem="is--lg" 
+											block_label="Французский"
+											block_name="Французский"
+											block_id="lang-voice-3"
+											block_status="  "
+											form_color="{{form_color}}"
+										]]
+										[[azbntple 
+											tpl="/src/block/site/default/form/elem-switch.html"
+											block_validate="  "
+											form_id="{{form_id}}"
+											block_prefix="{{block_prefix}}"
+											block_mod="{{block_mod}}" 
+											block_mod_elem="is--lg" 
+											block_label="Итальянский"
+											block_name="Итальянский"
+											block_id="lang-voice-4"
+											block_status="  "
+											form_color="{{form_color}}"
+										]]
+										[[azbntple 
+											tpl="/src/block/site/default/form/elem-switch.html"
+											block_validate="  "
+											form_id="{{form_id}}"
+											block_prefix="{{block_prefix}}"
+											block_mod="{{block_mod}}" 
+											block_mod_elem="is--lg" 
+											block_label="Испанский"
+											block_name="Испанский"
+											block_id="lang-voice-5"
+											block_status="  "
+											form_color="{{form_color}}"
+										]]
+										[[azbntple 
+											tpl="/src/block/site/default/form/elem-switch.html"
+											block_validate="  "
+											form_id="{{form_id}}"
+											block_prefix="{{block_prefix}}"
+											block_mod="{{block_mod}}" 
+											block_mod_elem="is--lg" 
+											block_label="Казахский"
+											block_name="Казахский"
+											block_id="lang-voice-6"
+											block_status="  "
+											form_color="{{form_color}}"
+										]]
+										[[azbntple 
+											tpl="/src/block/site/default/form/elem-switch.html"
+											block_validate="  "
+											form_id="{{form_id}}"
+											block_prefix="{{block_prefix}}"
+											block_mod="{{block_mod}}" 
+											block_mod_elem="is--lg" 
+											block_label="Киргизский"
+											block_name="Киргизский"
+											block_id="lang-voice-7"
+											block_status="  "
+											form_color="{{form_color}}"
+										]]
+										[[azbntple 
+											tpl="/src/block/site/default/form/elem-switch.html"
+											block_validate="  "
+											form_id="{{form_id}}"
+											block_prefix="{{block_prefix}}"
+											block_mod="{{block_mod}}" 
+											block_mod_elem="is--lg" 
+											block_label="Румынский"
+											block_name="Румынский"
+											block_id="lang-voice-8"
+											block_status="  "
+											form_color="{{form_color}}"
+										]]
+										[[azbntple 
+											tpl="/src/block/site/default/form/elem-switch.html"
+											block_validate="  "
+											form_id="{{form_id}}"
+											block_prefix="{{block_prefix}}"
+											block_mod="{{block_mod}}" 
+											block_mod_elem="is--lg" 
+											block_label="Украинский"
+											block_name="Украинский"
+											block_id="lang-voice-9"
+											block_status="  "
+											form_color="{{form_color}}"
+										]]
+										[[azbntple 
+											tpl="/src/block/site/default/form/elem-switch.html"
+											block_validate="  "
+											form_id="{{form_id}}"
+											block_prefix="{{block_prefix}}"
+											block_mod="{{block_mod}}" 
+											block_mod_elem="is--lg" 
+											block_label="Белорусский"
+											block_name="Белорусский"
+											block_id="lang-voice-10"
+											block_status="  "
+											form_color="{{form_color}}"
+										]] 
+								</div>
+							</div>
+						</div>											
+						<div class="cols {{block_prefix}}cols  {{block_mod}}">
+							[[azbntple 
+								tpl="/src/block/site/default/form/elem-label-input.html" 
+								form_id="{{form_id}}"
+								form_color="{{form_color}}"
+								block_prefix="{{block_prefix}}"
+								block_mod="{{block_mod}}" 
+								block_mod_elem="  " 
+								block_id="equipment"
+								block_required="  " 
+								block_required_custom="  " 
+								block_required_symbol="  "  
+								block_type="text"
+								block_attr="  "
+								block_label="Ваше оборудование"
+								block_placeholder="Ваше оборудование"
+								block_value="  "
+								block_info="  "
+								block_info_mod="is--hidden"
+							]]
+						</div>
+						<div class="cols {{block_prefix}}cols  {{block_mod}}">
+							[[azbntple 
+								tpl="/src/block/site/default/form/elem-label-input-bage-info.html" 
+								form_id="{{form_id}}"
+								form_color="{{form_color}}"
+								block_prefix="{{block_prefix}}"
+								block_mod="{{block_mod}}" 
+								block_mod_elem="  " 
+								block_input_elem="  " 
+								block_id="time"
+								block_required="required" 
+								block_required_symbol="<sup class='color--red'>*</sup>" 
+								block_type="number"
+								block_attr="min='0'"
+								block_label="Укажите сроки выполнения заказа"
+								block_placeholder="Cрок выполнения"
+								block_bage="час."
+								block_bage_mod="  "
+								block_info="Указать можно только в часах. Например, 1 или 1.5 и тд"
+								block_info_mod="  "
+							]]
+						</div>								
+						<div class="cols {{block_prefix}}cols  {{block_mod}}">
+							[[azbntple 
+								tpl="/src/block/site/default/form/elem-label-select.html" 
+								form_id="{{form_id}}"
+								form_color="{{form_color}}"
+								block_prefix="{{block_prefix}}"
+								block_mod="{{block_mod}}" 
+								block_mod_elem="  " 
+								block_select_elem="  "
+								block_id="withdrawal"
+								block_required="  " 
+								block_required_symbol="  "  
+								block_attr="  "
+								block_label="Укажите способ вывода средств"
+								block_option="<option>Ян­декс.День­ги</option>"
+								block_info="  "
+								block_info_mod="is--hidden"
+							]]
+						</div>
+						<div class="cols {{block_prefix}}cols  {{block_mod}}">
+							[[azbntple 
+								tpl="/src/block/site/default/form/elem-input-info.html" 
+								form_id="{{form_id}}"
+								form_color="{{form_color}}"
+								block_prefix="{{block_prefix}}"
+								block_mod="{{block_mod}}" 
+								block_mod_elem="  " 
+								block_id="withdrawal_number"
+								block_required="  " 
+								block_required_symbol="  " 
+								block_type="text"
+								block_attr="  "
+								block_label="Номер кошелька"
+								block_placeholder="Номер кошелька"
+								block_info="Укажите номер кошелька без пробелов"
+								block_info_mod="  "
+							]]
+						</div>
+						<div class="cols {{block_prefix}}cols  {{block_mod}}">
+							<div class="row {{block_prefix}}row  is--wrap  is--gutter10">
+								<div class="cols {{block_prefix}}cols  {{block_mod}}  is--btn  is--center  is--offset-left">
+									<div class="{{block_prefix}}footer-panel  {{block_mod}}  is--line">
+										<div class="{{block_prefix}}footer-elem  {{block_mod}}">
+											<div class="{{block_prefix}}footer-item  {{block_mod}}">																	
+												[[azbntple 
+													tpl="/src/block/site/default/form/elem-switch.html" 
+													form_id="{{form_id}}"
+													form_color="{{form_color}}"
+													block_prefix="{{block_prefix}}"
+													block_mod="{{block_mod}}" 
+													block_mod_elem="  " 
+													block_label="Я согласен с <a href='{{page.regulations}}'>правилами сайта</a> и <a href='{{page.offers}}'>договором-оферты</a>"
+													block_name="Согласие с правилами сайта и договором-оферты"
+													block_id="docs_speakers"
+													block_validate="required"
+													block_status="checked"
+												]]															
+												[[azbntple 
+													tpl="/src/block/site/default/form/elem-switch.html" 
+													form_id="{{form_id}}"
+													form_color="{{form_color}}"
+													block_prefix="{{block_prefix}}"
+													block_mod="{{block_mod}}" 
+													block_mod_elem="  " 
+													block_label="Я согласен на обработку <a href='{{page.agreement}}'>персональных данных</a>"
+													block_name="Согласие на обработку персональных данных"
+													block_id="agreement_speakers"
+													block_validate="required"
+													block_status="checked"
+												]]
+											</div>
+										</div>
+										<div class="{{block_prefix}}footer-elem  {{block_mod}}">
+											<div class="{{block_prefix}}footer-item  {{block_mod}}">
+												[[azbntple 
+													tpl="/src/block/site/default/button/button.html"
+													button_prefix="btn__" 
+													button_mod="{{form_btn_mod}}"
+													button_type="submit"
+													button_name="Подтвердить"
+												]]	
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

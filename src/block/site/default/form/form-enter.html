@@ -1,0 +1,111 @@
+<form action="#" class="{{block_prefix}}block  {{block_mod}}"  >
+	<input type="hidden" name="key" value="londonisthecapitalofgreatbritain">
+	<input type="hidden" name="f[Форма: {{block_heading}}]">
+	<div class="{{block_prefix}}inner  {{block_mod}}"  >		
+		<div class="row {{block_prefix}}row  is--wrap">
+			<div class="cols {{block_prefix}}cols  {{block_mod}}  is--heading">
+				<div class="row {{block_prefix}}row  is--wrap">
+					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--heading  is--center  is--offset-left">
+						[[azbntple 
+							tpl="/src/block/site/default/page-header/heading.html" 
+							header_prefix="page-header__" 
+							header_mod="{{block_heading_mod}}"
+							header_level="h1" 
+							header="{{block_heading}}"
+						]]
+						<div class="{{block_prefix}}desc  {{block_mod}}">Введите данные или <a href="{{page.registration}}">Зарегистрируйтесь</a></div>
+					</div> 
+				</div>
+			</div>
+			<div class="cols {{block_prefix}}cols  {{block_mod}}  is--email">
+				<div class="row {{block_prefix}}row  is--wrap  is--gutter10">
+					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--email  is--left">
+						<label for="{{form_id}}[email]" class="{{block_prefix}}label  {{block_mod}}">E-mail</label>
+					</div>
+					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--email  is--center">
+						<div class="{{block_prefix}}item">
+							<input type="email" class="{{block_prefix}}control form-control validate[required, custom[email]]  {{block_mod}}  {{form_color}}" id="{{form_id}}[email]" name="f[email]" placeholder="Ваш E-mail">
+						</div>	
+					</div>
+				</div>
+			</div>
+			<div class="cols {{block_prefix}}cols  {{block_mod}}  is--pass">
+				<div class="row {{block_prefix}}row  is--wrap  is--gutter10">
+					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--pass  is--left">
+						<label for="{{form_id}}[pass]" class="{{block_prefix}}label  {{block_mod}}">Пароль</label>
+					</div>
+					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--pass  is--center">
+						<div class="{{block_prefix}}item">
+							<input type="password" class="{{block_prefix}}control form-control validate[required]  {{block_mod}}  {{form_color}}  is--pass" id="{{form_id}}[pass]" name="f[pass]" placeholder="Пароль">
+							<button type="button" class="{{block_prefix}}btn-pass  is--view  is--active">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="pass-view" ]]</button>
+							<button type="button" class="{{block_prefix}}btn-pass  is--hide">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="pass-hide" ]]</button>
+						</div>	
+					</div>
+				</div>
+			</div>
+			<div class="cols {{block_prefix}}cols  {{block_mod}}  is--subscrabe">
+				<div class="row {{block_prefix}}row  is--wrap  is--gutter10">
+					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--subscrabe  is--center  is--offset-left">
+						<div class="{{block_prefix}}item  {{block_mod}}  is--link">
+							<a href="{{page.password}}">Забыли пароль?</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cols {{block_prefix}}cols  {{block_mod}}  is--subscrabe">
+				<div class="row {{block_prefix}}row  is--wrap  is--gutter10">
+					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--subscrabe  is--center  is--offset-left">
+						<div class="{{block_prefix}}switch-panel  {{block_mod}}">
+							<div class="{{block_prefix}}item  {{block_mod}}  is--switch">
+								<div class="{{block_prefix}}switch">
+									<input class="{{block_prefix}}switch-input validate[required]    {{form_color}}" id="{{form_id}}[processing]" name="f[Согласие на обработку персональных данных]" type="checkbox" checked />
+									<label for="{{form_id}}[processing]" class="{{block_prefix}}switch-label    {{form_color}}">
+										[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="checked" ]]</label> 
+									<label for="{{form_id}}[processing]" class="{{block_prefix}}switch-text    {{form_color}}"> 
+										Я согласен на обработку <a href="{{page.agreement}}">персональных данных</a>
+									</label>
+								</div>	
+							</div>	
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cols {{block_prefix}}cols  {{block_mod}}  is--btn">
+				<div class="row {{block_prefix}}row  is--wrap  is--gutter10">
+					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--btn  is--center  is--offset-left">
+						<div class="row  is--wrap  is--gutter  is--aic">
+							<div class="cols">
+								[[azbntple 
+									tpl="8/src/block/site/default/button/button.html"
+									button_prefix="btn__" 
+									button_mod="{{form_btn_mod}}"
+									button_type="submit"
+									button_name="{{form_btn_name}}"
+								]]
+								[[azbntple 
+									tpl="/src/block/site/default/button/link.html"
+									button_prefix="btn__" 
+									button_mod="{{form_btn_mod}}"
+									button_link="{{page.cabinet}}"
+									button_name="{{form_btn_name}}"
+								]]	
+							</div>
+							<div class="cols">
+								<div class="{{block_prefix}}item  {{block_mod}}">
+									<div class="{{block_prefix}}switch">
+										<input class="{{block_prefix}}switch-input    {{form_color}}" id="{{form_id}}[strangerPC]" name="f[Чужой компьютер]" type="checkbox" />
+										<label for="{{form_id}}[strangerPC]" class="{{block_prefix}}switch-label    {{form_color}}">
+											[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="checked" ]]</label> 
+										<label for="{{form_id}}[strangerPC]" class="{{block_prefix}}switch-text    {{form_color}}"> 
+											Чужой компьютер
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div> 
+</form> 

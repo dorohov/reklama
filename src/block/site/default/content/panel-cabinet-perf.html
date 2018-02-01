@@ -1,0 +1,534 @@
+<div class="{{block_prefix}}elem  is--lg">
+	<div class="{{block_prefix}}row row  is--wrap  is--gutter  is--aic  is--jcsb  {{block_mod}}">
+		<div class="{{block_prefix}}cols cols  {{block_mod}}  is--heading">
+			[[azbntple 
+				tpl="/src/block/site/default/page-header/heading.html" 
+				header_prefix="page-header__" 
+				header_level="h1"
+				header_mod="{{block_heading_mod}}"
+				header="{{block_heading}}"	 
+			]]	
+		</div>
+		<div class="{{block_prefix}}cols cols  {{block_mod}}  is--logout">
+			[[azbntple 
+				tpl="/src/block/site/default/button/link.html"
+				button_prefix="btn__" 
+				button_mod="is--white  is--xs"
+				button_link="{{page.index}}"
+				button_name="Выход" 
+			]]
+		</div>
+	</div>
+</div>
+<div class="{{block_prefix}}elem">
+	<div class="{{block_prefix}}row row  is--wrap  is--gutter  {{block_mod}}">
+	<div class="{{block_prefix}}cols cols  {{block_mod}}  is--cols-5  is--balance">
+		[[azbntple 
+			tpl="/src/block/site/default/cabinet/card-balance.html"
+			block_prefix="card-balance__" 
+			block_mod="is--cabinet"
+			block_heading="Баланс"
+			block_heading_mod="{{block_heading_mod}}"
+		]] 
+	</div>
+	<div class="{{block_prefix}}cols cols  {{block_mod}}  is--cols-7  is--btn">
+		<div class="{{block_prefix}}row row  is--wrap  is--gutter  {{block_mod}}  is--full">
+			<div class="{{block_prefix}}cols cols  {{block_mod}}  is--cols-6  is--btn-panel">
+				[[azbntple 
+					tpl="/src/block/site/default/button/link-icon-name.html"
+					button_prefix="btn__" 
+					button_mod="is--black  is--panel"
+					button_link="{{page.report}}"
+					button_name="Получить отчет"
+					button_icon="icon-report"
+					button_attr="  "
+				]]
+			</div>
+			<div class="{{block_prefix}}cols cols  {{block_mod}}  is--cols-6  is--btn-panel">
+				[[azbntple 
+					tpl="/src/block/site/default/button/link-icon-name.html"
+					button_prefix="btn__" 
+					button_mod="is--black  is--panel"
+					button_link="{{page.favorite}}"
+					button_name="Избранные исполнители"
+					button_icon="ison-favorite"
+					button_attr="  "
+				]]
+			</div>
+			<div class="{{block_prefix}}cols cols  {{block_mod}}  is--cols-6  is--btn-panel">
+				[[azbntple 
+					tpl="/src/block/site/default/button/link-icon-name.html"
+					button_prefix="btn__" 
+					button_mod="is--black  is--panel"
+					button_link="{{page.setting}}"
+					button_name="Настройки"
+					button_icon="icon-settings"
+					button_attr="  "
+				]]
+			</div>
+		</div>
+	</div>
+	<div class="{{block_prefix}}cols cols  {{block_mod}}  is--cols-12  is--new-order">
+		[[azbntple 
+			tpl="/src/block/site/default/cabinet/card-message.html"
+			block_prefix="card-message__" 
+			block_mod="is--order"
+			block_heading="Новый заказ"
+			block_note="Исполнение озвучки пародии Урганта"
+		]] 
+	</div>
+	<div class="{{block_prefix}}cols cols  {{block_mod}}  is--cols-12  is--btn-services">
+		
+		[[azbntple 
+			tpl="/src/block/site/default/page-header/heading.html" 
+			header_prefix="page-header__" 
+			header_level="h3"
+			header_mod="is--page-heading  is--mb20"
+			header="Мои услуги"	 
+		]]
+		<div class="{{block_prefix}}row row  is--wrap  is--gutter  {{block_mod}}">
+			<div class="{{block_prefix}}cols cols  {{block_mod}}  is--cols-6  is--btn-panel">
+				[[azbntple 
+					tpl="/src/block/site/default/cabinet/card-services.html"
+					block_prefix="card-services__" 
+					block_mod="is--cabinet"
+					block_heading="Диктор"
+					block_id="check-speaker"
+				]] 
+			</div>
+			<div class="{{block_prefix}}cols cols  {{block_mod}}  is--cols-6  is--btn-panel">
+				[[azbntple 
+					tpl="/src/block/site/default/cabinet/card-services.html"
+					block_prefix="card-services__" 
+					block_mod="is--cabinet"
+					block_heading="Звукорежиссер"
+					block_id="check-audio"
+				]] 
+			</div>
+			<div class="{{block_prefix}}cols cols  {{block_mod}}  is--cols-6  is--btn-panel">
+				[[azbntple 
+					tpl="/src/block/site/default/cabinet/card-services.html"
+					block_prefix="card-services__" 
+					block_mod="is--cabinet"
+					block_heading="Видеомонтажёр"
+					block_id="check-video"
+				]] 
+			</div>
+			<div class="{{block_prefix}}cols cols  {{block_mod}}  is--cols-6  is--btn-panel">
+				[[azbntple 
+					tpl="/src/block/site/default/cabinet/card-services.html"
+					block_prefix="card-services__" 
+					block_mod="is--cabinet"
+					block_heading="Сценарист"
+					block_id="check-dictor"
+				]] 
+			</div>
+		</div>
+	</div>
+	<div class="{{block_prefix}}cols cols  {{block_mod}}  is--cols-12  is--table">
+		<ul class="{{block_prefix}}tabs  {{block_mod}}">
+			<li class="{{block_prefix}}tabs-item  {{block_mod}}  active">
+				<a href="#myorder" class="{{block_prefix}}tabs-link  {{block_mod}}" data-toggle="tab">
+					Мои заказы
+				</a>
+			</li>
+			<li class="{{block_prefix}}tabs-item  {{block_mod}}">
+				<a href="#myworks" class="{{block_prefix}}tabs-link  {{block_mod}}" data-toggle="tab">
+					Мои работы
+				</a>
+			</li>
+		</ul>
+		<div class="{{block_prefix}}tabs-content  {{block_mod}}">
+			<div id="myorder" class="{{block_prefix}}tabs-pane  {{block_mod}}  active">
+				<div class="table-responsive">
+					<table class="table">
+						<thead>
+							<tr>
+								<th>Дата заказа</th>
+								<th>Название</th>
+								<th>Стоимость</th>
+								<th>Тип</th>
+								<th>Статус</th>
+								<th>Детали</th>
+								<th>Загрузить</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>26-01-2017 19:29</td>								
+								<td>МТС</td>								
+								<td>600 <span class="ruble__symbol">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="ruble" ]]</span></td>								
+								<td>Начитка</td>								
+								<td>Заказ в работе</td>								
+								<td class="is--btn">					
+									[[azbntple 
+										tpl="/src/block/site/default/button/link.html" 
+										button_prefix="btn__" 
+										button_mod="is--link"
+										button_link="{{page.speakers_order_ready}}"
+										button_name="Подробнее"
+										button_attr="  "
+									]]
+								</td>
+								<td>									
+									[[azbntple 
+										tpl="/src/block/site/default/button/button-icon-noname.html" 
+										button_prefix="btn__" 
+										button_mod="is--green"
+										button_link="##"
+										button_attr="  "
+										button_icon="download"
+									]]
+								</td>
+							</tr>
+							<tr>
+								<td>26-01-2017 19:29</td>								
+								<td>МТС</td>								
+								<td>600 <span class="ruble__symbol">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="ruble" ]]</span></td>								
+								<td>Аудиоролик</td>								
+								<td class="color--red">Заказ отменен</td>								
+								<td class="is--btn">					
+									[[azbntple 
+										tpl="/src/block/site/default/button/link.html" 
+										button_prefix="btn__" 
+										button_mod="is--link"
+										button_link="{{page.audio_order_ready}}"
+										button_name="Подробнее"
+										button_attr="  "
+									]]
+								</td>
+								<td>									
+									[[azbntple 
+										tpl="/src/block/site/default/button/button-icon-noname.html" 
+										button_prefix="btn__" 
+										button_mod="is--green"
+										button_link="##"
+										button_attr="  "
+										button_icon="download"
+									]]
+								</td>
+							</tr>
+							<tr>
+								<td>26-01-2017 19:29</td>								
+								<td>МТС</td>								
+								<td>600 <span class="ruble__symbol">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="ruble" ]]</span></td>								
+								<td>Видеоролик</td>								
+								<td class="color--green">Заказ выполнен</td>								
+								<td class="is--btn">					
+									[[azbntple 
+										tpl="/src/block/site/default/button/link.html" 
+										button_prefix="btn__" 
+										button_mod="is--link"
+										button_link="{{page.video_order_ready}}"
+										button_name="Подробнее"
+										button_attr="  "
+									]]
+								</td>
+								<td>									
+									[[azbntple 
+										tpl="/src/block/site/default/button/button-icon-noname.html" 
+										button_prefix="btn__" 
+										button_mod="is--green"
+										button_link="##"
+										button_attr="  "
+										button_icon="download"
+									]]
+								</td>
+							</tr>
+							<tr>
+								<td>26-01-2017 19:29</td>								
+								<td>МТС</td>								
+								<td>600 <span class="ruble__symbol">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="ruble" ]]</span></td>								
+								<td>Сценарий</td>								
+								<td>Заказ на модерации</td>								
+								<td class="is--btn">					
+									[[azbntple 
+										tpl="/src/block/site/default/button/link.html" 
+										button_prefix="btn__" 
+										button_mod="is--link"
+										button_link="{{page.scenario_order_ready}}"
+										button_name="Подробнее"
+										button_attr="  "
+									]]
+								</td>
+								<td>									
+									[[azbntple 
+										tpl="/src/block/site/default/button/button-icon-noname.html" 
+										button_prefix="btn__" 
+										button_mod="is--green"
+										button_link="##"
+										button_attr="  "
+										button_icon="download"
+									]]
+								</td>
+							</tr>
+							<tr>
+								<td>26-01-2017 19:29</td>								
+								<td>МТС</td>								
+								<td>600 <span class="ruble__symbol">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="ruble" ]]</span></td>								
+								<td>Начитка</td>								
+								<td>Ожидает оплаты</td>								
+								<td class="is--btn">					
+									[[azbntple 
+										tpl="/src/block/site/default/button/link.html" 
+										button_prefix="btn__" 
+										button_mod="is--link"
+										button_link="{{page.speakers_order_ready}}"
+										button_name="Подробнее"
+										button_attr="  "
+									]]
+								</td>
+								<td>									
+									[[azbntple 
+										tpl="/src/block/site/default/button/button-icon-noname.html" 
+										button_prefix="btn__" 
+										button_mod="is--green"
+										button_link="##"
+										button_attr="  "
+										button_icon="download"
+									]]
+								</td>
+							</tr>
+							<tr>
+								<td>26-01-2017 19:29</td>								
+								<td>МТС</td>								
+								<td>600 <span class="ruble__symbol">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="ruble" ]]</span></td>								
+								<td>Аудиоролик</td>								
+								<td>Заказ в ожидании</td>								
+								<td class="is--btn">					
+									[[azbntple 
+										tpl="/src/block/site/default/button/link.html" 
+										button_prefix="btn__" 
+										button_mod="is--link"
+										button_link="{{page.audio_order_ready}}"
+										button_name="Подробнее"
+										button_attr="  "
+									]]
+								</td>
+								<td>									
+									[[azbntple 
+										tpl="/src/block/site/default/button/button-icon-noname.html" 
+										button_prefix="btn__" 
+										button_mod="is--green"
+										button_link="##"
+										button_attr="  "
+										button_icon="download"
+									]]
+								</td>
+							</tr>
+							<tr>
+								<td>26-01-2017 19:29</td>								
+								<td>МТС</td>								
+								<td>600 <span class="ruble__symbol">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="ruble" ]]</span></td>								
+								<td>Видеоролик</td>								
+								<td class="color--red">Истек срок</td>								
+								<td class="is--btn">					
+									[[azbntple 
+										tpl="/src/block/site/default/button/link.html" 
+										button_prefix="btn__" 
+										button_mod="is--link"
+										button_link="{{page.video_order_ready}}"
+										button_name="Подробнее"
+										button_attr="  "
+									]]
+								</td>
+								<td>									
+									[[azbntple 
+										tpl="/src/block/site/default/button/button-icon-noname.html" 
+										button_prefix="btn__" 
+										button_mod="is--green"
+										button_link="##"
+										button_attr="  "
+										button_icon="download"
+									]]
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div id="myworks" class="{{block_prefix}}tabs-pane  {{block_mod}}">
+				<div class="table-responsive">
+					<table class="table">
+						<thead>
+							<tr>
+								<th>Дата заказа</th>
+								<th>Название</th>
+								<th>Стоимость</th>
+								<th>Тип</th>
+								<th>Статус</th>
+								<th>Детали</th>
+								<th>Скачать</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>26-01-2017 19:29</td>								
+								<td>МТС</td>								
+								<td>600 <span class="ruble__symbol">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="ruble" ]]</span></td>								
+								<td>Начитка</td>								
+								<td>Заказ ожидает принятия</td>								
+								<td class="is--btn">					
+									[[azbntple 
+										tpl="/src/block/site/default/button/link.html" 
+										button_prefix="btn__" 
+										button_mod="is--link"
+										button_link="{{page.speakers_order_ready}}"
+										button_name="Подробнее"
+										button_attr="  "
+									]]
+								</td>
+								<td>									
+									[[azbntple 
+										tpl="/src/block/site/default/button/button-icon-noname.html" 
+										button_prefix="btn__" 
+										button_mod="is--green"
+										button_link="##"
+										button_attr="  "
+										button_icon="download"
+									]]
+								</td>
+							</tr>
+							<tr>
+								<td>26-01-2017 19:29</td>								
+								<td>МТС</td>								
+								<td>600 <span class="ruble__symbol">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="ruble" ]]</span></td>								
+								<td>Аудиоролик</td>								
+								<td class="color--red">Истек срок</td>								
+								<td class="is--btn">					
+									[[azbntple 
+										tpl="/src/block/site/default/button/link.html" 
+										button_prefix="btn__" 
+										button_mod="is--link"
+										button_link="{{page.audio_order_ready}}"
+										button_name="Подробнее"
+										button_attr="  "
+									]]
+								</td>
+								<td>									
+									[[azbntple 
+										tpl="/src/block/site/default/button/button-icon-noname.html" 
+										button_prefix="btn__" 
+										button_mod="is--green"
+										button_link="##"
+										button_attr="  "
+										button_icon="download"
+									]]
+								</td>
+							</tr>
+							<tr>
+								<td>26-01-2017 19:29</td>								
+								<td>МТС</td>								
+								<td>600 <span class="ruble__symbol">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="ruble" ]]</span></td>								
+								<td>Видеоролик</td>								
+								<td class="color--green">Заказ выполнен</td>								
+								<td class="is--btn">					
+									[[azbntple 
+										tpl="/src/block/site/default/button/link.html" 
+										button_prefix="btn__" 
+										button_mod="is--link"
+										button_link="{{page.video_order_ready}}"
+										button_name="Подробнее"
+										button_attr="  "
+									]]
+								</td>
+								<td>									
+									[[azbntple 
+										tpl="/src/block/site/default/button/button-icon-noname.html" 
+										button_prefix="btn__" 
+										button_mod="is--green"
+										button_link="##"
+										button_attr="  "
+										button_icon="download"
+									]]
+								</td>
+							</tr>
+							<tr>
+								<td>26-01-2017 19:29</td>								
+								<td>МТС</td>								
+								<td>600 <span class="ruble__symbol">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="ruble" ]]</span></td>								
+								<td>Сценарий</td>								
+								<td>Заказ ожидает отправки</td>								
+								<td class="is--btn">					
+									[[azbntple 
+										tpl="/src/block/site/default/button/link.html" 
+										button_prefix="btn__" 
+										button_mod="is--link"
+										button_link="{{page.scenario_order_ready}}"
+										button_name="Подробнее"
+										button_attr="  "
+									]]
+								</td>
+								<td>									
+									[[azbntple 
+										tpl="/src/block/site/default/button/button-icon-noname.html" 
+										button_prefix="btn__" 
+										button_mod="is--green"
+										button_link="##"
+										button_attr="  "
+										button_icon="download"
+									]]
+								</td>
+							</tr>
+							<tr>
+								<td>26-01-2017 19:29</td>								
+								<td>МТС</td>								
+								<td>600 <span class="ruble__symbol">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="ruble" ]]</span></td>								
+								<td>Начитка</td>								
+								<td>Заказ на модерации</td>								
+								<td class="is--btn">					
+									[[azbntple 
+										tpl="/src/block/site/default/button/link.html" 
+										button_prefix="btn__" 
+										button_mod="is--link"
+										button_link="{{page.speakers_order_ready}}"
+										button_name="Подробнее"
+										button_attr="  "
+									]]
+								</td>
+								<td>									
+									[[azbntple 
+										tpl="/src/block/site/default/button/button-icon-noname.html" 
+										button_prefix="btn__" 
+										button_mod="is--green"
+										button_link="##"
+										button_attr="  "
+										button_icon="download"
+									]]
+								</td>
+							</tr>
+							<tr>
+								<td>26-01-2017 19:29</td>								
+								<td>МТС</td>								
+								<td>600 <span class="ruble__symbol">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="ruble" ]]</span></td>								
+								<td>Аудиоролик</td>								
+								<td class="color--red">Заказ отменен</td>								
+								<td class="is--btn">					
+									[[azbntple 
+										tpl="/src/block/site/default/button/link.html" 
+										button_prefix="btn__" 
+										button_mod="is--link"
+										button_link="{{page.audio_order_ready}}"
+										button_name="Подробнее"
+										button_attr="  "
+									]]
+								</td>
+								<td>									
+									[[azbntple 
+										tpl="/src/block/site/default/button/button-icon-noname.html" 
+										button_prefix="btn__" 
+										button_mod="is--green"
+										button_link="##"
+										button_attr="  "
+										button_icon="download"
+									]]
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>

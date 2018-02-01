@@ -1,0 +1,40 @@
+<div class="colorbg--green">
+	<div class="container {{content_prefix}}container  is--category">
+		[[azbntple 
+			tpl="/src/block/site/default/filter/panel-scenario.html" 
+			block_prefix="content-block__"
+			block_mod="is--category" 
+		]]
+	</div>
+</div>
+<main class="{{content_prefix}}panel  {{content_mod}}"  role="main">
+	<div class="{{content_prefix}}container container  {{content_mod}}">
+		[[azbntple 
+			tpl="/src/block/site/default/page-header/heading-icon.html" 
+			header_prefix="page-header__" 
+			header_level="h1"
+			header_mod="{{block_heading_mod}}"
+			header="{{block_heading}}"
+			header_icon="{{block_heading_icon}}"	 
+		]]	
+		<div class="{{content_prefix}}elem">
+			[[azbntple 
+				tpl="/src/block/site/default/filter/panel-audio-tabs.html"
+				block_prefix="content-block__"
+				block_mod="is--filter-tabs" 
+				block_heading_mod="{{block_heading_mod}}"
+				block_heading="{{block_heading}}" 
+				block_icon="{{block_heading_icon}}"	
+			]]
+		</div>
+		<div class="{{content_prefix}}elem">
+			[[azbntple 
+				tpl="/src/block/site/default/content/panel-scenario.html"
+				block_prefix="content-block__" 
+				block_mod="is--audio"
+				block_heading="{{block_heading}}"
+				block_heading_mod="{{block_heading_mod}}"
+			]] 
+		</div> 
+	</div>
+</main>

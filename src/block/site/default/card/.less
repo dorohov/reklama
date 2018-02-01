@@ -1,0 +1,201 @@
+.card-panel__{
+	&block{}
+	&row{}
+	&cols{} 
+}
+.card-item__{
+	&card{
+		&.is--services{
+			background-color: @white;
+			position: relative;
+			padding-bottom: 30px;
+			height: 100%;
+		}
+		&.is--step{
+			position: relative;
+			margin-bottom: 20px;
+			@media @media-point-screen {
+				margin-bottom: 0;
+				&::after{
+					content: '';
+					position: absolute;
+					top: 55px;
+					right: 0;
+					transform: translateX(50%);
+					width: 55%;
+					height: 4px;
+					background-image: url("@{url-path-img}/default/bg-tire.png");
+					background-position: center left;
+					background-repeat: repeat-x;
+				}
+				.content-block__cols.is--step-card:last-child &{
+					&::after{
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	&preview{
+		display: block;
+		&.is--gallery{
+			margin-bottom: 0;
+		}
+		&.is--services{
+			background-color: @red;
+			color: @white;
+			padding: 35px 15px;
+			transition: @trs-site;
+			@media @media-point-screen {
+				padding: 2.75vw 2vw;
+			}
+			.card-item__card:hover &{
+				background-color: @black-light;
+				color: @b-color-a;
+			}
+		}
+		&.is--step{
+			width: 85px;
+			height: 85px;
+			margin: 0 auto 25px;
+			color: @white;
+			text-align: center;
+			font-weight: 300;
+			font-size: @b-fs + 12;
+			line-height: @b-lh + 14;
+			text-transform: uppercase;
+			border-radius: 50%;
+			background-color: @black-light;
+			padding: 25px 10px;
+			&.is--red{
+				background-color: @red;
+			}
+			@media @media-point-notsmart {				
+				margin: 0 auto 45px;
+				font-size: @b-fs + 22;
+				line-height: @b-lh + 24;
+				width: 115px;
+				height: 115px;
+				padding: 35px 20px;
+			}
+		}
+	}
+	&preview-icon{
+		&.is--services{
+			display: block;
+			width: 78px;
+			height: 78px;
+			margin: 0 auto;			
+		}
+	}
+	&desc{
+		transition: @trs-site;
+		&.is--services{
+			padding: 30px 15px 25px;
+			.card-item__card:hover &{
+				background-color: @black-light;
+				transform: translateY(-30px);
+			}
+		}
+	}
+	&heading{
+		font-weight: 700;
+		transition: @trs-site;
+		&.is--services{
+			text-align: center;
+			text-transform: uppercase;
+			margin-bottom: 5px;
+			.card-item__card:hover &{
+				color: @white;
+			}
+		}
+		&.is--step{
+			font-weight: 400;
+			text-transform: uppercase;
+			text-align: center;
+			.calcFontSize(16, 24, 320, 1680);
+			.calcLineHeight(18, 34, 320, 1680);
+			margin-bottom: 10px;
+			@media @media-point-notsmart {
+				margin-bottom: 20px;
+			}
+			br{
+				display: none;
+				@media @media-point-screen {
+					display: block;
+				}
+			}
+		}
+		&.is--news{
+			font-size: @b-fs + 2;
+			line-height: @b-lh - 2;
+		}
+		a{				
+			&, &:focus{
+				color: @b-color-h;
+			}
+			.card-item__card:hover &,
+			&:hover{
+				color: @b-color-a;
+			}
+		}
+	}
+	&heading-small{
+		font-size: @b-fs - 2;
+		line-height: @b-lh + 1;
+		&.is--services{
+			padding: 0 15px;
+			text-align: center;
+			margin-bottom: 20px;
+			@media @media-point-xxl {
+				padding: 0 2vw;
+			}
+		}
+		&.is--step{
+			text-align: center;
+			max-width: 290px;
+    		margin: 0 auto;
+    		@media @media-point-smart {    			
+				font-size: @b-fs - 4;
+				line-height: @b-lh - 4;
+    		}
+		}
+		&.is--news{
+			font-size: @b-fs - 4;
+			line-height: @b-lh - 4;
+		}
+	}
+	&date{
+		&.is--news{
+			font-size: @b-fs - 4;
+			line-height: @b-lh - 4;
+			color: fadeout(@black, 40%);
+		}
+	}
+	&cost{
+		transition: @trs-site;
+		&.is--services{
+			text-align: center;
+			color: @red;
+			font-size: @b-fs + 2;
+			.card-item__card:hover &{
+				color: @b-color-a;
+			}			
+		}
+	}
+	&cost-ruble{
+		&.is--services{
+			display: inline-block;
+			width: 16px;
+			height: 16px;
+		}
+	}
+	&btn{
+		&.is--services{
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translate(-50%, 50%);
+		}
+	}
+}

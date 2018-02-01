@@ -1,0 +1,37 @@
+<div class="row {{block_prefix}}row  is--wrap  is--gutter10  {{block_mod}}  {{block_mod_elem}}">
+	<div class="cols {{block_prefix}}cols  is--left  {{block_mod}}  {{block_mod_elem}}">
+		<label for="{{form_id}}[{{block_id}}]" class="{{block_prefix}}label  {{block_mod}}">{{block_required_symbol}}{{block_label}}</label>
+	</div>
+	<div class="cols {{block_prefix}}cols  is--center  {{block_mod}}  {{block_mod_elem}}">
+		<div class="row  is--wrap  is--gutter  is--aic">
+			<div class="cols">
+				<div class="{{block_prefix}}control form-control  {{block_mod}}  {{form_color}}  is--box">
+					<div class="row  is--wrap  is--gutter10  is--aic">
+						<div class="cols">
+							[[azbntple 
+								tpl="/src/block/site/default/audio/card-file-btn.html" 
+								block_prefix="audio-card__"
+								block_mod="is--btn" 
+								block_heading="{{block_download_name}}"
+							]]
+						</div>
+					</div>
+				</div>
+			</div>	
+			<div class="cols"> 
+				[[azbntple 
+					tpl="/src/block/site/default/button/button.html"
+					button_prefix="btn__" 
+					button_mod="  "
+					button_type="button"
+					button_name="Загрузить"
+				]]									
+			</div>
+		</div>
+	</div> 	
+	<div class="cols {{block_prefix}}cols  is--right  {{block_mod}}  {{block_mod_elem}}">
+		<div class="{{block_prefix}}info  {{block_mod}}  {{block_info_mod}}">{{block_info}}</div>
+	</div>
+</div>
+
+

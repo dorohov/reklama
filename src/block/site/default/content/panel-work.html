@@ -1,0 +1,51 @@
+<div class="{{block_prefix}}panel  {{block_mod}}  colorbg--green"> 
+	<div class="{{block_prefix}}container container  {{block_mod}}">
+		<div class="{{block_prefix}}row row  is--wrap  is--gutter  {{block_mod}}  is--aic">
+			<div class="{{block_prefix}}cols cols  {{block_mod}}  is--heading">			
+				[[azbntple 
+					tpl="/src/block/site/default/page-header/heading.html" 
+					header_prefix="page-header__" 
+					header_level="h2"
+					header_mod="{{block_heading_mod}}"
+					header="{{block_heading}}"	 
+				]]	
+			</div>
+			<div class="{{block_prefix}}cols cols  {{block_mod}}  is--slick-btn">
+				<div class="{{block_prefix}}tabs-pane  {{block_mod}}  active  work-audio"></div>
+				<div class="{{block_prefix}}tabs-pane  {{block_mod}}  work-video"></div>
+			</div>
+			<div class="{{block_prefix}}cols cols  {{block_mod}}  is--tabs">
+				<ul class="{{block_prefix}}tabs  {{block_mod}}">
+					<li class="{{block_prefix}}tabs-item  {{block_mod}}  active">
+						<a href=".work-audio" class="{{block_prefix}}tabs-link  {{block_mod}}  tabs-audio" data-toggle="tab">
+							Аудиоролики
+						</a>
+					</li>
+					<li class="{{block_prefix}}tabs-item  {{block_mod}}">
+						<a href=".work-video" class="{{block_prefix}}tabs-link  {{block_mod}}  tabs-video" data-toggle="tab">
+							Видеоролики
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="{{block_prefix}}cols cols  {{block_mod}}  is--tabs-content">
+				<div class="{{block_prefix}}tabs-content  {{block_mod}}">
+					<div id="work-audio" class="{{block_prefix}}tabs-pane  {{block_mod}}  active  work-audio">
+						[[azbntple 
+							tpl="/src/block/site/default/audio/panel.html" 
+							block_prefix="content-block__"
+							block_mod="is--panel-audio" 
+						]]
+					</div>
+					<div id="work-video" class="{{block_prefix}}tabs-pane  {{block_mod}}  work-video">
+						[[azbntple 
+							tpl="/src/block/site/default/audio/panel-video.html" 
+							block_prefix="content-block__"
+							block_mod="is--panel-video" 
+						]]
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div> 

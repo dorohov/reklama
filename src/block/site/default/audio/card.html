@@ -1,0 +1,34 @@
+<div class="{{block_prefix}}card  {{block_mod}}  azbn__player" data-audio="{{block_audio}}">
+	<div class="{{block_prefix}}btn  {{block_mod}}">
+		[[azbntple 
+			tpl="/src/block/site/default/button/button-icon-noname.html"
+			button_prefix="audio-btn__" 
+			button_mod="is--play  azbn__play  {{block_mod}}"
+			button_icon="play"
+			button_attr="title='Воспроизвести {{block_heading}}'"
+		]]
+		[[azbntple 
+			tpl="/src/block/site/default/button/button-icon-noname.html"
+			button_prefix="audio-btn__" 
+			button_mod="is--pause  azbn__pause  {{block_mod}}"
+			button_icon="pause"
+			button_attr="title='Остоновить {{block_heading}}'"
+		]]
+	</div> 
+	<div class="{{block_prefix}}desc  {{block_mod}}">
+		<div class="{{block_prefix}}heading  {{block_mod}}">{{block_heading}}</div>
+		<div class="{{block_prefix}}download  {{block_mod}}">				
+			[[azbntple 
+				tpl="/src/block/site/default/button/button-icon-noname.html"
+				button_prefix="audio-btn__" 
+				button_mod="is--download  azbn__download"
+				button_icon="download"
+			]]
+			245 Загрузок
+		</div>
+		<div class="{{block_prefix}}progress-bar">
+			<div class="{{block_prefix}}progress-line" style="width: 25%;"></div>
+			<div class="{{block_prefix}}progress-slider" style="left: 25%;"></div>
+		</div>
+	</div>	
+</div>

@@ -1,0 +1,50 @@
+<div class="{{block_prefix}}card  {{block_mod}}">
+	<div class="{{block_prefix}}row row  is--wrap  is--gutter  {{block_mod}}">
+		<div class="{{block_prefix}}cols cols  {{block_mod}}  is--status">
+			<div class="{{block_prefix}}heading  {{block_mod}}">{{block_heading}}</div>
+			<div class="{{block_prefix}}status">
+				<div class="{{block_prefix}}status-heading">Статус:</div>
+				<div class="{{block_prefix}}status-inner">
+					<label class="{{block_prefix}}status-label  is--online">
+						<input type="radio" name="{{block_id}}" checked  class="{{block_prefix}}status-input">
+						<span class="{{block_prefix}}status-name  is--online">Online</span>
+					</label>
+					<label class="{{block_prefix}}status-label  is--offline">
+						<input type="radio" name="{{block_id}}"  class="{{block_prefix}}status-input">
+						<span class="{{block_prefix}}status-name  is--offline">Offline</span>
+					</label>	
+				</div>
+			</div>
+		</div>
+		<div class="{{block_prefix}}cols cols  {{block_mod}}  is--work">
+			<label class="{{block_prefix}}select-label  {{block_mod}}">
+				<div class="{{block_prefix}}select-icon  {{block_mod}}">
+					[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="icon-docs" ]]
+				</div>
+				<div class="{{block_prefix}}select-name  {{block_mod}}">
+					Работаю до:
+				</div>
+				<select class="form__control  is--services  {{block_prefix}}select  {{block_mod}}">
+					<option>19:00</option>
+					<option>20:00</option>
+					<option>21:00</option>
+				</select>
+			</label>
+		</div>
+		<div class="{{block_prefix}}cols cols  {{block_mod}}  is--time">
+			<label class="{{block_prefix}}select-label  {{block_mod}}">
+				<div class="{{block_prefix}}select-icon  {{block_mod}}">
+					[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="icon-docs" ]]
+				</div>
+				<div class="{{block_prefix}}select-name  {{block_mod}}">
+					Сроки выполнения:
+				</div>
+				<select class="form__control  is--services  {{block_prefix}}select  {{block_mod}}">
+					<option>1.5 час.</option>
+					<option>2.5 час.</option>
+					<option>3.5 час.</option>
+				</select>
+			</label>
+		</div>
+	</div>
+</div>

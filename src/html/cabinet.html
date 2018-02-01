@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"> 
+	<head>
+		[[azbntple 
+			tpl="/src/block/site/default/head/.html" 
+			title=" "
+			description=" "
+		]] 		
+	</head>
+	<body> 
+		[[azbntple 
+			tpl="/src/block/site/default/navbar/cabinet.html"
+			class="navbar-site scroll"
+			navbar_prefix="navbar__"   
+			navbar_mod="  "   
+		]] 
+		[[azbntple  
+			tpl="/src/block/site/page/cabinet/cabinet.html"
+			content_prefix="content-block__"      
+			content_mod="  "      
+			block_heading_mod="is--page-heading"
+			block_heading="Личный кабинет"     
+		]]		
+		[[azbntple 
+			tpl="/src/block/site/default/footer/.html"
+			footer_prefix="footer__" 
+		]]	
+		[[azbntple 
+			tpl="/src/block/site/default/modals/overdraft.html"
+			modals_prefix="modal-base__" 
+			modals_id="modal-overdraft"
+			modals_mod="  "
+			modals_heading="Хочу оплачивать потом"
+			modals_note="  "
+			form_btn_name="Отправить"
+			form_btn_mod="is--invers"
+		]]
+		[[azbntple tpl="/src/block/site/default/script/script.html" ]]
+	</body>
+</html>

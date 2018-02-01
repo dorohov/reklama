@@ -1,0 +1,87 @@
+<footer class="{{footer_prefix}}block">	
+	<div class="{{footer_prefix}}inner">	
+		<div class="container {{footer_prefix}}container">
+			<ul class="{{footer_prefix}}navbar">
+				<li class="{{footer_prefix}}navbar-item">
+					<a href="{{page.speakers}}" class="{{footer_prefix}}navbar-link">Дикторы</a>
+				</li>
+				<li class="{{footer_prefix}}navbar-item">
+					<a href="{{page.audio_order}}" class="{{footer_prefix}}navbar-link">Аудиоролики</a>
+				</li>
+				<li class="{{footer_prefix}}navbar-item">
+					<a href="{{page.video_order}}" class="{{footer_prefix}}navbar-link">Видеоролики</a>
+				</li>
+				<li class="{{footer_prefix}}navbar-item">
+					<a href="{{page.scenario_order}}" class="{{footer_prefix}}navbar-link">Сценарии</a>
+				</li>
+			</ul>
+			<div class="{{footer_prefix}}content">
+				<div class="row {{footer_prefix}}row  is--wrap  is--top">
+					<div class="cols {{footer_prefix}}cols  is--cols-6  is--contacts">
+						<div class="{{footer_prefix}}heading">Реклама оптом</div>
+						[[azbntple 
+							tpl="/src/block/site/default/social/panel-contacts-footer.html" 
+							block_prefix="social-contacts__" 
+							block_mod="is--footer" 
+						]]			
+					</div>
+					<div class="cols {{footer_prefix}}cols  is--cols-3  is--navbar">
+						<div class="{{footer_prefix}}heading">Полезное</div>
+						<ul class="{{footer_prefix}}list">
+							<li class="{{footer_prefix}}list-item">
+								<a href="{{page.speakers_order}}" class="{{footer_prefix}}list-link">Дикторы</a>
+							</li>
+							<li class="{{footer_prefix}}list-item">
+								<a href="{{page.video_order}}" class="{{footer_prefix}}list-link">Видеоролики</a>
+							</li>
+							<li class="{{footer_prefix}}list-item">
+								<a href="{{page.audio_order}}" class="{{footer_prefix}}list-link">Аудиоролики</a>
+							</li>
+							<li class="{{footer_prefix}}list-item">
+								<a href="{{page.scenario_order}}" class="{{footer_prefix}}list-link">Сценарии</a>
+							</li>
+							<li class="{{footer_prefix}}list-item">
+								<a href="{{page.payment}}" class="{{footer_prefix}}list-link">Оплата</a>
+							</li>
+							<li class="{{footer_prefix}}list-item">
+								<a href="{{page.contacts}}" class="{{footer_prefix}}list-link">Контакты</a>
+							</li>
+						</ul>
+					</div>
+					<div class="cols {{footer_prefix}}cols  is--cols-3  is--logotip">
+						<a href="{{page.index}}" class="{{footer_prefix}}logotip"><img src="{{url-path-img}}/default/logotip-white.png" alt=""></a>
+					</div>
+				</div>
+				<div class="cols {{footer_prefix}}cols  is--cols-12  is--soc">
+					[[azbntple 
+						tpl="/src/block/site/default/social/panel.html" 
+						block_prefix="social__" 
+						block_mod="is--footer" 
+					]]
+				</div>
+			</div>
+			<div class="row {{footer_prefix}}row  is--wrap  is--bottom">
+				<div class="cols {{footer_prefix}}cols  is--left">
+					<ul class="{{footer_prefix}}list  is--flex">
+						<li class="{{footer_prefix}}list-item  is--flex">
+							<a href="{{page.offers}}" class="{{footer_prefix}}list-link  is--flex">Оферта</a>
+						</li>
+						<li class="{{footer_prefix}}list-item  is--flex">
+							<a href="{{page.regulations}}" class="{{footer_prefix}}list-link  is--flex">Правила сайта</a>
+						</li>
+						<li class="{{footer_prefix}}list-item  is--flex">
+							<a href="{{page.feedback}}" class="{{footer_prefix}}list-link  is--flex">Обратная связь</a>
+						</li>
+						<li class="{{footer_prefix}}list-item  is--flex">
+							<a href="{{page.enter}}" class="{{footer_prefix}}list-link  is--flex">Присоединиться</a>
+						</li>
+					</ul>
+				</div>
+				<div class="cols {{footer_prefix}}cols  is--right">
+					<div class="{{footer_prefix}}copyright"> {{contacts.copyright}} 2018г. Все права защищены.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>

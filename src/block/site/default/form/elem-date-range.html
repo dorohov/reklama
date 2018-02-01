@@ -1,0 +1,23 @@
+<div class="row {{block_prefix}}row  is--wrap  is--gutter10">
+	<div class="cols {{block_prefix}}cols  is--left  {{block_mod}}  {{block_mod_elem}}">
+		<label for="{{form_id}}[{{block_id}}]" class="{{block_prefix}}label  {{block_mod}}">{{block_required_symbol}}{{block_label}}</label>
+	</div>
+	<div class="cols {{block_prefix}}cols  is--center  {{block_mod}}  {{block_mod_elem}}">
+		<div class="{{block_prefix}}item  {{block_mod}}  is--mb20">
+			<div class="row  is--gutter10  is--wrap">
+				<div class="cols">
+					<label>
+						<div class="{{block_prefix}}range-label">С</div>
+						<input type="date" class="{{block_prefix}}control form-control  is--date  validate[required,custom[dateUTF],past[now]]" id="{{form_id}}[{{block_id_from}}]" name="f[{{block_label_from}}]"/>	
+					</label>								
+				</div>
+				<div class="cols">
+					<label>
+						<div class="{{block_prefix}}range-label">По</div>
+						<input type="date" class="{{block_prefix}}control form-control  is--date  validate[required,custom[dateUTF]]" id="{{form_id}}[{{block_id_to}}]" name="f[{{block_label_to}}]"/>	
+					</label>	
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

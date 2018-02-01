@@ -1,0 +1,23 @@
+<div class="row {{block_prefix}}row  is--wrap  is--gutter10">
+	<div class="cols {{block_prefix}}cols  {{block_mod}}    is--center  is--offset-left">
+		<div class="{{block_prefix}}item  {{block_mod}}  is--mb20">
+			<div class="row">
+				<div class="cols">
+					<label>
+						<div class="{{block_prefix}}range-label">От</div>
+						<input type="number" min="0" max="24" step="0.5" class="js-input-from  {{block_prefix}}control form-control  is--range" value="0" id="{{form_id}}[{{block_id_from}}]" name="f[{{block_label_from}}]"/>	час.	
+					</label>								
+				</div>
+				<div class="cols">
+					<label>
+						<div class="{{block_prefix}}range-label">До</div>
+						<input type="number" min="0" max="24" step="0.5" class="js-input-to  {{block_prefix}}control form-control  is--range" value="0" id="{{form_id}}[{{block_id_to}}]" name="f[{{block_label_to}}]"/>	час.	
+					</label>	
+				</div>
+			</div>
+		</div>
+		<div class="{{block_prefix}}item  {{block_mod}}  is--mb20">
+			<input type="text" class="js-range-slider" value="" id="{{form_id}}[{{block_id}}]" name="f[{{block_label}}]"/>
+		</div>
+	</div>
+</div>

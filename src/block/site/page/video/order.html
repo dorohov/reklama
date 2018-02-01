@@ -1,0 +1,36 @@
+<div class="colorbg--green">
+	<div class="container {{content_prefix}}container  is--category">
+		[[azbntple 
+			tpl="/src/block/site/default/filter/panel-video.html" 
+			block_prefix="content-block__"
+			block_mod="is--category" 
+		]]
+	</div>
+</div>
+<div class="{{content_prefix}}panel  is--order-nav  colorbg--white">
+	<div class="container {{content_prefix}}container  is--order-nav">
+		[[azbntple 
+			tpl="/src/block/site/default/filter/panel-order.html" 
+			block_prefix="content-block__"
+			block_mod="is--order-nav"  
+		]]
+	</div>
+</div>
+<main class="{{content_prefix}}panel  {{content_mod}}"  role="main">
+	<div class="{{content_prefix}}container container  {{content_mod}}">
+		<div class="{{content_prefix}}elem">
+			[[azbntple 
+				tpl="/src/block/site/default/form/form-video-order.html"
+				block_prefix="form__" 
+				block_mod="is--video-order"
+				block_heading="{{block_heading}}"
+				block_heading_mod="{{block_heading_mod}}"
+
+				form_id="pfa"
+				form_color="  "
+				form_btn_mod="is--invers"
+				form_btn_name="Заказать"
+			]]
+		</div> 
+	</div>
+</main>

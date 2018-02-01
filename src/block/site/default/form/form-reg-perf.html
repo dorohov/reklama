@@ -1,0 +1,204 @@
+<form action="#" class="{{block_prefix}}block  {{block_mod}}"  >
+	<input type="hidden" name="key" value="londonisthecapitalofgreatbritain">
+	<input type="hidden" name="f[Форма: {{block_heading}}]">
+	<div class="{{block_prefix}}inner  {{block_mod}}"  >		
+		<div class="row {{block_prefix}}row  is--wrap">
+			<div class="cols {{block_prefix}}cols  {{block_mod}}  is--heading">
+				<div class="row {{block_prefix}}row  is--wrap">
+					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--heading  is--center  is--offset-left">
+						[[azbntple 
+							tpl="/src/block/site/default/page-header/heading.html" 
+							header_prefix="page-header__" 
+							header_mod="{{block_heading_mod}}"
+							header_level="h1" 
+							header="{{block_heading}}"
+						]]
+						<div class="{{block_prefix}}desc  {{block_mod}}">Зарегистрироваться или <a href="{{page.enter}}">Войти в аккаунт</a></div>
+					</div> 
+				</div>
+			</div>
+			<div class="cols {{block_prefix}}cols  {{block_mod}}">
+				[[azbntple 
+					tpl="/src/block/site/default/form/elem-label-input.html" 
+					form_id="{{form_id}}"
+					form_color="{{form_color}}"
+					block_prefix="{{block_prefix}}"
+					block_mod="{{block_mod}}" 
+					block_mod_elem="  " 
+					block_id="reg_name"
+					block_required="required" 
+					block_required_custom="onlyLetterSp" 
+					block_required_symbol="<sup class='color--red'>*</sup>"  
+					block_type="text"
+					block_attr="  "
+					block_label="ФИО"
+					block_placeholder="Ваше ФИО"
+					block_info="  "
+					block_info_mod="is--hidden"
+				]]
+			</div>
+			<div class="cols {{block_prefix}}cols  {{block_mod}}">
+				[[azbntple 
+					tpl="/src/block/site/default/form/elem-label-input.html" 
+					form_id="{{form_id}}"
+					form_color="{{form_color}}"
+					block_prefix="{{block_prefix}}"
+					block_mod="{{block_mod}}" 
+					block_mod_elem="  " 
+					block_id="reg_pseudonym"
+					block_required="required" 
+					block_required_custom="  " 
+					block_required_symbol="<sup class='color--red'>*</sup>"  
+					block_type="text"
+					block_attr="  "
+					block_label="Творческий псевдоним"
+					block_placeholder="Ваш творческий псевдоним"
+					block_info="  "
+					block_info_mod="is--hidden"
+				]]
+			</div>
+			<div class="cols {{block_prefix}}cols  {{block_mod}}">
+				[[azbntple 
+					tpl="/src/block/site/default/form/elem-label-input.html" 
+					form_id="{{form_id}}"
+					form_color="{{form_color}}"
+					block_prefix="{{block_prefix}}"
+					block_mod="{{block_mod}}" 
+					block_mod_elem="  " 
+					block_id="reg_сity"
+					block_required="  " 
+					block_required_custom="  " 
+					block_required_symbol="  "  
+					block_type="text"
+					block_attr="  "
+					block_label="Ваш город"
+					block_placeholder="Ваш город"
+					block_info="  "
+					block_info_mod="is--hidden"
+				]]
+			</div>
+			<div class="cols {{block_prefix}}cols  {{block_mod}}">
+				[[azbntple 
+					tpl="/src/block/site/default/form/elem-label-input.html" 
+					form_id="{{form_id}}"
+					form_color="{{form_color}}"
+					block_prefix="{{block_prefix}}"
+					block_mod="{{block_mod}}" 
+					block_mod_elem="  " 
+					block_id="reg_tel"
+					block_required="required" 
+					block_required_custom="phone" 
+					block_required_symbol="<sup class='color--red'>*</sup>"  
+					block_type="tel"
+					block_attr="  "
+					block_label="Ваш телефон"
+					block_placeholder="Ваш телефон"
+					block_info="На этот номер Вы будите получать уведомления о Вашем заказе"
+					block_info_mod="  "
+				]]
+			</div>
+			<div class="cols {{block_prefix}}cols  {{block_mod}}">
+				[[azbntple 
+					tpl="/src/block/site/default/form/elem-label-input.html" 
+					form_id="{{form_id}}"
+					form_color="{{form_color}}"
+					block_prefix="{{block_prefix}}"
+					block_mod="{{block_mod}}" 
+					block_mod_elem="  " 
+					block_id="reg_email"
+					block_required="required" 
+					block_required_custom="email" 
+					block_required_symbol="<sup class='color--red'>*</sup>"  
+					block_type="email"
+					block_attr="  "
+					block_label="Ваш E-mail"
+					block_placeholder="Ваш E-mail"
+					block_info="На эту почту Вы будете получать исполненные заказы"
+					block_info_mod="  "
+				]]
+			</div>
+			<div class="cols {{block_prefix}}cols  {{block_mod}}  is--pass">
+				<div class="row {{block_prefix}}row  is--wrap  is--gutter10">
+					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--pass  is--left">
+						<label for="{{form_id}}[pass]" class="{{block_prefix}}label  {{block_mod}}"><sup class="color--red">*</sup>Ваш пароль</label>
+					</div>
+					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--pass  is--center">
+						<div class="{{block_prefix}}item">
+							<input type="password" class="{{block_prefix}}control form-control validate[required]  {{block_mod}}  {{form_color}}  is--pass" id="{{form_id}}[pass]" name="f[pass]" placeholder="Пароль">
+							<button type="button" class="{{block_prefix}}btn-pass  is--view  is--active">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="pass-view" ]]</button>
+							<button type="button" class="{{block_prefix}}btn-pass  is--hide">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="pass-hide" ]]</button>
+						</div>	
+					</div>
+					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--pass  is--right">
+						<div class="{{block_prefix}}info  {{block_mod}}">Используйте латинские буквы и цифры, не меньше 8 символов
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cols {{block_prefix}}cols  {{block_mod}}  is--pass">
+				<div class="row {{block_prefix}}row  is--wrap  is--gutter10">
+					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--pass  is--left">
+						<label for="{{form_id}}[pass-conf]" class="{{block_prefix}}label  {{block_mod}}"><sup class="color--red">*</sup>Подтвердить пароль</label>
+					</div>
+					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--pass  is--center">
+						<div class="{{block_prefix}}item">
+							<input type="password" class="{{block_prefix}}control form-control validate[required]  {{block_mod}}  {{form_color}}  is--pass" id="{{form_id}}[pass-conf]" name="f[pass-conf]" placeholder="Подтвердить пароль">
+						</div>	
+					</div>
+				</div>
+			</div>
+			<div class="cols {{block_prefix}}cols  {{block_mod}}">
+				<div class="row {{block_prefix}}row  is--wrap  is--gutter10">
+					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--center  is--offset-left">
+						[[azbntple 
+							tpl="/src/block/site/default/form/elem-switch.html" 
+							form_id="{{form_id}}"
+							form_color="{{form_color}}"
+							block_prefix="{{block_prefix}}"
+							block_mod="{{block_mod}}" 
+							block_mod_elem="  " 
+							block_label="Я согласен с <a href='{{page.regulations}}'>правилами сайта</a> и <a href='{{page.offers}}'>договором-оферты</a>"
+							block_name="Согласие с правилами сайта и договором-оферты"
+							block_id="reg_docs"
+							block_validate="required"
+							block_status="checked"
+						]]															
+						[[azbntple 
+							tpl="/src/block/site/default/form/elem-switch.html" 
+							form_id="{{form_id}}"
+							form_color="{{form_color}}"
+							block_prefix="{{block_prefix}}"
+							block_mod="{{block_mod}}" 
+							block_mod_elem="  " 
+							block_label="Я согласен на обработку <a href='{{page.agreement}}'>персональных данных</a>"
+							block_name="Согласие на обработку персональных данных"
+							block_id="reg_agreement"
+							block_validate="required"
+							block_status="checked"
+						]]
+					</div>
+				</div>
+			</div>
+			<div class="cols {{block_prefix}}cols  {{block_mod}}  is--btn">
+				<div class="row {{block_prefix}}row  is--wrap  is--gutter10">
+					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--btn  is--center  is--offset-left">
+						[[azbntple 
+							tpl="/src/block/site/default/button/link.html"
+							button_prefix="btn__" 
+							button_mod="{{form_btn_mod}}"
+							button_link="{{page.cabinet_performer}}"
+							button_name="{{form_btn_name}}"
+						]]	
+						[[azbntple 
+							tpl="8/src/block/site/default/button/button.html"
+							button_prefix="btn__" 
+							button_mod="{{form_btn_mod}}"
+							button_type="submit"
+							button_name="{{form_btn_name}}"
+						]]	
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div> 
+</form> 

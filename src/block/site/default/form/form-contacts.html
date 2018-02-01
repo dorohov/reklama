@@ -1,0 +1,161 @@
+<form action="#" class="{{block_prefix}}block  {{block_mod}}"  >
+	<input type="hidden" name="key" value="londonisthecapitalofgreatbritain">
+	<input type="hidden" name="f[Форма: {{block_heading}}]">
+	<div class="{{block_prefix}}inner  {{block_mod}}  is--mb35"  >		
+		<div class="row {{block_prefix}}row  is--wrap">
+			<div class="cols {{block_prefix}}cols  is--heading">
+				<div class="row {{block_prefix}}row  is--wrap">
+					<div class="cols {{block_prefix}}cols  is--heading  is--center  is--offset-left">
+						[[azbntple 
+							tpl="/src/block/site/default/page-header/heading.html" 
+							header_prefix="page-header__" 
+							header_mod="{{block_heading_mod}}"
+							header_level="h1" 
+							header="{{block_heading}}"
+						]]
+					</div> 
+				</div>
+			</div>
+			<div class="cols {{block_prefix}}cols  {{block_mod}}">
+				[[azbntple 
+					tpl="/src/block/site/default/form/elem-icon-text.html"
+					block_prefix="{{block_prefix}}"
+					block_mod="{{block_mod}}  is--border"
+					block_mod_elem="is--icon"  
+					block_mod_item="  "  
+					block_label="contacts-email"
+					block_text="<a href='mailto:{{contacts.email}}' class='{{block_prefix}}contacts'>{{contacts.email}}</a>"
+				]]
+			</div>
+			<div class="cols {{block_prefix}}cols  {{block_mod}}">
+				[[azbntple 
+					tpl="/src/block/site/default/form/elem-icon-text.html"
+					block_prefix="{{block_prefix}}"
+					block_mod="{{block_mod}}  is--border"
+					block_mod_elem="is--icon" 
+					block_mod_item="  "  
+					block_label="contacts-tel"
+					block_text="<a href='tel:{{contacts.phone_tel}}' class='{{block_prefix}}contacts'>{{contacts.phone}}</a>"
+				]]
+			</div>
+			<div class="cols {{block_prefix}}cols  {{block_mod}}">
+				[[azbntple 
+					tpl="/src/block/site/default/form/elem-icon-text.html"
+					block_prefix="{{block_prefix}}"
+					block_mod="{{block_mod}}  is--border"
+					block_mod_elem="is--icon" 
+					block_mod_item="  "  
+					block_label="skype"
+					block_text="<a href='skype:{{contacts.skype}}?call' class='{{block_prefix}}contacts'>{{contacts.skype}}</a>"
+				]]
+			</div>
+		</div>
+	</div>
+	<div class="{{block_prefix}}inner"  id="feedback">
+		<div class="row {{block_prefix}}row  is--wrap">
+			<div class="cols {{block_prefix}}cols  is--heading">
+				<div class="row {{block_prefix}}row  is--wrap">
+					<div class="cols {{block_prefix}}cols  is--heading  is--center  is--offset-left">
+						[[azbntple 
+							tpl="/src/block/site/default/page-header/heading.html" 
+							header_prefix="page-header__" 
+							header_mod="{{block_heading_mod}}"
+							header_level="h2" 
+							header="Обратная связь"
+						]]
+					</div> 
+				</div>
+			</div>
+			<div class="cols {{block_prefix}}cols">
+				[[azbntple 
+					tpl="/src/block/site/default/form/elem-label-input-custom.html" 
+					form_id="{{form_id}}"
+					form_color="{{form_color}}"
+					block_prefix="{{block_prefix}}"
+					block_mod="  " 
+					block_mod_elem="  "  
+					block_id="contacts_name"
+					block_type="text"
+					block_required="required"
+					block_required_custom="onlyLetterSp" 
+					block_required_symbol="<sup class='color--red'>*</sup>" 
+					block_label="Ваше имя"
+					block_placeholder="Ваше имя"
+					block_info="  "
+					block_info_mod="is--hidden"
+				]]
+			</div>
+			<div class="cols {{block_prefix}}cols">
+				[[azbntple 
+					tpl="/src/block/site/default/form/elem-label-input-custom.html" 
+					form_id="{{form_id}}"
+					form_color="{{form_color}}"
+					block_prefix="{{block_prefix}}"
+					block_mod="  " 
+					block_mod_elem="  "
+					block_id="contacts_email"
+					block_type="email"
+					block_required="required"  
+					block_required_custom="email" 
+					block_required_symbol="<sup class='color--red'>*</sup>" 
+					block_label="Ваш e-mail"
+					block_placeholder="Ваш e-mail"
+					block_info="  "
+					block_info_mod="is--hidden"
+				]]
+			</div>
+			<div class="cols {{block_prefix}}cols">
+				[[azbntple 
+					tpl="/src/block/site/default/form/elem-label-textarea-info.html" 
+					form_id="{{form_id}}"
+					form_color="{{form_color}}"
+					block_prefix="{{block_prefix}}"
+					block_mod="  " 
+					block_mod_elem="is--bottom" 
+					block_id="contacts_text"
+					block_required="required"  
+					block_required_symbol="<sup class='color--red'>*</sup>" 
+					block_attr="  "
+					block_label="Текст сообщения"
+					block_placeholder="Текст сообщения"
+					block_info="  "
+					block_info_mod="is--hidden"
+				]]
+			</div>
+			<div class="cols {{block_prefix}}cols  {{block_mod}}  is--btn">
+				<div class="row {{block_prefix}}row  is--wrap  is--gutter10">
+					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--btn  is--center  is--offset-left">
+						<div class="{{block_prefix}}footer-panel  {{block_mod}}  is--line">
+							<div class="{{block_prefix}}footer-elem  {{block_mod}}">
+								[[azbntple 
+								tpl="/src/block/site/default/form/elem-switch.html" 
+								form_id="{{form_id}}"
+								form_color="{{form_color}}"
+								block_prefix="{{block_prefix}}"
+								block_mod="{{block_mod}}" 
+								block_mod_elem="  " 
+								block_label="Я согласен на обработку <a href='{{page.agreement}}'>персональных данных</a>"
+								block_name="Согласие на обработку персональных данных"
+								block_id="agreement1"
+								block_validate="required"
+								block_status="checked"
+							]]
+							</div>
+							<div class="{{block_prefix}}footer-elem  {{block_mod}}">
+								<div class="{{block_prefix}}footer-item  {{block_mod}}">
+									[[azbntple 
+										tpl="/src/block/site/default/button/button.html"
+										button_prefix="btn__" 
+										button_mod="{{form_btn_mod}}"
+										button_type="submit"
+										button_name="{{form_btn_name}}"
+									]]	
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div> 
+</form> 

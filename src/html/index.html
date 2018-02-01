@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"> 
+	<head>
+		[[azbntple 
+			tpl="/src/block/site/default/head/.html" 
+			title=" "
+			description=" "
+		]] 		
+	</head>
+	<body> 
+		[[azbntple 
+			tpl="/src/block/site/default/navbar/.html"
+			class="navbar-site scroll"
+			navbar_prefix="navbar__"   
+			navbar_mod="  "     
+		]] 
+		[[azbntple 
+			tpl="/src/block/site/default/content/panel-services.html" 
+			block_prefix="content-block__"
+			block_mod="is--panel-services"
+		]]
+		[[azbntple 
+			tpl="/src/block/site/default/content/panel-work.html" 
+			block_prefix="content-block__"
+			block_mod="is--panel-work"
+			block_heading="Последние работы"
+			block_heading_mod="is--page-heading  is--pdl10"
+		]]	
+		[[azbntple 
+			tpl="/src/block/site/default/content/panel-step.html" 
+			block_prefix="content-block__"
+			block_mod="is--panel-step"
+			block_heading="Как мы работаем"
+			block_heading_mod="is--page-heading"
+		]]
+		[[azbntple 
+			tpl="/src/block/site/default/content/panel-artists.html" 
+			block_prefix="content-block__"
+			block_mod="is--panel-artists"
+			block_heading="Новые исполнители"
+			block_heading_mod="is--page-heading  is--pdl10"
+		]]	
+		[[azbntple 
+			tpl="/src/block/site/default/content/panel-news.html" 
+			block_prefix="content-block__"
+			block_mod="is--panel-artists"
+			block_heading="Новости"
+			block_heading_mod="is--page-heading  is--pdl10"
+		]]	
+		[[azbntple 
+			tpl="/src/block/site/default/content/panel-about-index.html" 
+			block_prefix="content-block__"
+			block_mod="is--panel-about-index"
+			block_heading="Реклама оптом"
+			block_heading_mod="is--page-heading  is--index"
+		]]		
+		[[azbntple 
+			tpl="/src/block/site/default/footer/.html"
+			footer_prefix="footer__" 
+		]]		
+		[[azbntple 
+			tpl="/src/block/site/default/modals/video.html"
+			modals_prefix="modal-base__" 
+			modals_id="modal-video"
+			modals_mod="is--video"
+			modals_heading="Видео"
+			modals_video="{{url-path-video}}/video.mp4"
+			modals_poster="http://via.placeholder.com/380x200"
+		]]	
+		[[azbntple tpl="/src/block/site/default/script/script.html" ]]  
+		[[azbntple tpl="/src/block/site/default/script/slick.html" ]] 
+	</body>
+</html>

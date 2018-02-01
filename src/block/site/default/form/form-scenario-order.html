@@ -1,0 +1,281 @@
+<form action="#" class="{{block_prefix}}block  {{block_mod}}"  >
+	<input type="hidden" name="key" value="londonisthecapitalofgreatbritain">
+	<input type="hidden" name="f[Форма: {{block_heading}}]">
+	<div class="{{block_prefix}}inner  {{block_mod}}"  >		
+		<div class="row {{block_prefix}}row  is--wrap">
+			<div class="cols {{block_prefix}}cols  {{block_mod}}  is--heading">
+				<div class="row {{block_prefix}}row  is--wrap">
+					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--heading  is--center  is--offset-left">
+						[[azbntple 
+							tpl="/src/block/site/default/page-header/heading.html" 
+							header_prefix="page-header__" 
+							header_mod="{{block_heading_mod}}"
+							header_level="h1" 
+							header="{{block_heading}}"
+						]]
+						<div class="{{block_prefix}}desc  {{block_mod}}">Написание сценария от 400 <span class="ruble__symbol">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="ruble" ]]</span></div>
+					</div> 
+				</div>
+			</div>
+			<div class="cols {{block_prefix}}cols  {{block_mod}}">
+				[[azbntple 
+					tpl="/src/block/site/default/form/elem-label-input.html" 
+					form_id="{{form_id}}"
+					form_color="{{form_color}}"
+					block_prefix="{{block_prefix}}"
+					block_mod="{{block_mod}}" 
+					block_mod_elem="  "
+					block_type="text"
+					block_id="scenario_name"
+					block_required="required" 
+					block_required_symbol="<sup class='color--red'>*</sup>" 
+					block_label="Название"
+					block_placeholder="Название"
+					block_info="Название будет отображено в отчетных документах"
+					block_info_mod="  "
+				]]
+			</div>
+			<div class="cols {{block_prefix}}cols  {{block_mod}}  is--name">
+				<div class="row {{block_prefix}}row  is--wrap  is--gutter10">
+					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--name  is--center  is--offset-left">	
+						<div class="{{block_prefix}}item  {{block_mod}}">
+							[[azbntple 
+								tpl="/src/block/site/default/form/elem-switch.html"
+								block_validate="  "
+								form_id="{{form_id}}"
+								block_prefix="{{block_prefix}}"
+								block_mod="{{block_mod}}" 
+								block_mod_elem="is--nopb" 
+								block_label="Срочный заказ!"
+								block_name="Срочный заказ!"
+								block_id="scenario_rush_order"
+								block_status="checked"
+								form_color="{{form_color}}"
+							]]
+						</div>	
+					</div>
+				</div>
+			</div>	
+			<div class="cols {{block_prefix}}cols  {{block_mod}}">				
+				[[azbntple 
+					tpl="/src/block/site/default/form/elem-range.html"
+					block_validate="  "
+					form_id="{{form_id}}"
+					form_color="{{form_color}}"
+					block_prefix="{{block_prefix}}"
+					block_mod="{{block_mod}}" 
+					block_mod_elem="  "
+					block_id="scenario_rush_order_input"
+					block_id_from="scenario_rush_order_from"
+					block_id_to="scenario_rush_order_to"
+					block_label="Срочный заказ!"
+					block_label_from="Срочный заказ! От (час.)"
+					block_label_to="Срочный заказ! До (час.)"
+				]]
+			</div>				
+			<div class="cols {{block_prefix}}cols  {{block_mod}}">
+				[[azbntple 
+					tpl="/src/block/site/default/form/elem-label-select.html" 
+					form_id="{{form_id}}"
+					form_color="{{form_color}}"
+					block_prefix="{{block_prefix}}"
+					block_mod="{{block_mod}}" 
+					block_mod_elem="  " 
+					block_select_elem="  "
+					block_id="scenario_tutorial"
+					block_required="required" 
+					block_required_symbol="<sup class='color--red'>*</sup>"  
+					block_attr="  "
+					block_label="Выбрать сценариста"
+					block_option="<option>Антонов Антон (запись от 12 ч, стоимость от 400 руб)</option><option>Антонов Антон (запись от 12 ч, стоимость от 400 руб)</option><option>Антонов Антон (запись от 12 ч, стоимость от 400 руб)</option>"
+					block_info="Исполнитель офлайн! Рекомендуем выбрать доступного исполнителя!"
+					block_info_mod="is--warning"
+				]]
+			</div>
+			<div class="cols {{block_prefix}}cols  {{block_mod}}  is--audio-type">
+				<div class="row {{block_prefix}}row  is--wrap  is--gutter10">
+					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--audio-type  is--left">
+						<label for="{{form_id}}[audio_type]" class="{{block_prefix}}label  {{block_mod}}"><sup class="color--red">*</sup>Тип текста</label>
+					</div>
+					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--audio-type  is--center">
+						<div class="{{block_prefix}}item">
+							<div class="row  is--wrap  is--gutter  is--aic">
+								<div class="cols">
+									<select class="{{block_prefix}}control form-control validate[required]  {{block_mod}}  {{form_color}}" id="{{form_id}}[audio_type]" name="f[Тип текста]">
+										<option>Информационный</option>
+										<option>Игровой</option>
+										<option>Стихотворный</option>
+										<option>Вокальный</option>
+										<option>Автоответчик</option>
+										<option>Политический</option>
+									</select>
+								</div>	
+								<div class="cols"> 
+									<div class="{{block_prefix}}bage  {{block_mod}}">Стоимость монтажа: <span class="{{block_prefix}}bage-cost color--red">400</span> <span class="color--red  ruble__symbol">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="ruble" ]]</span></div>
+								</div>
+							</div>	
+						</div>	
+					</div>
+				</div>
+			</div>
+			<div class="cols {{block_prefix}}cols  {{block_mod}}">
+				[[azbntple 
+					tpl="/src/block/site/default/form/elem-label-input-bage-info.html" 
+					form_id="{{form_id}}"
+					form_color="{{form_color}}"
+					block_prefix="{{block_prefix}}"
+					block_mod="{{block_mod}}" 
+					block_mod_elem="  " 
+					block_input_elem="is--timekeeping" 
+					block_id="scenario_timekeeping"
+					block_required="required" 
+					block_required_symbol="<sup class='color--red'>*</sup>" 
+					block_type="number"
+					block_attr="min='0'"
+					block_label="Желаемый хронометраж"
+					block_placeholder="  "
+					block_bage="сек."
+					block_bage_mod="  "
+					block_info="Укажите в секундах какой продолжительностью должен быть ролик"
+					block_info_mod="  "
+				]]
+			</div>
+			<div class="cols {{block_prefix}}cols  {{block_mod}}">
+				[[azbntple 
+					tpl="/src/block/site/default/form/elem-label-input.html" 
+					form_id="{{form_id}}"
+					form_color="{{form_color}}"
+					block_prefix="{{block_prefix}}"
+					block_mod="{{block_mod}}" 
+					block_mod_elem="  "
+					block_id="scenario_products"
+					block_required="required" 
+					block_required_symbol="<sup class='color--red'>*</sup>" 
+					block_label="Товар (услуга), который рекламируется в ролике"
+					block_placeholder="Товар (услуга)"
+					block_info="  "
+					block_info_mod="is--hidden"
+				]]
+			</div>
+			<div class="cols {{block_prefix}}cols  {{block_mod}}">
+				[[azbntple 
+					tpl="/src/block/site/default/form/elem-label-textarea-info.html" 
+					form_id="{{form_id}}"
+					form_color="{{form_color}}"
+					block_prefix="{{block_prefix}}"
+					block_mod="{{block_mod}}" 
+					block_mod_elem="  " 
+					block_id="scenario_text"
+					block_required="required" 
+					block_required_symbol="<sup class='color--red'>*</sup>" 
+					block_attr="  "
+					block_label="Главное сообщение, которое должно прозвучать в ролике"
+					block_placeholder="Главное сообщение"
+					block_info="Тезесно, своим словами опишите как видите ролик."
+					block_info_mod="  "
+				]]
+			</div>
+			<div class="cols {{block_prefix}}cols  {{block_mod}}">
+				[[azbntple 
+					tpl="/src/block/site/default/form/elem-label-textarea-info.html" 
+					form_id="{{form_id}}"
+					form_color="{{form_color}}"
+					block_prefix="{{block_prefix}}"
+					block_mod="{{block_mod}}" 
+					block_mod_elem="  " 
+					block_id="scenario_text_info"
+					block_required="required" 
+					block_required_symbol="<sup class='color--red'>*</sup>" 
+					block_attr="  "
+					block_label="Адрес (са) и телефон (ны), название фирмы, которые должны прозвучать в ролике"
+					block_placeholder="Информация"
+					block_info="  "
+					block_info_mod="is--hidden"
+				]]
+			</div>
+			<div class="cols {{block_prefix}}cols  {{block_mod}}">
+				[[azbntple 
+					tpl="/src/block/site/default/form/elem-label-audio-demo-info.html" 
+					form_id="{{form_id}}"
+					form_color="{{form_color}}"
+					block_prefix="{{block_prefix}}"
+					block_mod="{{block_mod}}" 
+					block_mod_elem="  " 
+					block_mod_item="  " 
+					block_id="scenario_demo"
+					block_required="required" 
+					block_required_symbol="<sup class='color--red'>*</sup>"
+					block_label="Загрузить пример"
+					block_btn_name="Загрузить"
+					block_bnt_mod="  "
+					block_info="Добавьте аудио пример если он есть."
+					block_info_mod="  "
+				]]
+			</div>
+			<div class="cols {{block_prefix}}cols  {{block_mod}}  is--manually">
+				<div class="row {{block_prefix}}row  is--wrap  is--gutter10">
+					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--manually  is--center  is--offset-left">	
+						<div class="{{block_prefix}}item  {{block_mod}}  is--switch">	
+							<div class="{{block_prefix}}switch-panel  is--nopadtop  {{block_mod}}">
+								<div class="{{block_prefix}}switch">
+									<input class="{{block_prefix}}switch-input    {{form_color}}" id="{{form_id}}[manually]" name="f[Рассчитать заказ вручную]" type="checkbox" />
+									<label for="{{form_id}}[manually]" class="{{block_prefix}}switch-label    {{form_color}}">
+										[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="checked" ]]
+									</label> 
+									<label for="{{form_id}}[manually]" class="{{block_prefix}}switch-text    {{form_color}}"> 
+										Рассчитать заказ вручную!
+									</label>
+								</div>	
+							</div>
+						</div>	
+					</div>
+					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--manually  is--right">
+						<div class="{{block_prefix}}info  {{block_mod}}">Если Вы не согласны с ценой, модератор оценит Ваш заказ в течении 10-30 минут! После чего Вы сможете подтвердить или отменить заказ
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cols {{block_prefix}}cols  {{block_mod}}  is--btn">
+				<div class="row {{block_prefix}}row  is--wrap  is--gutter10">
+					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--btn  is--center  is--offset-left">
+						<div class="{{block_prefix}}footer-panel  {{block_mod}}  is--line">
+							<div class="{{block_prefix}}footer-elem  {{block_mod}}  is--icon">
+								<div class="{{block_prefix}}footer-item  {{block_mod}}  is--icon">
+									<div class="{{block_prefix}}footer-icon  {{block_mod}}">
+										[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="timing" ]]
+									</div>
+									Хронометраж 20 сек.
+								</div>
+							</div>
+							<div class="{{block_prefix}}footer-elem  {{block_mod}}">
+								<div class="{{block_prefix}}footer-item  {{block_mod}}  is--icon">
+									<div class="{{block_prefix}}footer-icon  {{block_mod}}">
+										[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="clock" ]]
+									</div>
+									Сроки выполнения 1 час
+								</div>
+							</div>
+							<div class="{{block_prefix}}footer-elem  {{block_mod}}  is--cost">
+								<div class="{{block_prefix}}footer-item  {{block_mod}}  is--cost">
+									ИТОГО: 2000 <span class="ruble__symbol">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="ruble" ]]</span>
+								</div>
+							</div>
+
+							<div class="{{block_prefix}}footer-elem  {{block_mod}}">
+								<div class="{{block_prefix}}footer-item  {{block_mod}}">
+									[[azbntple 
+										tpl="/src/block/site/default/button/button.html"
+										button_prefix="btn__" 
+										button_mod="{{form_btn_mod}}"
+										button_type="submit"
+										button_name="{{form_btn_name}}"
+									]]	
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div> 
+</form> 

@@ -1,0 +1,110 @@
+<form action="#" class="{{block_prefix}}block  {{block_mod}}"  >
+	<input type="hidden" name="key" value="londonisthecapitalofgreatbritain">
+	<input type="hidden" name="f[Форма: {{block_heading}}]">
+	<div class="{{block_prefix}}inner  {{block_mod}}  is--setting"  >		
+		<div class="row {{block_prefix}}row  is--wrap">
+			<div class="cols {{block_prefix}}cols  {{block_mod}}  is--heading">
+				<div class="row {{block_prefix}}row  is--wrap">
+					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--heading  is--center  is--offset-left">
+						[[azbntple 
+							tpl="/src/block/site/default/page-header/heading.html" 
+							header_prefix="page-header__" 
+							header_mod="{{block_heading_mod}}"
+							header_level="h1" 
+							header="{{block_heading}}"
+						]]
+					</div> 
+				</div>
+			</div>
+			<div class="cols {{block_prefix}}cols  {{block_mod}}">
+				[[azbntple 
+					tpl="/src/block/site/default/form/elem-label-input-info.html" 
+					form_id="{{form_id}}"
+					form_color="{{form_color}}"
+					block_prefix="{{block_prefix}}"
+					block_mod="{{block_mod}}" 
+					block_mod_elem="is--date" 
+					block_id="withdraw_date"
+					block_required="required" 
+					block_required_symbol="<sup class='color--red'>*</sup>" 
+					block_type="date"
+					block_attr="lang='ru_ru-RU_ru-UA_ru-KZ_ru-MD'" 
+					block_label="Укажите дату оплаты"
+					block_placeholder="Дата оплаты"
+					block_bage="  "
+					block_bage_mod="  "
+					block_info="  "
+					block_info_mod="is--hidden"
+				]]
+			</div>							
+			<div class="cols {{block_prefix}}cols  {{block_mod}}">
+				[[azbntple 
+					tpl="/src/block/site/default/form/elem-label-select.html" 
+					form_id="{{form_id}}"
+					form_color="{{form_color}}"
+					block_prefix="{{block_prefix}}"
+					block_mod="{{block_mod}}" 
+					block_mod_elem="  " 
+					block_select_elem="  "
+					block_id="withdraw_select"
+					block_required="required" 
+					block_required_symbol="<sup class='color--red'>*</sup>" 
+					block_attr="  "
+					block_label="Способ оплаты"
+					block_option="<option>Ян­декс.День­ги</option>"
+					block_info="  "
+					block_info_mod="is--hidden"
+				]]
+			</div>
+			<div class="cols {{block_prefix}}cols  {{block_mod}}">
+				[[azbntple 
+					tpl="/src/block/site/default/form/elem-label-download-info.html" 
+					form_id="{{form_id}}"
+					form_color="{{form_color}}"
+					block_prefix="{{block_prefix}}"
+					block_mod="{{block_mod}}" 
+					block_mod_elem="  "
+					block_id="video_download_file"
+					block_required_symbol="<sup class='color--red'>*</sup>" 
+					block_label="Прикрепить чек"
+					block_placeholder="Прикрепить чек"
+					block_info="  "
+					block_info_mod="is--hidden"
+					block_download_name="чек.jpg"
+				]]
+			</div>
+			<div class="cols {{block_prefix}}cols  {{block_mod}}  is--subscrabe">
+				<div class="row {{block_prefix}}row  is--wrap  is--gutter10">
+					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--subscrabe  is--center  is--offset-left">
+						[[azbntple 
+							tpl="/src/block/site/default/form/elem-switch.html" 
+							form_id="{{form_id}}"
+							form_color="{{form_color}}"
+							block_prefix="{{block_prefix}}"
+							block_mod="{{block_mod}}" 
+							block_mod_elem="  " 
+							block_label="Я согласен на обработку <a href='{{page.agreement}}'>персональных данных</a>"
+							block_name="Согласие на обработку персональных данных"
+							block_id="agreement1"
+							block_validate="required"
+							block_status="checked"
+						]]
+					</div>
+				</div>
+			</div>
+			<div class="cols {{block_prefix}}cols  {{block_mod}}  is--btn">
+				<div class="row {{block_prefix}}row  is--wrap  is--gutter10">
+					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--btn  is--center  is--offset-left">
+						[[azbntple 
+							tpl="/src/block/site/default/button/button.html"
+							button_prefix="btn__" 
+							button_mod="{{form_btn_mod}}"
+							button_type="submit"
+							button_name="{{form_btn_name}}"
+						]]	
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div> 
+</form>

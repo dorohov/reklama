@@ -1,0 +1,117 @@
+<nav class="{{class}} navbar {{navbar_mod}}">
+	<div class="{{navbar_prefix}}inner">
+		<div class="container {{navbar_prefix}}container"> 				
+			<div class="{{navbar_prefix}}header">
+				<div class="row {{navbar_prefix}}row-header ">
+					<div class="cols {{navbar_prefix}}cols-header  is--hamburger">
+						<div class="{{navbar_prefix}}hamburger">
+							<button class="{{navbar_prefix}}hamburger-btn hamburger__item" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false" data-toggle-nav=".navbar-site" data-body="html" data-collapse-nav=".navbar__collapse">
+								<span class="hamburger__line  is--left"></span>
+								<span class="hamburger__line  is--center"></span>
+								<span class="hamburger__line  is--right"></span>
+							</button>
+						</div>
+					</div>
+					<div class="cols {{navbar_prefix}}cols-header  is--brand">
+						<a class="{{navbar_prefix}}brand" href="{{page.index}}">
+							<img src="{{url-path-img}}/default/logotip.png" alt="">
+						</a>
+					</div>
+					<div class="cols {{navbar_prefix}}cols-header  is--tel">
+						<a href="tel:{{contacts.phone_tel}}" class="{{navbar_prefix}}tel">
+							<span class="{{navbar_prefix}}tel-icon">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="contacts-tel" ]]</span>
+							<span class="{{navbar_prefix}}tel-num">{{contacts.phone}}</span>
+						</a>
+					</div>
+					<div class="cols {{navbar_prefix}}cols-header  is--btn">
+						<a href="{{page.cabinet}}" class="{{navbar_prefix}}enter">
+							<div class="{{navbar_prefix}}enter-preview">
+								<img src="{{url-path-img}}/temp/autor-item-lock-140x140.jpg" alt=""> 
+							</div>
+							<div class="{{navbar_prefix}}enter-name">Корнилов Олег</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="{{navbar_prefix}}collapse" >
+			<div class="{{navbar_prefix}}collapse-inner">
+				<div class="container {{navbar_prefix}}collapse-container">	
+					<div class="row {{navbar_prefix}}collapse-row">
+						<div class="cols {{navbar_prefix}}collapse-cols cols  is--left">
+							<div class="{{navbar_prefix}}hamburger">
+								<button class="{{navbar_prefix}}hamburger-btn hamburger__item  is--active" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false" data-toggle-nav=".navbar-site" data-body="html" data-collapse-nav=".navbar__collapse">
+									<span class="hamburger__line  is--left"></span>
+									<span class="hamburger__line  is--center"></span>
+									<span class="hamburger__line  is--right"></span>
+								</button>
+							</div>
+						</div>
+						<div class="cols {{navbar_prefix}}collapse-cols cols  is--center">
+							<ul class="{{navbar_prefix}}nav">
+								[[azbntple 
+									tpl="/src/block/site/default/navbar/item.html" 
+									navbar_prefix="navbar__" 
+									navbar_name="Главная" 
+									navbar_link="{{page.index}}"
+									navbar_mod="  " 
+								]]
+								[[azbntple 
+									tpl="/src/block/site/default/navbar/item.html" 
+									navbar_prefix="navbar__" 
+									navbar_name="Дикторы" 
+									navbar_link="{{page.speakers}}"
+									navbar_mod="  " 
+								]]
+								[[azbntple 
+									tpl="/src/block/site/default/navbar/item.html" 
+									navbar_prefix="navbar__" 
+									navbar_name="Аудиоролики" 
+									navbar_link="{{page.audio_order}}"
+									navbar_mod="  " 
+								]]
+								[[azbntple 
+									tpl="/src/block/site/default/navbar/item.html" 
+									navbar_prefix="navbar__" 
+									navbar_name="Видеоролики" 
+									navbar_link="{{page.video_order}}"
+									navbar_mod="  " 
+								]]
+								[[azbntple 
+									tpl="/src/block/site/default/navbar/item.html" 
+									navbar_prefix="navbar__" 
+									navbar_name="Сценарии" 
+									navbar_link="{{page.scenario_order}}"
+									navbar_mod="  " 
+								]]
+								[[azbntple 
+									tpl="/src/block/site/default/navbar/item.html" 
+									navbar_prefix="navbar__" 
+									navbar_name="Примеры" 
+									navbar_link="{{page.example_audio}}"
+									navbar_mod="  " 
+								]]
+								[[azbntple 
+									tpl="/src/block/site/default/navbar/item.html" 
+									navbar_prefix="navbar__" 
+									navbar_name="Оплата" 
+									navbar_link="{{page.payment}}"
+									navbar_mod="  " 
+								]]
+								[[azbntple 
+									tpl="/src/block/site/default/navbar/item.html" 
+									navbar_prefix="navbar__" 
+									navbar_name="Контакты"
+									navbar_link="{{page.contacts}}"
+									navbar_mod="  " 
+								]]	
+							</ul>
+						</div>
+						<div class="cols {{navbar_prefix}}collapse-cols cols  is--right">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>

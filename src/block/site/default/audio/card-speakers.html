@@ -1,0 +1,89 @@
+<div class="{{block_prefix}}card  {{block_mod}}  azbn__player" data-audio="{{block_audio}}">
+	<div class="{{block_prefix}}row row  {{block_mod}}  is--gutter">
+		<div class="{{block_prefix}}cols cols  {{block_mod}}  is--preview">
+			<a href="{{block_link}}" class="{{block_prefix}}preview">
+				<img src="{{block_preview}}" alt="{{block_heading}}">
+			</a>
+		</div>
+		<div class="{{block_prefix}}cols cols  {{block_mod}}  is--player">
+			<div class="{{block_prefix}}inner-cols  {{block_mod}}">
+				<div class="{{block_prefix}}player-desc  {{block_mod}}">
+					<div class="{{block_prefix}}heading  {{block_mod}}"><a href="{{block_link}}">{{block_heading}}</a></div>
+					<div class="{{block_prefix}}heading-small  {{block_mod}}">Уже 105 заказов</div>
+					<button type="button" class="{{block_prefix}}favorite  {{block_mod}}">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="favorite" ]]</button>
+				</div>	
+				<div class="{{block_prefix}}player-row row  {{block_mod}}">
+					<div class="{{block_prefix}}player-cols cols  {{block_mod}}  is--btn">
+						[[azbntple 
+							tpl="/src/block/site/default/button/button-icon-noname.html"
+							button_prefix="audio-btn__" 
+							button_mod="is--play  azbn__play  {{block_mod}}"
+							button_icon="play"
+							button_attr="title='Воспроизвести {{block_heading}}'"
+						]]
+						[[azbntple 
+							tpl="/src/block/site/default/button/button-icon-noname.html"
+							button_prefix="audio-btn__" 
+							button_mod="is--pause  azbn__pause  {{block_mod}}"
+							button_icon="pause"
+							button_attr="title='Остоновить {{block_heading}}'"
+						]]
+					</div> 
+					<div class="{{block_prefix}}player-cols cols  {{block_mod}}  is--desc">
+						<div class="{{block_prefix}}download  {{block_mod}}">				
+							[[azbntple 
+								tpl="/src/block/site/default/button/button-icon-noname.html"
+								button_prefix="audio-btn__" 
+								button_mod="is--download"
+								button_icon="download"
+							]]
+							245 Загрузок
+						</div>
+						<!-- <input class="azbn__seek {{block_prefix}}seek" type="range" value="0" max=""/> -->
+						<div class="{{block_prefix}}progress-bar">
+							<div class="{{block_prefix}}progress-line" style="width: 25%;"></div>
+							<div class="{{block_prefix}}progress-slider" style="left: 25%;"></div>
+						</div>
+
+					</div>
+				</div>	
+			</div>	
+		</div>	
+		<div class="{{block_prefix}}cols cols  {{block_mod}}  is--cost">
+			<div class="{{block_prefix}}inner-cols  {{block_mod}}">
+				<div class="{{block_prefix}}heading-label  {{block_mod}}">Стоимость: (до 60 слов)</div>
+				<div class="{{block_prefix}}cost  {{block_mod}}">
+					{{block_cost}} 
+					<span class="{{block_prefix}}cost-ruble  {{block_mod}}">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="ruble" ]]</span>
+				</div>
+			</div>
+		</div>
+		<div class="{{block_prefix}}cols cols  {{block_mod}}  is--time">
+			<div class="{{block_prefix}}inner-cols  {{block_mod}}">
+				<div class="{{block_prefix}}heading-label  {{block_mod}}">Сроки записи:</div>
+				<div class="{{block_prefix}}time  {{block_mod}}">{{block_time}} час.</div>
+				
+			</div>
+		</div>
+		<div class="{{block_prefix}}cols cols  {{block_mod}}  is--btn">
+			<div class="{{block_prefix}}inner-cols  {{block_mod}}">				
+				[[azbntple 
+					tpl="/src/block/site/default/button/link.html"
+					button_prefix="btn__" 
+					button_mod="is--black"
+					button_link="{{block_link}}"
+					button_name="Заказать"
+				]]
+			</div>			
+		</div>
+		<div class="{{block_prefix}}cols cols  {{block_mod}}  is--status">			
+			<div class="{{block_prefix}}inner-cols  {{block_mod}}">
+				<div class="{{block_prefix}}heading-label  {{block_mod}}">Статус:</div>
+				<div class="{{block_prefix}}status  {{block_mod}}  {{block_status_mod}}">{{block_status}}</div>
+				<div class="{{block_prefix}}status-time  {{block_mod}}">до {{block_status_time}}</div> 
+			</div>
+		</div>
+	</div>	
+</div>
+
+
