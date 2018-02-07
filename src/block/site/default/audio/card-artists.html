@@ -2,29 +2,14 @@
 	<div class="{{block_prefix}}preview  {{block_mod}}">
 		<img src="{{block_preview}}" alt="{{block_heading}}">
 		<div class="{{block_prefix}}inner  {{block_mod}}">			
-			<div class="{{block_prefix}}btn  {{block_mod}}">
-				[[azbntple 
-					tpl="/src/block/site/default/button/button-icon-noname.html"
-					button_prefix="audio-btn__" 
-					button_mod="is--play  azbn__play  {{block_mod}}"
-					button_icon="play"
-					button_attr="title='Воспроизвести {{block_heading}}'"
-				]]
-				[[azbntple 
-					tpl="/src/block/site/default/button/button-icon-noname.html"
-					button_prefix="audio-btn__" 
-					button_mod="is--pause  azbn__pause  {{block_mod}}"
-					button_icon="pause"
-					button_attr="title='Остоновить {{block_heading}}'"
-				]]
-			</div> 
+			
 			<div class="{{block_prefix}}btn-order  {{block_mod}}">
 				[[azbntple 
 					tpl="/src/block/site/default/button/link.html"
 					button_prefix="btn__" 
-					button_mod="is--black  is--hover-white"
-					button_link="{{page.audio_order_ready}}"
-					button_name="Заказать"
+					button_mod="is--black  is--hover-white  is--block"
+					button_link="{{block_link}}"
+					button_name="Подробнее"
 				]]
 			</div>
 		</div>

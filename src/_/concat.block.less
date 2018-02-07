@@ -574,7 +574,8 @@
 		&.is--artists{
 			position: absolute;
 			bottom: 0;
-			left: 0;			
+			left: 0;
+			width: 100%;			
 		}		
 	}
 	&btn-delete{
@@ -1774,6 +1775,13 @@
 				}
 			}
 		}
+		&.is--news{
+			&.is--lg{
+				@media @media-point-notsmart {
+					margin-bottom: 20px;
+				}
+			}
+		}
 	}
 	&preview{
 		display: block;
@@ -2329,6 +2337,11 @@
 		}
 		&.is--panel-last-work{
 			@media @media-point-xs {
+				.makeCols(6, 12);
+			}
+		}
+		&.is--news-page{
+			@media @media-point-tablet {
 				.makeCols(6, 12);
 			}
 		}
