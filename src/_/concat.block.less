@@ -238,6 +238,9 @@
 			position: relative;
 			background-color: @black-light;
 			min-width: 250px;
+			&.is--inline{
+				max-width: 250px;
+			}
 		}
 		&.is--speakers{
 			border: 1px solid @white10;
@@ -520,7 +523,7 @@
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background-color: @b-color-a;
+			//background-color: @b-color-a;
 			transition: @trs-site;
 			opacity: 0;
 			.audio-card__card.is--active &,
@@ -554,7 +557,7 @@
 		&.is--list-xs{
 			position: absolute;
 			left: 15px;
-			top: 53%;
+			top: 50%;
 			transform: translateY(-50%);
 		}
 		&.is--video-list{
@@ -610,6 +613,12 @@
 			img{
 				position: relative;
 				z-index: 1;
+				filter: saturate(0%);
+				transition: @trs-site;
+				.audio-card__card.is--active &,
+				.audio-card__card:hover &{
+					filter: saturate(100%);
+				}
 			}
 		}
 		&.is--rating{
@@ -933,6 +942,7 @@
 .audio-btn__{
 	&icon{	
 		.btn-clearfix();
+		display: block;
 		&.is--play{
 			background-color: @b-color-a;
 			color: @white;	
@@ -2130,6 +2140,11 @@
 				margin-bottom: 0;
 			}
 		}
+	}
+	&elem-heading{
+		margin-bottom: 15px;
+		.calcFontSize(20, 24, 320, 1680);
+		.calcLineHeight(24, 28, 320, 1680);	
 	}
 	&panel{
 		&.is--filter-select{
@@ -3537,6 +3552,8 @@
 			min-height: @form_control_height;
 			height: auto;
 			min-width: 80px;
+			padding-top: 5px;
+			padding-bottom: 5px;
 		}
 		&.is--pass{
 			padding-right: 50px;
@@ -7202,9 +7219,9 @@ body.rtl .formError .formErrorArrow {
 		@media @media-point-smart {
 			padding-left: 0;
 		}
-		@media @media-point-xxl {
+		/*@media @media-point-xxl {
 			padding-left: 60px;
-		}
+		}*/
 	}
 	&item-name{
 		display: block;
@@ -7217,16 +7234,16 @@ body.rtl .formError .formErrorArrow {
 		left: 0;
 		top: 50%;
 		transform: translateY(-50%);
-		width: 30px;
-		height: 30px;
+		width: 32px;
+		height: 32px;
 		//border-width: 2px;
 		//border-style: solid;
 		//border-radius: 50%;
 		//padding: 6px;
-		@media @media-point-xxl {
+		/*@media @media-point-xxl {
 			width: 44px;
 			height: 44px;
-		}
+		}*/
 		&.is--footer{
 			//border-color: @b-color-a;
 			color: @b-color-a;
@@ -7349,6 +7366,8 @@ body.rtl .formError .formErrorArrow {
 				}
 				&.is--btn{
 					transition: @trs-site;
+					padding: 0;
+					width: auto;
 					&:hover{
 						background-color: @black-light;
 					}
@@ -7460,6 +7479,8 @@ body.rtl .formError .formErrorArrow {
 	}
 	.is--link{
 		color: @b-color-h;
+		display: block;
+		padding: 20px;
 		&:hover{color: @b-color-a;}
 	}
 	.is--ruble{

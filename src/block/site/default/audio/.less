@@ -16,6 +16,9 @@
 			position: relative;
 			background-color: @black-light;
 			min-width: 250px;
+			&.is--inline{
+				max-width: 250px;
+			}
 		}
 		&.is--speakers{
 			border: 1px solid @white10;
@@ -298,7 +301,7 @@
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background-color: @b-color-a;
+			//background-color: @b-color-a;
 			transition: @trs-site;
 			opacity: 0;
 			.audio-card__card.is--active &,
@@ -332,7 +335,7 @@
 		&.is--list-xs{
 			position: absolute;
 			left: 15px;
-			top: 53%;
+			top: 50%;
 			transform: translateY(-50%);
 		}
 		&.is--video-list{
@@ -388,6 +391,12 @@
 			img{
 				position: relative;
 				z-index: 1;
+				filter: saturate(0%);
+				transition: @trs-site;
+				.audio-card__card.is--active &,
+				.audio-card__card:hover &{
+					filter: saturate(100%);
+				}
 			}
 		}
 		&.is--rating{
@@ -711,6 +720,7 @@
 .audio-btn__{
 	&icon{	
 		.btn-clearfix();
+		display: block;
 		&.is--play{
 			background-color: @b-color-a;
 			color: @white;	
