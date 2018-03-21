@@ -452,6 +452,7 @@
 			}
 		}
 		&.is--cabinet{
+			position: relative;
 			padding: 20px 10px;
 			border: 2px solid @white10;
 			background-color: @white;
@@ -467,6 +468,22 @@
 			@media @media-point-notsmart {
 				padding: 20px;
 			}
+		}
+	}
+	&bages{
+		&.is--cabinet{
+			letter-spacing: 0;
+			font-size: @b-fs - 6;
+			line-height: @b-lh - 6;
+			width: 18px;
+			text-align: center;
+			background-color: @red;
+			border-radius: 50%;
+			position: absolute;
+			top: 2px;
+			right: 2px;
+			color: @white;
+			font-weight: 400;
 		}
 	}
 	&tabs-link{		
@@ -541,6 +558,9 @@
 		&.is--panel-rating{
 			padding: 0 0 5px;
 		}		
+	}
+	&time{
+		font-size: @b-fs - 4;
 	}
 }
 .link--{
