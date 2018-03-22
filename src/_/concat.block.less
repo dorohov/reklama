@@ -2721,6 +2721,49 @@
 	    width: 100%;
 		
 	}
+	&dropdown-toggle{
+		position: relative;
+		.btn-clearfix();
+		background-color: @white4;
+		height: 50px;
+		font-weight: 700;
+		font-size: @b-fs - 4;
+		border: 3px solid @black-light;
+	    border-radius: 0;
+	    padding: 10px 15px;
+	    text-align: left;
+	    &::after{
+	    	content: '';
+	    	position: absolute;
+	    	top: 50%;
+	    	right: 5px;
+	    	transform: translateY(-50%);
+	    	border-top: 6px solid fadeout(@black, 0%);
+	    	border-left: 3px solid fadeout(@black, 100%);
+	    	border-right: 3px solid fadeout(@black, 100%);
+	    }
+	    @media @media-point-screen {
+	    	padding: 13px 15px;
+	    	min-width: 180px;
+	    }
+	    width: 100%;
+	}
+	&dropdown-menu{
+		border-radius: 0;
+		padding: 0;
+		> li{
+			> a{
+				display: block;
+				color: @black;
+				transition: @trs-site;
+				padding: 5px 15px;
+				&:hover{
+					background-color: @black;
+					color: @white;
+				}
+			}
+		}
+	}
 }
 .search__{
 	&form{}
@@ -3676,6 +3719,73 @@
 				}
 				&::-webkit-input-placeholder {
 					color: @form_control_plh_color;
+				}
+			}
+		}
+	}
+	&dropdown-toggle{
+		position: relative;
+		.btn-clearfix();
+		display: inline-block;
+		text-align: left;
+		//width: 100%;
+		background-color: @form_control_bg_color;
+		border-width: @form_control_border_width;   
+		border-style: solid;   
+		border-color: @form_control_border_color;
+		border-radius: @form_control_border_radius;	   
+		height: @form_control_height;
+		padding: 15px 30px 15px 20px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		//text-align: center;
+		color: @form_control_t_color;
+		//letter-spacing: 0.5px;	
+		font-size: @form_control_t_fs;
+		line-height: @form_control_t_lh;
+		transition: @trs-site;
+	    &::after{
+	    	content: '';
+	    	position: absolute;
+	    	top: 50%;
+	    	right: 5px;
+	    	transform: translateY(-50%);
+	    	border-top: 6px solid fadeout(@black, 0%);
+	    	border-left: 3px solid fadeout(@black, 100%);
+	    	border-right: 3px solid fadeout(@black, 100%);
+	    }
+	    @media @media-point-screen {
+	    	padding: 13px 25px 13px 15px;
+	    	min-width: 180px;
+	    }
+	    max-width: 100%;
+	    &.is--full{
+			width: 100%;
+	    }
+	    .form__dropdown.open &{	    	
+			border-color: @form_control_focus_border_color;
+			background-color: @form_control_focus_bg_color;
+			box-shadow: 0px 0px 13px 0px fadeout(@form_control_focus_border_color, 70%);
+			color: @form_control_focus_t_color;
+	    }
+
+	}
+	&dropdown-menu{
+		border-radius: 0;
+		padding: 0;
+	    &.is--full{
+	    	width: 100%;
+	    }
+		> li{
+			> a{
+				display: block;
+				color: @black;
+				transition: @trs-site;
+				padding: 5px 15px;
+				&:hover{
+					background-color: @black;
+					color: @white;
 				}
 			}
 		}

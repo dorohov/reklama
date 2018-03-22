@@ -21,10 +21,20 @@
 				<div class="row {{block_prefix}}row  is--wrap  is--gutter10">
 					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--indiv  is--center  is--offset-left">
 						<div class="{{block_prefix}}item">
-							<select class="{{block_prefix}}control form-control validate[required]  {{block_mod}}  {{form_color}}" id="{{form_id}}[indiv]" name="f[Правовой статус]">
-								<option>Для Физических лиц</option>
-								<option>Для Юридических лиц</option>
-							</select>
+							[[azbntple 
+								tpl="/src/block/site/default/form/elem-dropdown.html" 
+								form_id="{{form_id}}"
+								form_color="{{form_color}}"
+								block_prefix="{{block_prefix}}"
+								block_mod="{{block_mod}}  is--full" 
+								block_mod_elem="  " 
+								block_select_elem="  "
+								block_id="speakers_tutorial"
+								block_required="required" 
+								block_option_base="Для Физических лиц"
+								block_option="<li><a href='#'>Для Физических лиц</a></li><li><a href='#'>Для Юридических лиц</a></li>"
+								block_info_mod="is--warning"
+							]]
 						</div>	
 					</div>
 					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--indiv  is--right">

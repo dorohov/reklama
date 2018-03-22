@@ -38,7 +38,7 @@
 					block_text="<a href='{{page.speakers_card}}'>Антонов Антон</a>"
 				]]
 			</div>	
-			<div class="cols {{block_prefix}}cols  {{block_mod}}">
+			<!--<div class="cols {{block_prefix}}cols  {{block_mod}}">
 				[[azbntple 
 					tpl="/src/block/site/default/form/elem-label-text.html"
 					block_prefix="{{block_prefix}}"
@@ -48,7 +48,18 @@
 					block_label="Текст"
 					block_text="<p>Микояновский мясокомбинат и торговый дом Мир Колбас поздравляют с Великим праздником Победы. Спасибо ветеранам за силу и веру. Подвиги отцов и дедов не забыты, а память передается из поколения в поколение.Спасибо за то, что живём.</p>"
 				]]
-			</div>	
+			</div>	-->
+			<div class="cols {{block_prefix}}cols  {{block_mod}}">
+				[[azbntple 
+					tpl="/src/block/site/default/form/elem-label-text.html"
+					block_prefix="{{block_prefix}}"
+					block_mod="{{block_mod}}  is--border"
+					block_mod_elem="  " 
+					block_mod_item="  " 
+					block_label="Тип текста"
+					block_text="Информационный"
+				]]
+			</div>
 			<div class="cols {{block_prefix}}cols  {{block_mod}}">
 				[[azbntple 
 					tpl="/src/block/site/default/form/elem-label-text.html"
@@ -90,9 +101,9 @@
 					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--center">
 						<div class="{{block_prefix}}item  {{block_mod}}  is--border">
 							[[azbntple 
-								tpl="/src/block/site/default/audio/card-xs.html" 
+								tpl="/src/block/site/default/audio/card-xs-notdel.html" 
 								block_prefix="audio-card__"
-								block_mod="is--list-xs" 
+								block_mod="is--list-xs  is--inline" 
 								block_audio="{{url-path-audio}}/semin.mp3"
 							]]
 						</div>	
@@ -108,17 +119,6 @@
 					block_mod_item="  " 
 					block_label="Комментарии"
 					block_text="<p>Хочу, чтобы ролик был с котиками по центру!</p>"
-				]]
-			</div>
-			<div class="cols {{block_prefix}}cols  {{block_mod}}">
-				[[azbntple 
-					tpl="/src/block/site/default/form/elem-label-text.html"
-					block_prefix="{{block_prefix}}"
-					block_mod="{{block_mod}}  is--border"
-					block_mod_elem="  " 
-					block_mod_item="  " 
-					block_label="Тип текста"
-					block_text="Информационный"
 				]]
 			</div>	
 			<div class="cols {{block_prefix}}cols  {{block_mod}}">

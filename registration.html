@@ -150,10 +150,14 @@
 				<div class="row form__row  is--wrap  is--gutter10">
 					<div class="cols form__cols  is--reg  is--indiv  is--center  is--offset-left">
 						<div class="form__item">
-							<select class="form__control form-control validate[required]  is--reg    " id="pfr[indiv]" name="f[Правовой статус]">
-								<option>Для Физических лиц</option>
-								<option>Для Юридических лиц</option>
-							</select>
+							<div class="form__item  is--reg  is--full    ">
+	<div class="dropdown  form__dropdown  is--reg  is--full">
+		<button type="button" data-toggle="dropdown" class="form__dropdown-toggle  is--reg  is--full">Для Физических лиц</button>
+		<ul class="dropdown-menu  form__dropdown-menu  is--reg  is--full">
+			<li><a href='#'>Для Физических лиц</a></li><li><a href='#'>Для Юридических лиц</a></li>
+		</ul>
+	</div>
+</div>	
 						</div>	
 					</div>
 					<div class="cols form__cols  is--reg  is--indiv  is--right">

@@ -248,7 +248,12 @@
 	</div>
 	<div class="cols form__cols  is--center  is--audio-order    ">
 		<div class="form__item  is--audio-order    ">
-			<select     class="form__control form-control validate[required]  is--select  is--audio-order            " id="pfa[audio_tutorial]" name="f[Выбрать звукорежиссёра]"><option>Антонов Антон (запись от 12 ч, стоимость от 400 руб)</option><option>Антонов Антон (запись от 12 ч, стоимость от 400 руб)</option><option>Антонов Антон (запись от 12 ч, стоимость от 400 руб)</option></select>
+			<div class="dropdown  form__dropdown  is--audio-order">
+				<button type="button" data-toggle="dropdown" class="form__dropdown-toggle  is--audio-order">Антонов Антон (запись от 12 ч, стоимость от 400 руб)</button>
+				<ul class="dropdown-menu  form__dropdown-menu  is--audio-order">
+					<li><a href='#'>Антонов Антон (запись от 12 ч, стоимость от 400 руб)</a></li><li><a href='#'>Антонов Антон (запись от 12 ч, стоимость от 400 руб)</a></li>
+				</ul>
+			</div>
 		</div>	
 	</div> 
 	<div class="cols form__cols  is--right  is--audio-order    ">
@@ -265,13 +270,14 @@
 						<div class="form__item">
 							<div class="row  is--wrap  is--gutter  is--aic">
 								<div class="cols">
-									<select class="form__control form-control validate[required]  is--audio-order    " id="pfa[audio_type]" name="f[Тип аудиоролика]">
-										<option>Информационный</option>
-										<option>Игровой</option>
-										<option>Вокальный</option>
-										<option>Автоответчик</option>
-										<option>Политический</option>
-									</select>
+									<div class="form__item  is--audio-order    ">
+	<div class="dropdown  form__dropdown  is--audio-order">
+		<button type="button" data-toggle="dropdown" class="form__dropdown-toggle  is--audio-order">Информационный</button>
+		<ul class="dropdown-menu  form__dropdown-menu  is--audio-order">
+			<li><a href='#'>Информационный</a></li><li><a href='#'>Игровой</a></li><li><a href='#'>Вокальный</a></li><li><a href='#'>Автоответчик</a></li><li><a href='#'>Политический</a></li>
+		</ul>
+	</div>
+</div>	
 								</div>	
 								<div class="cols"> 
 									<div class="form__bage  is--audio-order">Стоимость монтажа: <span class="form__bage-cost color--red">400</span> <span class="color--red  ruble__symbol"><svg class="icon-svg icon-ruble" role="img">
@@ -538,11 +544,16 @@
 			<div class="cols form__cols  is--audio-order">
 				<div class="row form__row  is--wrap  is--gutter10  is--audio-order    ">
 	<div class="cols form__cols  is--left  is--audio-order    ">
-		<label for="pfa[audio_format]" class="form__label  is--audio-order"><sup class='color--red'>*</sup>Формат файла</label>
+		<label for="pfa[speakers_format]" class="form__label  is--audio-order"><sup class='color--red'>*</sup>Формат файла</label>
 	</div>
 	<div class="cols form__cols  is--center  is--audio-order    ">
 		<div class="form__item  is--audio-order    ">
-			<select     class="form__control form-control validate[required]  is--select  is--audio-order          is--dib" id="pfa[audio_format]" name="f[Формат файла]"><option>.mp3</option><option>.wav</option><option>Любой формат</option></select>
+			<div class="dropdown  form__dropdown  is--audio-order">
+				<button type="button" data-toggle="dropdown" class="form__dropdown-toggle  is--audio-order">.mp3</button>
+				<ul class="dropdown-menu  form__dropdown-menu  is--audio-order">
+					<li><a href='#'>.mp3</a></li><li><a href='#'>.wav</a></li><li><a href='#'>Любой формат</a></li>
+				</ul>
+			</div>
 		</div>	
 	</div> 
 	<div class="cols form__cols  is--right  is--audio-order    ">

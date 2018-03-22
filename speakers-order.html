@@ -248,7 +248,12 @@
 	</div>
 	<div class="cols form__cols  is--center  is--speakers-order    ">
 		<div class="form__item  is--speakers-order    ">
-			<select     class="form__control form-control validate[required]  is--select  is--speakers-order            " id="pfa[speakers_tutorial]" name="f[Выбрать диктора]"><option>Антонов Антон (запись от 12 ч, стоимость от 400 руб)</option><option>Антонов Антон (запись от 12 ч, стоимость от 400 руб)</option><option>Антонов Антон (запись от 12 ч, стоимость от 400 руб)</option></select>
+			<div class="dropdown  form__dropdown  is--speakers-order">
+				<button type="button" data-toggle="dropdown" class="form__dropdown-toggle  is--speakers-order">Антонов Антон (запись от 12 ч, стоимость от 400 руб)</button>
+				<ul class="dropdown-menu  form__dropdown-menu  is--speakers-order">
+					<li><a href='#'>Антонов Антон (запись от 12 ч, стоимость от 400 руб)</a></li><li><a href='#'>Антонов Антон (запись от 12 ч, стоимость от 400 руб)</a></li>
+				</ul>
+			</div>
 		</div>	
 	</div> 
 	<div class="cols form__cols  is--right  is--speakers-order    ">
@@ -265,11 +270,14 @@
 						<div class="form__item">
 							<div class="row  is--wrap  is--gutter  is--aic">
 								<div class="cols">
-									<select class="form__control form-control validate[required]  is--speakers-order    " id="pfa[audio_type]" name="f[Тип текста]">
-										<option>Рекламный</option>
-										<option>Автоответчик</option>
-										<option>Политический</option>
-									</select>
+									<div class="form__item  is--speakers-order    ">
+	<div class="dropdown  form__dropdown  is--speakers-order">
+		<button type="button" data-toggle="dropdown" class="form__dropdown-toggle  is--speakers-order">Рекламный</button>
+		<ul class="dropdown-menu  form__dropdown-menu  is--speakers-order">
+			<li><a href='#'>Рекламный</a></li><li><a href='#'>Автоответчик</a></li><li><a href='#'>Политический</a></li>
+		</ul>
+	</div>
+</div>	
 								</div>	
 								<div class="cols"> 
 									<div class="form__bage  is--speakers-order">Стоимость монтажа: <span class="form__bage-cost color--red">400</span> <span class="color--red  ruble__symbol"><svg class="icon-svg icon-ruble" role="img">
@@ -372,7 +380,12 @@
 	</div>
 	<div class="cols form__cols  is--center  is--speakers-order    ">
 		<div class="form__item  is--speakers-order    ">
-			<select     class="form__control form-control validate[required]  is--select  is--speakers-order          is--dib" id="pfa[speakers_format]" name="f[Формат файла]"><option>.mp3</option><option>.wav</option><option>Любой формат</option></select>
+			<div class="dropdown  form__dropdown  is--speakers-order">
+				<button type="button" data-toggle="dropdown" class="form__dropdown-toggle  is--speakers-order">.mp3</button>
+				<ul class="dropdown-menu  form__dropdown-menu  is--speakers-order">
+					<li><a href='#'>.mp3</a></li><li><a href='#'>.wav</a></li><li><a href='#'>Любой формат</a></li>
+				</ul>
+			</div>
 		</div>	
 	</div> 
 	<div class="cols form__cols  is--right  is--speakers-order    ">

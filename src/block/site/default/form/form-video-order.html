@@ -75,7 +75,7 @@
 			</div>										
 			<div class="cols {{block_prefix}}cols  {{block_mod}}">
 				[[azbntple 
-					tpl="/src/block/site/default/form/elem-label-select.html" 
+					tpl="/src/block/site/default/form/elem-label-dropdown.html" 
 					form_id="{{form_id}}"
 					form_color="{{form_color}}"
 					block_prefix="{{block_prefix}}"
@@ -87,7 +87,8 @@
 					block_required_symbol="<sup class='color--red'>*</sup>"  
 					block_attr="  "
 					block_label="Выбрать видеомонтажёра"
-					block_option="<option>Антонов Антон (запись от 12 ч, стоимость от 400 руб)</option><option>Антонов Антон (запись от 12 ч, стоимость от 400 руб)</option><option>Антонов Антон (запись от 12 ч, стоимость от 400 руб)</option>"
+					block_option_base="Антонов Антон (запись от 12 ч, стоимость от 400 руб)"
+					block_option="<li><a href='#'>Антонов Антон (запись от 12 ч, стоимость от 400 руб)</a></li><li><a href='#'>Антонов Антон (запись от 12 ч, стоимость от 400 руб)</a></li>"
 					block_info="Исполнитель офлайн! Рекомендуем выбрать доступного исполнителя!"
 					block_info_mod="is--warning"
 				]]
@@ -101,12 +102,20 @@
 						<div class="{{block_prefix}}item">
 							<div class="row  is--wrap  is--gutter  is--aic">
 								<div class="cols">
-									<select class="{{block_prefix}}control form-control validate[required]  {{block_mod}}  {{form_color}}" id="{{form_id}}[audio_type]" name="f[Тип аудиоролика]">
-										<option>Информационный</option>
-										<option>2D графика</option>
-										<option>3D графика</option>
-										<option>Политический</option>
-									</select>
+									[[azbntple 
+										tpl="/src/block/site/default/form/elem-dropdown.html" 
+										form_id="{{form_id}}"
+										form_color="{{form_color}}"
+										block_prefix="{{block_prefix}}"
+										block_mod="{{block_mod}}" 
+										block_mod_elem="  " 
+										block_select_elem="  "
+										block_id="speakers_tutorial"
+										block_required="required" 
+										block_option_base="Информационный"
+										block_option="<li><a href='#'>Информационный</a></li><li><a href='#'>2D графика</a></li><li><a href='#'>3D графика</a></li><li><a href='#'>Политический</a></li>"
+										block_info_mod="is--warning"
+									]]
 								</div>	
 								<div class="cols"> 
 									<div class="{{block_prefix}}bage  {{block_mod}}">Стоимость монтажа: <span class="{{block_prefix}}bage-cost color--red">400</span> <span class="color--red  ruble__symbol">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="ruble" ]]</span></div>
@@ -375,7 +384,7 @@
 			</div>										
 			<div class="cols {{block_prefix}}cols  {{block_mod}}">
 				[[azbntple 
-					tpl="/src/block/site/default/form/elem-label-select.html" 
+					tpl="/src/block/site/default/form/elem-label-dropdown.html" 
 					form_id="{{form_id}}"
 					form_color="{{form_color}}"
 					block_prefix="{{block_prefix}}"
@@ -387,7 +396,8 @@
 					block_required_symbol="<sup class='color--red'>*</sup>"  
 					block_attr="  "
 					block_label="Формат файла"
-					block_option="<option>Для интернета</option><option>Для ТВ</option><option>Для плазм</option><option>Вертикальный экран</option><option>Другое</option>"
+					block_option_base="Для интернета"
+					block_option="<li><a href='#'>Для интернета</a></li><li><a href='#'>Для ТВ</a></li><li><a href='#'>Для плазм</a></li><li><a href='#'>Вертикальный экран</a></li><li><a href='#'>Другое</a></li>"
 					block_info="Если Вам нужен особый формат файла, укажите его в комментариях"
 					block_info_mod="  "
 				]]
