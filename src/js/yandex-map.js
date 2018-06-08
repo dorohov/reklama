@@ -3,7 +3,7 @@
 $(function() {
 	
 	var yandex_map_div_id = 'yandex-map';
-	//var CMS__TPL_PATH = '/bitrix/templates/azbn7theme';
+	//var CMS__TPL_PATH = '/local/templates/dorohov';
 	var CMS__TPL_PATH = '';
 	
 	var yandex_map = $('#' + yandex_map_div_id);
