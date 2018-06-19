@@ -1,59 +1,60 @@
-var
-player = $('.azbn__player'),
-play = $('.azbn__play'),
-pause = $('.azbn__pause'),
-songTrask = player.attr("data-audio"),
-song = new Audio(songTrask),
-duration = song.duration;
-//mute = $('#mute'),
-//muted = $('#muted'),
-//close = $('#close'),
 
-/*if (song.canPlayType('audio/mpeg;')) {
-	song.type= 'audio/mpeg';
-	song.src= 'music/semin.mp3';
-} else {
-	song.type= 'audio/ogg';
-	song.src= 'music/semin.ogg';
-}*/
+(function(){
+	
+	var __body = $(document.body);
+	
+	__body.on('click.azbn7', '.azbn7__audio', null, function(event){
+		event.preventDefault();
+		
+		var block = $(this);
+		var btn = $(event.target);
+		
+		var path = block.attr('data-audio') || '';
+		
+		if(path != '') {
+			
+			var pl = block.data('azbn7player') || new Audio(path);
+			block.data('azbn7player', pl);
+			
+			if(btn.hasClass('__play')) {
+				
+				pl.play();
+				
+				block.toggleClass("is--active");
+				btn.toggleClass("is--hidden");
+				block.find('.__pause').toggleClass("is--visible");
+				
+			}
+			
+			if(btn.hasClass('__pause')) {
+				
+				pl.pause();
+				
+				block.toggleClass("is--active");
+				btn.toggleClass("is--visible");
+				block.find('.__play').toggleClass("is--hidden");
+				
+			}
+			
+			if(btn.hasClass('__delete')) {
+				
+				block.empty().remove();
+				
+			}
+			
+		}
+		
+	});
+	
+})();
 
-
-
-play.on('click', function(e) {
-	e.preventDefault();
-	//alert('sd');
-	song.play();
-	$(this).closest(player).toggleClass("is--active");
-	$(this).toggleClass("is--hidden");
-	$(this).siblings(pause).toggleClass("is--visible");
-
-	//$(this).replaceWith('<a class="button gradient" id="pause" href="" title=""></a>');
-	//container.addClass('containerLarge');
-	//cover.addClass('coverLarge');
-	//$('#close').fadeIn(300);
-	//$('.azbn__seek').attr('max',song.duration);
-});
-/*$('.azbn__download').on('click', function(e) {
-	e.preventDefault();
-	alert('11');
-	song.play();
-});*/
-
-pause.on('click', function(e) {
-	e.preventDefault();
-	song.pause();
-	//$(this).replaceWith('<a class="button gradient" id="play" href="" title=""></a>');
-
-	$(this).closest(player).toggleClass("is--active");
-	$(this).toggleClass("is--visible");
-	$(this).siblings(play).toggleClass("is--hidden");
-});
 $('#modal-video').on('shown.bs.modal', function (e) {
 	$(".azbn__video").get(0).play();
 });
 $('#modal-video').on('hidden.bs.modal', function (e) {
 	$(".azbn__video").get(0).pause();
 })
+
 /*
 $(".azbn__seek").bind("change", function() {
 	song.currentTime = $(this).val();

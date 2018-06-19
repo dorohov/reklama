@@ -40,8 +40,8 @@ $(function() {
 				}
 		    }
 		],
-		prevArrow: '<button type="button" class="slick-prev  is--horizontal"><svg class="icon-svg icon-owl-prev" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite.svg#owl-prev"></use></svg></button>',
-		nextArrow: '<button type="button" class="slick-next  is--horizontal"><svg class="icon-svg icon-owl-next" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite.svg#owl-next"></use></svg></button>'
+		prevArrow: '<button type="button" class="slick-prev  is--horizontal"><svg class="icon-svg icon-owl-prev" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/local/templates/dorohov/img/svg/sprite.svg#owl-prev"></use></svg></button>',
+		nextArrow: '<button type="button" class="slick-next  is--horizontal"><svg class="icon-svg icon-owl-next" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/local/templates/dorohov/img/svg/sprite.svg#owl-next"></use></svg></button>'
 		//asNavFor: "#sl-nav",
 		//fade: true,
 		//customPaging: 20,
@@ -74,8 +74,8 @@ $(function() {
 					//fade: true,
 					//variableWidth: true,
 					//centerMode: true,
-					prevArrow: '<button type="button" class="slick-prev  is--horizontal"><svg class="icon-svg icon-owl-prev" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite.svg#owl-prev"></use></svg></button>',
-					nextArrow: '<button type="button" class="slick-next  is--horizontal"><svg class="icon-svg icon-owl-next" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite.svg#owl-next"></use></svg></button>',
+					prevArrow: '<button type="button" class="slick-prev  is--horizontal"><svg class="icon-svg icon-owl-prev" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/local/templates/dorohov/img/svg/sprite.svg#owl-prev"></use></svg></button>',
+					nextArrow: '<button type="button" class="slick-next  is--horizontal"><svg class="icon-svg icon-owl-next" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/local/templates/dorohov/img/svg/sprite.svg#owl-next"></use></svg></button>',
 					responsive: [
 					    {
 							breakpoint: 901,
@@ -129,8 +129,8 @@ $(function() {
 				}
 		    }
 		],
-		prevArrow: '<button type="button" class="slick-prev  is--vertical"><svg class="icon-svg icon-owl-prev" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite.svg#owl-prev"></use></svg></button>',
-		nextArrow: '<button type="button" class="slick-next  is--vertical"><svg class="icon-svg icon-owl-next" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite.svg#owl-next"></use></svg></button>'
+		prevArrow: '<button type="button" class="slick-prev  is--vertical"><svg class="icon-svg icon-owl-prev" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/local/templates/dorohov/img/svg/sprite.svg#owl-prev"></use></svg></button>',
+		nextArrow: '<button type="button" class="slick-next  is--vertical"><svg class="icon-svg icon-owl-next" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/local/templates/dorohov/img/svg/sprite.svg#owl-next"></use></svg></button>'
 		//asNavFor: "#sl-nav",
 		//fade: true,
 		//customPaging: 20,
@@ -162,8 +162,8 @@ $(function() {
 				}
 		    }
 		],
-		prevArrow: '<button type="button" class="slick-prev  is--horizontal"><svg class="icon-svg icon-owl-prev" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite.svg#owl-prev"></use></svg></button>',
-		nextArrow: '<button type="button" class="slick-next  is--horizontal"><svg class="icon-svg icon-owl-next" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite.svg#owl-next"></use></svg></button>'
+		prevArrow: '<button type="button" class="slick-prev  is--horizontal"><svg class="icon-svg icon-owl-prev" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/local/templates/dorohov/img/svg/sprite.svg#owl-prev"></use></svg></button>',
+		nextArrow: '<button type="button" class="slick-next  is--horizontal"><svg class="icon-svg icon-owl-next" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/local/templates/dorohov/img/svg/sprite.svg#owl-next"></use></svg></button>'
 		//asNavFor: "#sl-nav",
 		//fade: true,
 		//customPaging: 20,
@@ -211,8 +211,8 @@ $(function() {
 				}
 		    }
 		],
-		prevArrow: '<button type="button" class="slick-prev  is--horizontal"><svg class="icon-svg icon-owl-prev" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite.svg#owl-prev"></use></svg></button>',
-		nextArrow: '<button type="button" class="slick-next  is--horizontal"><svg class="icon-svg icon-owl-next" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite.svg#owl-next"></use></svg></button>'
+		prevArrow: '<button type="button" class="slick-prev  is--horizontal"><svg class="icon-svg icon-owl-prev" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/local/templates/dorohov/img/svg/sprite.svg#owl-prev"></use></svg></button>',
+		nextArrow: '<button type="button" class="slick-next  is--horizontal"><svg class="icon-svg icon-owl-next" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/local/templates/dorohov/img/svg/sprite.svg#owl-next"></use></svg></button>'
 		//asNavFor: "#sl-nav",
 		//fade: true,
 		//customPaging: 20,
