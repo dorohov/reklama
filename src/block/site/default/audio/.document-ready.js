@@ -1,52 +1,11 @@
 
+/*
 (function(){
 	
 	var __body = $(document.body);
 	
-	__body.on('click.azbn7', '.azbn7__audio', null, function(event){
-		event.preventDefault();
-		
-		var block = $(this);
-		var btn = $(event.target);
-		
-		var path = block.attr('data-audio') || '';
-		
-		if(path != '') {
-			
-			var pl = block.data('azbn7player') || new Audio(path);
-			block.data('azbn7player', pl);
-			
-			if(btn.hasClass('__play')) {
-				
-				pl.play();
-				
-				block.toggleClass("is--active");
-				btn.toggleClass("is--hidden");
-				block.find('.__pause').toggleClass("is--visible");
-				
-			}
-			
-			if(btn.hasClass('__pause')) {
-				
-				pl.pause();
-				
-				block.toggleClass("is--active");
-				btn.toggleClass("is--visible");
-				block.find('.__play').toggleClass("is--hidden");
-				
-			}
-			
-			if(btn.hasClass('__delete')) {
-				
-				block.empty().remove();
-				
-			}
-			
-		}
-		
-	});
-	
 })();
+*/
 
 $('#modal-video').on('shown.bs.modal', function (e) {
 	$(".azbn__video").get(0).play();
