@@ -103,6 +103,20 @@
 		}
 		&.is--btn{}
 	}
+	&hamburger-btn{
+		@media @media-point-screen {			
+			&::after{
+				content: attr(data-text);
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				text-align: center;
+				transform: translate(-50%, 110%);
+				font-size: @b-fs - 6;
+				text-transform: uppercase;
+			}
+		}
+	}
 	&brand{
 		position: relative;
 		display: block;

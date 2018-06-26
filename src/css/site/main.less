@@ -76,6 +76,37 @@ body {
 		}
 	}
 }
+.go-to-top{
+	display: none;
+	@media @media-point-notsmart {
+		display: block;
+	}
+	.btn-clearfix();
+	width: 42px;
+	height: 42px;
+	padding: 5px;
+	position: fixed;
+	z-index: 999;
+	bottom: 0;
+	left: 10px;
+	opacity: 0;
+	background-color: @red;
+	color: @white;
+	transition: @trs-site;
+	transform: rotate(-90deg);
+	&.active{
+		opacity: 1;
+		bottom: 15%;
+		@media @media-point-tablet {
+			bottom: 17.5%;
+		}
+	}
+	&:hover{
+		color: @white;
+		background-color: @b-color-a;
+	}
+	
+}
 #wpadminbar{
 	@media @media-point-device {
 		position: fixed!important;
