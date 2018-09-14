@@ -151,6 +151,14 @@
 
 }
 .card-message__{
+	&block{
+		@media @media-point-notsmart {			
+			position: absolute;
+			z-index: 100;
+			right: 0;
+			top: 22%;
+		}
+	}
 	&card{
 		background-color: @white;
 		border: 1px solid @white10;
@@ -162,11 +170,6 @@
 			display: block;
 		}
 		@media @media-point-notsmart {
-			margin: 0;
-			position: absolute;
-			z-index: 100;
-			right: 0;
-			top: 23.5%;
 			min-width: 435px;
 			box-shadow: 0px 3px 16px 3px fadeout(@black, 75%);
 		}
