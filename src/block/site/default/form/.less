@@ -709,6 +709,17 @@
 			box-shadow: 0px 0px 13px 0px fadeout(@form_control_focus_border_color, 70%);
 			color: @form_control_focus_t_color;
 	    }
+	    &.is--sm{
+			padding: 0 25px 0 5px;
+			border: 0;
+			font-weight: 700;
+			font-size: 18px;
+			height: 32px;
+			width: 100%;
+			.form__dropdown.open &{
+				box-shadow: none;
+			}
+	    }
 
 	}
 	&dropdown-menu{
@@ -726,6 +737,15 @@
 				&:hover{
 					background-color: @black;
 					color: @white;
+				}
+			}
+		}
+		&.is--sm{
+			min-width: auto;
+			width: 100%;
+			> li{
+				> a{
+					padding: 5px 15px 5px 5px;
 				}
 			}
 		}
