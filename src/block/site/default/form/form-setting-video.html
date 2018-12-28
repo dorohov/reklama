@@ -37,10 +37,10 @@
 								block_attr="min='0'"
 								block_label="Укажите стоимость"
 								block_placeholder="Стоимость"
-								block_bage="час."
+								block_bage="за 30 сек."
 								block_bage_mod="  "
 								block_info="Ваш гонорар составит 60% от указанной ставки"
-								block_info_mod="  "
+								block_info_mod="is--warning"
 							]]
 						</div>
 						<div class="cols {{block_prefix}}cols  {{block_mod}}">
@@ -125,10 +125,10 @@
 								block_attr="min='0'"
 								block_label="Укажите стоимость"
 								block_placeholder="Стоимость"
-								block_bage="час."
+								block_bage="за 1 сек."
 								block_bage_mod="  "
 								block_info="Ваш гонорар составит 60% от указанной ставки"
-								block_info_mod="  "
+								block_info_mod="is--warning"
 							]]
 						</div>
 						<div class="cols {{block_prefix}}cols  {{block_mod}}">
@@ -213,10 +213,10 @@
 								block_attr="min='0'"
 								block_label="Укажите стоимость"
 								block_placeholder="Стоимость"
-								block_bage="час."
+								block_bage="за 1 сек."
 								block_bage_mod="  "
 								block_info="Ваш гонорар составит 60% от указанной ставки"
-								block_info_mod="  "
+								block_info_mod="is--warning"
 							]]
 						</div>
 						<div class="cols {{block_prefix}}cols  {{block_mod}}">
@@ -290,19 +290,20 @@
 			</div>									
 			<div class="cols {{block_prefix}}cols  {{block_mod}}">
 				[[azbntple 
-					tpl="/src/block/site/default/form/elem-label-select.html" 
+					tpl="/src/block/site/default/form/elem-label-dropdown.html" 
 					form_id="{{form_id}}"
 					form_color="{{form_color}}"
 					block_prefix="{{block_prefix}}"
 					block_mod="{{block_mod}}" 
 					block_mod_elem="  " 
 					block_select_elem="  "
-					block_id="video_withdrawal"
-					block_required="  " 
-					block_required_symbol="  "  
+					block_id="video_tutorial"
+					block_required="required" 
+					block_required_symbol="<sup class='color--red'>*</sup>"  
 					block_attr="  "
 					block_label="Укажите способ вывода средств"
-					block_option="<option>Ян­декс.День­ги</option>"
+					block_option_base="Яндекс.Деньги"
+					block_option="<li><a href='#'>Яндекс.Деньги</a></li>"
 					block_info="  "
 					block_info_mod="is--hidden"
 				]]
@@ -326,6 +327,15 @@
 					block_info_mod="  "
 				]]
 			</div>
+			<div class="{{block_prefix}}item  is--mb20 _ati">
+							[[azbntple 
+								tpl="/src/block/site/default/button/button.html"
+								button_prefix="btn__" 
+								button_mod="  "
+								button_type="button"
+								button_name="Добавить тип исполнителя"
+							]]	
+						</div>
 			<div class="cols {{block_prefix}}cols  {{block_mod}}">
 				<div class="row {{block_prefix}}row  is--wrap  is--gutter10">
 					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--btn  is--center  is--offset-left">

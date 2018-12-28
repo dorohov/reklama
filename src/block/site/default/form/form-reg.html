@@ -32,7 +32,7 @@
 								block_id="speakers_tutorial"
 								block_required="required" 
 								block_option_base="Для Физических лиц"
-								block_option="<li><a href='#'>Для Физических лиц</a></li><li><a href='#'>Для Юридических лиц</a></li>"
+								block_option="<li><a href='registration.html'>Для Физических лиц</a></li><li><a href='registration-ur.html'>Для Юридических лиц</a></li>"
 								block_info_mod="is--warning"
 							]]
 						</div>	
@@ -55,8 +55,28 @@
 					block_required_symbol="<sup class='color--red'>*</sup>"  
 					block_type="text"
 					block_attr="  "
-					block_label="ФИО"
-					block_placeholder="Ваше ФИО"
+					block_label="Имя"
+					block_placeholder="Ваше имя"
+					block_info="  "
+					block_info_mod="is--hidden"
+				]]
+			</div>
+			<div class="cols {{block_prefix}}cols  {{block_mod}}">
+				[[azbntple 
+					tpl="/src/block/site/default/form/elem-label-input.html" 
+					form_id="{{form_id}}"
+					form_color="{{form_color}}"
+					block_prefix="{{block_prefix}}"
+					block_mod="{{block_mod}}" 
+					block_mod_elem="  " 
+					block_id="reg_lname"
+					block_required="required" 
+					block_required_custom="onlyLetterSp" 
+					block_required_symbol="<sup class='color--red'>*</sup>"  
+					block_type="text"
+					block_attr="  "
+					block_label="Фамилия"
+					block_placeholder="Ваша фамилия"
 					block_info="  "
 					block_info_mod="is--hidden"
 				]]
@@ -95,11 +115,12 @@
 					block_required_symbol="<sup class='color--red'>*</sup>"  
 					block_type="tel"
 					block_attr="  "
-					block_label="Ваш телефон"
-					block_placeholder="Ваш телефон"
+					block_label="Мобильный телефон"
+					block_placeholder="Мобильный телефон"
 					block_info="На этот номер Вы будите получать уведомления о Вашем заказе"
 					block_info_mod="  "
 				]]
+				<a class="btn__phone-p" href="#">Подтвердить</a>
 			</div>
 			<div class="cols {{block_prefix}}cols  {{block_mod}}">
 				[[azbntple 
@@ -142,11 +163,11 @@
 			<div class="cols {{block_prefix}}cols  {{block_mod}}  is--pass">
 				<div class="row {{block_prefix}}row  is--wrap  is--gutter10">
 					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--pass  is--left">
-						<label for="{{form_id}}[pass-conf]" class="{{block_prefix}}label  {{block_mod}}"><sup class="color--red">*</sup>Подтвердить пароль</label>
+						<label for="{{form_id}}[pass-conf]" class="{{block_prefix}}label  {{block_mod}}"><sup class="color--red">*</sup>Повторите пароль</label>
 					</div>
 					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--pass  is--center">
 						<div class="{{block_prefix}}item">
-							<input type="password" class="{{block_prefix}}control form-control validate[required]  {{block_mod}}  {{form_color}}  is--pass" id="{{form_id}}[pass-conf]" name="f[pass-conf]" placeholder="Подтвердить пароль">
+							<input type="password" class="{{block_prefix}}control form-control validate[required]  {{block_mod}}  {{form_color}}  is--pass" id="{{form_id}}[pass-conf]" name="f[pass-conf]" placeholder="Повторить пароль">
 						</div>	
 					</div>
 				</div>

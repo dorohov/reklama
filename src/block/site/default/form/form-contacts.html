@@ -111,7 +111,7 @@
 					form_color="{{form_color}}"
 					block_prefix="{{block_prefix}}"
 					block_mod="  " 
-					block_mod_elem="is--bottom" 
+					block_mod_elem=" " 
 					block_id="contacts_text"
 					block_required="required"  
 					block_required_symbol="<sup class='color--red'>*</sup>" 
@@ -121,6 +121,21 @@
 					block_info="  "
 					block_info_mod="is--hidden"
 				]]
+			</div>
+			<div class="cols {{block_prefix}}cols  {{block_mod}}  is--capt">
+				<div class="row {{block_prefix}}row  is--wrap  is--gutter10">
+					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--capt  is--left">
+						<label for="{{form_id}}[capt]" class="{{block_prefix}}label  {{block_mod}}"><sup class="color--red">*</sup>Код с картинки</label>
+					</div>
+					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--capt  is--center">
+						<div class="{{block_prefix}}item capt-container">
+							<input type="password" class="{{block_prefix}}control form-control validate[required]  {{block_mod}}  {{form_color}} capt-input is--pass" id="{{form_id}}[capt]" name="f[capt]" placeholder="">
+							<div class="capt-img">
+								<img src="img/default/capt.jpg" alt="">
+							</div>
+						</div>	
+					</div>
+				</div>
 			</div>
 			<div class="cols {{block_prefix}}cols  {{block_mod}}  is--btn">
 				<div class="row {{block_prefix}}row  is--wrap  is--gutter10">

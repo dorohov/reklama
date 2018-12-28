@@ -11,3 +11,135 @@
 svg4everybody();
 document.createElement("picture");
 </script> 
+<script>
+	$(document).ready(function() {
+		var tabs = $('.dreq--tab'),
+			active_tab_id = $('.form__switch-input:checked').attr('data-tabid');
+
+		toggleTab();
+
+		$('.form__switch-input').change(function() {
+			if($(this).attr('data-tabid')) {
+				active_tab_id = $(this).attr('data-tabid');
+				toggleTab();
+			}
+		});
+
+		function toggleTab() {
+			tabs.hide();
+			if(active_tab_id) {
+				$('.dreq--tab[data-tabid="' + active_tab_id + '"]').show();
+			}
+		}
+
+		$('.step-l1 button').click(function() {
+			var trigger = $('a[href="#work-customer"]');
+			trigger.click();
+		});
+		$('.step-l2 button').click(function() {
+			var trigger = $('a[href="#work-performer"]');
+			trigger.click();
+		});
+
+		$('.ndhcn_slider').hide();
+
+		$('._ndnch').change(function(e) {
+			if(e.target.checked) {
+				$('.ndhcn_slider').slideDown();
+			}else {
+				$('.ndhcn_slider').slideUp();
+			}
+		});
+		
+	})
+</script>
+
+<script>
+	// New audio player
+
+	(function($){
+
+		"use strict"
+
+	 	jQuery.fn.f4Player = function(options){
+
+		  	var options = $.extend({
+		  		play: '.player_play',
+		  		pause: '.player_pause',
+		  		bar: '.player_bar'
+		  	}, options)
+
+		  	var make = function() {
+		  		var btn_play = 		$(this).find(options.play),
+		  			btn_pause = 	$(this).find(options.pause),
+		  			progress = 		$(this).find(options.bar),
+		  			song = 			$(this).find('audio')[0],
+		  			
+		  			song_data = {
+					  	time: 		null,
+					  	duration: 	null 
+					}
+
+		  		btn_play.on('click', function() {
+			  		playSong()
+		  		})
+
+		  		btn_pause.on('click', function() {
+		  			pauseSong()
+		  		})
+
+		  		var playSong = function() {
+					if(song) {
+			  			song.play()
+			  			$(btn_play).hide()
+					  	$(btn_pause).show()
+					  	
+					  	if($(song).attr('data-time')) {
+					  		var currentTime = JSON.parse($(song).attr('data-time'))
+					  		song.currentTime = currentTime.time
+					  	}
+
+				  		song.addEventListener('timeupdate', function() {
+
+				  			song_data.time 			= song.currentTime
+					  		song_data.duration 		= song.duration
+
+					  		$(song).attr('data-time', JSON.stringify(song_data))
+							var total = 100 / (song.duration / song.currentTime)
+							$('.' + progress[0].className + '__inner').css('width', total + '%');
+						})
+			  		}else {
+			  			console.log('Song not found');
+			  		}
+		  		}
+
+		  		var pauseSong = function() {
+					$(btn_pause).hide()
+		  			$(btn_play).show()
+		  			if(song) {
+		  				song.pause()
+		  			}
+		  		}
+
+		  	}
+
+		  	return this.each(make)
+		    
+	  	};
+	})(jQuery);
+</script>
+
+<script>
+	$(document).ready(function() {
+		// $('.player_big').f4Player({
+		// 	play: 'is--btn-play',
+		// 	pause: 'is--btn-pause'
+		// });
+
+		$('.player_big').f4Player({
+			play: '.is--btn-play',
+			pause: '.is--btn-pause',
+			bar: '.player-new__progress'
+		});
+	})
+</script>

@@ -148,7 +148,18 @@
 					block_mod_elem="  " 
 					block_mod_item="is--status" 
 					block_label="Статус"
-					block_text="Выполнен"
+					block_text="{{block_status}}"
+				]]
+			</div>
+			<div class="cols {{block_prefix}}cols  {{block_mod}}">
+				[[azbntple 
+					tpl="/src/block/site/default/form/elem-label-text.html"
+					block_prefix="{{block_prefix}}"
+					block_mod="{{block_mod}}  is--border" 
+					block_mod_elem="  " 
+					block_mod_item="  " 
+					block_label="  "
+					block_text="{{block_status_text}}"
 				]]
 			</div>	
 			<div class="cols {{block_prefix}}cols  {{block_mod}}  is--btn">
@@ -176,7 +187,10 @@
 									<div class="{{block_prefix}}footer-icon  {{block_mod}}">
 										[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="clock" ]]
 									</div>
-									Сроки выполнения 1 час
+									[[azbntple 
+										tpl="/src/block/site/default/timer/.html"
+										timer_text="Заказ будет выполнен через"
+									]]
 								</div>
 							</div>
 							<div class="{{block_prefix}}footer-elem  {{block_mod}}  is--cost">
@@ -424,7 +438,10 @@
 									<div class="{{block_prefix}}footer-icon  {{block_mod}}">
 										[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="clock" ]]
 									</div>
-									Сроки выполнения 1 час
+									[[azbntple 
+										tpl="/src/block/site/default/timer/.html"
+										timer_text="Заказ будет выполнен через"
+									]]
 								</div>
 							</div>
 							<div class="{{block_prefix}}footer-elem  {{block_mod}}  is--cost">

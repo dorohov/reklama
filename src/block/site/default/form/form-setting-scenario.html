@@ -37,10 +37,10 @@
 								block_attr="min='0'"
 								block_label="Укажите стоимость"
 								block_placeholder="Стоимость"
-								block_bage="час."
+								block_bage="до 70 слов."
 								block_bage_mod="  "
 								block_info="Ваш гонорар составит 50% от указанной ставки"
-								block_info_mod="  "
+								block_info_mod="is--warning"
 							]]
 						</div>
 						<div class="cols {{block_prefix}}cols  {{block_mod}}">
@@ -55,7 +55,7 @@
 								block_required="required" 
 								block_required_symbol="<sup class='color--red'>*</sup>" 
 								block_attr="  "
-								block_label="Загрузить демо"
+								block_label="Вставить сценарий"
 								block_placeholder="Демо"
 								block_value="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic alias totam quis optio quia reiciendis a dicta qui, cumque unde eveniet voluptates quasi facilis cupiditate at doloribus, ex rem ratione! Eius totam molestias adipisci dolorem doloremque, perspiciatis voluptatem atque voluptatibus quia porro sed possimus a eos dolores, nobis nisi beatae?"
 								block_info="Для примера разрешается добавить только однин сценарий"
@@ -106,10 +106,10 @@
 								block_attr="min='0'"
 								block_label="Укажите стоимость"
 								block_placeholder="Стоимость"
-								block_bage="час."
+								block_bage="до 70 слов."
 								block_bage_mod="  "
 								block_info="Ваш гонорар составит 50% от указанной ставки"
-								block_info_mod="  "
+								block_info_mod="is--warning"
 							]]
 						</div>
 						<div class="cols {{block_prefix}}cols  {{block_mod}}">
@@ -124,7 +124,7 @@
 								block_required="required" 
 								block_required_symbol="<sup class='color--red'>*</sup>" 
 								block_attr="  "
-								block_label="Загрузить демо"
+								block_label="Вставить сценарий"
 								block_placeholder="Демо"
 								block_value="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic alias totam quis optio quia reiciendis a dicta qui, cumque unde eveniet voluptates quasi facilis cupiditate at doloribus, ex rem ratione! Eius totam molestias adipisci dolorem doloremque, perspiciatis voluptatem atque voluptatibus quia porro sed possimus a eos dolores, nobis nisi beatae?"
 								block_info="Для примера разрешается добавить только однин сценарий"
@@ -175,10 +175,10 @@
 								block_attr="min='0'"
 								block_label="Укажите стоимость"
 								block_placeholder="Стоимость"
-								block_bage="час."
+								block_bage="до 70 слов."
 								block_bage_mod="  "
 								block_info="Ваш гонорар составит 60% от указанной ставки"
-								block_info_mod="  "
+								block_info_mod="is--warning"
 							]]
 						</div>
 						<div class="cols {{block_prefix}}cols  {{block_mod}}">
@@ -193,7 +193,145 @@
 								block_required="required" 
 								block_required_symbol="<sup class='color--red'>*</sup>" 
 								block_attr="  "
-								block_label="Загрузить демо"
+								block_label="Вставить сценарий"
+								block_placeholder="Демо"
+								block_value="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic alias totam quis optio quia reiciendis a dicta qui, cumque unde eveniet voluptates quasi facilis cupiditate at doloribus, ex rem ratione! Eius totam molestias adipisci dolorem doloremque, perspiciatis voluptatem atque voluptatibus quia porro sed possimus a eos dolores, nobis nisi beatae?"
+								block_info="Для примера разрешается добавить только однин сценарий"
+								block_info_mod="  "
+							]]
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="{{block_prefix}}checkbox-elem  {{block_mod}}">
+		<div class="row {{block_prefix}}row  is--wrap">
+			<div class="cols {{block_prefix}}cols  {{block_mod}}">			
+				<div class="row {{block_prefix}}row  is--wrap  is--gutter10">
+					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--left"></div>
+					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--center">
+						<div class="{{block_prefix}}switch-line  {{block_mod}}"></div>
+						[[azbntple 
+							tpl="/src/block/site/default/form/elem-switch.html" 
+							form_id="{{form_id}}"
+							form_color="{{form_color}}"
+							block_prefix="{{block_prefix}}"
+							block_mod="{{block_mod}}" 
+							block_mod_elem="is--xl" 
+							block_label="Стихотворный"
+							block_name="Стихотворный"
+							block_id="scenario_stih"
+							block_validate="  "
+							block_status="checked"
+						]]	
+					</div>
+				</div>									
+				<div class="{{block_prefix}}checkbox-panel  is--active  {{block_mod}}">
+					<div class="row {{block_prefix}}row  is--wrap">
+						<div class="cols {{block_prefix}}cols  {{block_mod}}">
+							[[azbntple 
+								tpl="/src/block/site/default/form/elem-label-input-cost-info.html" 
+								form_id="{{form_id}}"
+								form_color="{{form_color}}"
+								block_prefix="{{block_prefix}}"
+								block_mod="{{block_mod}}" 
+								block_mod_elem="  " 
+								block_id="scenario_vocal_cost"
+								block_required="required" 
+								block_required_symbol="<sup class='color--red'>*</sup>" 
+								block_type="number"
+								block_attr="min='0'"
+								block_label="Укажите стоимость"
+								block_placeholder="Стоимость"
+								block_bage="до 70 слов."
+								block_bage_mod="  "
+								block_info="Ваш гонорар составит 60% от указанной ставки"
+								block_info_mod="is--warning"
+							]]
+						</div>
+						<div class="cols {{block_prefix}}cols  {{block_mod}}">
+							[[azbntple 
+								tpl="/src/block/site/default/form/elem-label-textarea-value-info.html" 
+								form_id="{{form_id}}"
+								form_color="{{form_color}}"
+								block_prefix="{{block_prefix}}"
+								block_mod="{{block_mod}}" 
+								block_mod_elem="  " 
+								block_id="scenario_playing_demo"
+								block_required="required" 
+								block_required_symbol="<sup class='color--red'>*</sup>" 
+								block_attr="  "
+								block_label="Вставить сценарий"
+								block_placeholder="Демо"
+								block_value="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic alias totam quis optio quia reiciendis a dicta qui, cumque unde eveniet voluptates quasi facilis cupiditate at doloribus, ex rem ratione! Eius totam molestias adipisci dolorem doloremque, perspiciatis voluptatem atque voluptatibus quia porro sed possimus a eos dolores, nobis nisi beatae?"
+								block_info="Для примера разрешается добавить только однин сценарий"
+								block_info_mod="  "
+							]]
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="{{block_prefix}}checkbox-elem  {{block_mod}}">
+		<div class="row {{block_prefix}}row  is--wrap">
+			<div class="cols {{block_prefix}}cols  {{block_mod}}">			
+				<div class="row {{block_prefix}}row  is--wrap  is--gutter10">
+					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--left"></div>
+					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--center">
+						<div class="{{block_prefix}}switch-line  {{block_mod}}"></div>
+						[[azbntple 
+							tpl="/src/block/site/default/form/elem-switch.html" 
+							form_id="{{form_id}}"
+							form_color="{{form_color}}"
+							block_prefix="{{block_prefix}}"
+							block_mod="{{block_mod}}" 
+							block_mod_elem="is--xl" 
+							block_label="Политический"
+							block_name="Политический"
+							block_id="scenario_polit"
+							block_validate="  "
+							block_status="checked"
+						]]	
+					</div>
+				</div>									
+				<div class="{{block_prefix}}checkbox-panel  is--active  {{block_mod}}">
+					<div class="row {{block_prefix}}row  is--wrap">
+						<div class="cols {{block_prefix}}cols  {{block_mod}}">
+							[[azbntple 
+								tpl="/src/block/site/default/form/elem-label-input-cost-info.html" 
+								form_id="{{form_id}}"
+								form_color="{{form_color}}"
+								block_prefix="{{block_prefix}}"
+								block_mod="{{block_mod}}" 
+								block_mod_elem="  " 
+								block_id="scenario_vocal_cost"
+								block_required="required" 
+								block_required_symbol="<sup class='color--red'>*</sup>" 
+								block_type="number"
+								block_attr="min='0'"
+								block_label="Укажите стоимость"
+								block_placeholder="Стоимость"
+								block_bage="до 70 слов."
+								block_bage_mod="  "
+								block_info="Ваш гонорар составит 60% от указанной ставки"
+								block_info_mod="is--warning"
+							]]
+						</div>
+						<div class="cols {{block_prefix}}cols  {{block_mod}}">
+							[[azbntple 
+								tpl="/src/block/site/default/form/elem-label-textarea-value-info.html" 
+								form_id="{{form_id}}"
+								form_color="{{form_color}}"
+								block_prefix="{{block_prefix}}"
+								block_mod="{{block_mod}}" 
+								block_mod_elem="  " 
+								block_id="scenario_playing_demo"
+								block_required="required" 
+								block_required_symbol="<sup class='color--red'>*</sup>" 
+								block_attr="  "
+								block_label="Вставить сценарий"
 								block_placeholder="Демо"
 								block_value="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic alias totam quis optio quia reiciendis a dicta qui, cumque unde eveniet voluptates quasi facilis cupiditate at doloribus, ex rem ratione! Eius totam molestias adipisci dolorem doloremque, perspiciatis voluptatem atque voluptatibus quia porro sed possimus a eos dolores, nobis nisi beatae?"
 								block_info="Для примера разрешается добавить только однин сценарий"
@@ -210,6 +348,7 @@
 	<div class="cols {{block_prefix}}cols  {{block_mod}}">						
 		<div class="row {{block_prefix}}row  is--wrap">	
 			<div class="cols {{block_prefix}}cols  {{block_mod}}">
+			<div class="{{block_prefix}}switch-line sline_smm {{block_mod}}"></div>
 				[[azbntple 
 					tpl="/src/block/site/default/form/elem-label-input-bage-info.html" 
 					form_id="{{form_id}}"
@@ -233,19 +372,20 @@
 			</div>										
 			<div class="cols {{block_prefix}}cols  {{block_mod}}">
 				[[azbntple 
-					tpl="/src/block/site/default/form/elem-label-select.html" 
+					tpl="/src/block/site/default/form/elem-label-dropdown.html" 
 					form_id="{{form_id}}"
 					form_color="{{form_color}}"
 					block_prefix="{{block_prefix}}"
 					block_mod="{{block_mod}}" 
 					block_mod_elem="  " 
 					block_select_elem="  "
-					block_id="scenario_withdrawal"
-					block_required="  " 
-					block_required_symbol="  "  
+					block_id="video_tutorial"
+					block_required="required" 
+					block_required_symbol="<sup class='color--red'>*</sup>"  
 					block_attr="  "
 					block_label="Укажите способ вывода средств"
-					block_option="<option>Ян­декс.День­ги</option>"
+					block_option_base="Яндекс.Деньги"
+					block_option="<li><a href='#'>Яндекс.Деньги</a></li>"
 					block_info="  "
 					block_info_mod="is--hidden"
 				]]
@@ -269,6 +409,15 @@
 					block_info_mod="  "
 				]]
 			</div>
+			<div class="{{block_prefix}}item  is--mb20 _ati">
+							[[azbntple 
+								tpl="/src/block/site/default/button/button.html"
+								button_prefix="btn__" 
+								button_mod="  "
+								button_type="button"
+								button_name="Добавить тип исполнителя"
+							]]	
+						</div>
 			<div class="cols {{block_prefix}}cols  {{block_mod}}">
 				<div class="row {{block_prefix}}row  is--wrap  is--gutter10">
 					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--btn  is--center  is--offset-left">

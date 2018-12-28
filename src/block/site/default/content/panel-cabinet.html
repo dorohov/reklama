@@ -85,7 +85,6 @@
 					<a href="#myorder" class="{{block_prefix}}tabs-link  {{block_mod}}" data-toggle="tab">
 						Мои заказы
 					</a>
-					<div class="{{block_prefix}}bages  {{block_mod}}">10</div>
 				</li>
 			</ul>	
 			<div class="{{block_prefix}}tabs-content  {{block_mod}}">
@@ -115,21 +114,12 @@
 											tpl="/src/block/site/default/button/link.html" 
 											button_prefix="btn__" 
 											button_mod="is--link"
-											button_link="{{page.speakers_order_ready}}"
+											button_link="{{page.speakers_order_work}}"
 											button_name="Подробнее"
 											button_attr="  "
 										]]
-										<div class="{{block_prefix}}bages  {{block_mod}}">10</div>
 									</td>
-									<td>									
-										[[azbntple 
-											tpl="/src/block/site/default/button/button-icon-noname.html" 
-											button_prefix="btn__" 
-											button_mod="is--green"
-											button_link="##"
-											button_attr="  "
-											button_icon="download"
-										]]
+									<td>
 									</td>
 								</tr>
 								<tr>
@@ -143,20 +133,12 @@
 											tpl="/src/block/site/default/button/link.html" 
 											button_prefix="btn__" 
 											button_mod="is--link"
-											button_link="{{page.audio_order_ready}}"
+											button_link="{{page.audio_order_canceled}}"
 											button_name="Подробнее"
 											button_attr="  "
 										]]
 									</td>
-									<td>									
-										[[azbntple 
-											tpl="/src/block/site/default/button/button-icon-noname.html" 
-											button_prefix="btn__" 
-											button_mod="is--green"
-											button_link="##"
-											button_attr="  "
-											button_icon="download"
-										]]
+									<td>
 									</td>
 								</tr>
 								<tr>
@@ -197,20 +179,12 @@
 											tpl="/src/block/site/default/button/link.html" 
 											button_prefix="btn__" 
 											button_mod="is--link"
-											button_link="{{page.scenario_order_ready}}"
+											button_link="{{page.scenario_order_moderation}}"
 											button_name="Подробнее"
 											button_attr="  "
 										]]
 									</td>
-									<td>									
-										[[azbntple 
-											tpl="/src/block/site/default/button/button-icon-noname.html" 
-											button_prefix="btn__" 
-											button_mod="is--green"
-											button_link="##"
-											button_attr="  "
-											button_icon="download"
-										]]
+									<td>
 									</td>
 								</tr>
 								<tr>
@@ -224,20 +198,12 @@
 											tpl="/src/block/site/default/button/link.html" 
 											button_prefix="btn__" 
 											button_mod="is--link"
-											button_link="{{page.speakers_order_ready}}"
+											button_link="{{page.speakers_order_payment}}"
 											button_name="Подробнее"
 											button_attr="  "
 										]]
 									</td>
-									<td>									
-										[[azbntple 
-											tpl="/src/block/site/default/button/button-icon-noname.html" 
-											button_prefix="btn__" 
-											button_mod="is--green"
-											button_link="##"
-											button_attr="  "
-											button_icon="download"
-										]]
+									<td>
 									</td>
 								</tr>
 								<tr>
@@ -245,26 +211,18 @@
 									<td>МТС</td>								
 									<td>600 <span class="ruble__symbol">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="ruble" ]]</span></td>								
 									<td>Аудиоролик</td>								
-									<td>Заказ в ожидании</td>								
+									<td>Заказ в работе</td>								
 									<td class="is--btn">					
 										[[azbntple 
 											tpl="/src/block/site/default/button/link.html" 
 											button_prefix="btn__" 
 											button_mod="is--link"
-											button_link="{{page.audio_order_ready}}"
+											button_link="{{page.audio_order_work}}"
 											button_name="Подробнее"
 											button_attr="  "
 										]]
 									</td>
-									<td>									
-										[[azbntple 
-											tpl="/src/block/site/default/button/button-icon-noname.html" 
-											button_prefix="btn__" 
-											button_mod="is--green"
-											button_link="##"
-											button_attr="  "
-											button_icon="download"
-										]]
+									<td>
 									</td>
 								</tr>
 								<tr>
@@ -278,20 +236,50 @@
 											tpl="/src/block/site/default/button/link.html" 
 											button_prefix="btn__" 
 											button_mod="is--link"
-											button_link="{{page.video_order_ready}}"
+											button_link="{{page.video_order_expired}}"
 											button_name="Подробнее"
 											button_attr="  "
 										]]
 									</td>
-									<td>									
+									<td>
+									</td>
+								</tr>
+								<tr>
+									<td>26-01-2017 19:29</td>								
+									<td>МТС</td>								
+									<td>600 <span class="ruble__symbol">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="ruble" ]]</span></td>								
+									<td>Сценарий</td>								
+									<td>Заказ в ожидании</td>								
+									<td class="is--btn">					
 										[[azbntple 
-											tpl="/src/block/site/default/button/button-icon-noname.html" 
+											tpl="/src/block/site/default/button/link.html" 
 											button_prefix="btn__" 
-											button_mod="is--green"
-											button_link="##"
+											button_mod="is--link"
+											button_link="{{page.scenario_order_waiting}}"
+											button_name="Подробнее"
 											button_attr="  "
-											button_icon="download"
 										]]
+									</td>
+									<td>
+									</td>
+								</tr>
+								<tr>
+									<td>26-01-2017 19:29</td>								
+									<td>МТС</td>								
+									<td>600 <span class="ruble__symbol">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="ruble" ]]</span></td>								
+									<td>Начитка</td>								
+									<td>Ожидает принятия</td>								
+									<td class="is--btn">					
+										[[azbntple 
+											tpl="/src/block/site/default/button/link.html" 
+											button_prefix="btn__" 
+											button_mod="is--link"
+											button_link="{{page.speakers_order_adoption}}"
+											button_name="Подробнее"
+											button_attr="  "
+										]]
+									</td>
+									<td>
 									</td>
 								</tr>
 							</tbody>

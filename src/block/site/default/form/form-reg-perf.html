@@ -17,6 +17,36 @@
 					</div> 
 				</div>
 			</div>
+			<div class="cols {{block_prefix}}cols  {{block_mod}}  is--avatar">
+				<div class="row {{block_prefix}}row  is--wrap  is--gutter10">
+					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--avatar  is--left">
+						<label for="{{form_id}}[avatar]" class="{{block_prefix}}label  {{block_mod}}">Аватарка</label>
+					</div>
+					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--name  is--center">	
+						<div class="row  is--wrap  is--gutter10  is--aic">
+							<div class="cols">
+								<div class="audio-card__card  is--artists">
+									<div style="position: relative;">
+										<img src="/img/temp/autor-item-woman-lock-180x180.jpg" alt="Виталий" class="img-responsive">
+										<div class="audio-card__inner  is--artists">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cols"> 
+								<div class="{{block_prefix}}desc">Использовать фото портрет запрещено</div>
+								[[azbntple 
+									tpl="/src/block/site/default/button/button.html"
+									button_prefix="btn__" 
+									button_mod="  "
+									button_type="button"
+									button_name="Загрузить"
+								]]									
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 			<div class="cols {{block_prefix}}cols  {{block_mod}}">
 				[[azbntple 
 					tpl="/src/block/site/default/form/elem-label-input.html" 
@@ -31,8 +61,28 @@
 					block_required_symbol="<sup class='color--red'>*</sup>"  
 					block_type="text"
 					block_attr="  "
-					block_label="ФИО"
-					block_placeholder="Ваше ФИО"
+					block_label="Имя"
+					block_placeholder="Ваше имя"
+					block_info="  "
+					block_info_mod="is--hidden"
+				]]
+			</div>
+			<div class="cols {{block_prefix}}cols  {{block_mod}}">
+				[[azbntple 
+					tpl="/src/block/site/default/form/elem-label-input.html" 
+					form_id="{{form_id}}"
+					form_color="{{form_color}}"
+					block_prefix="{{block_prefix}}"
+					block_mod="{{block_mod}}" 
+					block_mod_elem="  " 
+					block_id="reg_lname"
+					block_required="required" 
+					block_required_custom="onlyLetterSp" 
+					block_required_symbol="<sup class='color--red'>*</sup>"  
+					block_type="text"
+					block_attr="  "
+					block_label="Фамилия"
+					block_placeholder="Ваша фамилия"
 					block_info="  "
 					block_info_mod="is--hidden"
 				]]
@@ -91,11 +141,12 @@
 					block_required_symbol="<sup class='color--red'>*</sup>"  
 					block_type="tel"
 					block_attr="  "
-					block_label="Ваш телефон"
-					block_placeholder="Ваш телефон"
-					block_info="На этот номер Вы будите получать уведомления о Вашем заказе"
-					block_info_mod="  "
+					block_label="Мобильный телефон"
+					block_placeholder="Мобильный телефон"
+					block_info=""
+					block_info_mod="is--hidden"
 				]]
+				<a class="btn__phone-p" href="#">Подтвердить</a>
 			</div>
 			<div class="cols {{block_prefix}}cols  {{block_mod}}">
 				[[azbntple 
@@ -113,7 +164,7 @@
 					block_attr="  "
 					block_label="Ваш E-mail"
 					block_placeholder="Ваш E-mail"
-					block_info="На эту почту Вы будете получать исполненные заказы"
+					block_info="Эта почта будет использоваться для входа в личный кабинет и для уведомлений о заказах"
 					block_info_mod="  "
 				]]
 			</div>

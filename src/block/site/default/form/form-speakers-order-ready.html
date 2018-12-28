@@ -23,7 +23,18 @@
 					block_mod="{{block_mod}}  is--border"
 					block_mod_elem="  " 
 					block_mod_item="  " 
-					block_label="Название ролика"
+					block_label="Тип заказа"
+					block_text="Дикторская начитка <span class='srord'>Срочный заказ!</span>"
+				]]
+			</div>	
+			<div class="cols {{block_prefix}}cols  {{block_mod}}">
+				[[azbntple 
+					tpl="/src/block/site/default/form/elem-label-text.html"
+					block_prefix="{{block_prefix}}"
+					block_mod="{{block_mod}}  is--border"
+					block_mod_elem="  " 
+					block_mod_item="  " 
+					block_label="Название"
 					block_text="Бритая кошка"
 				]]
 			</div>	
@@ -34,10 +45,38 @@
 					block_mod="{{block_mod}}  is--border"
 					block_mod_elem="  " 
 					block_mod_item="  " 
-					block_label="Диктор"
+					block_label="Имя исполнителя"
 					block_text="<a href='{{page.speakers_card}}'>Антонов Антон</a>"
 				]]
-			</div>	
+			</div>
+			<div class="cols form__cols  is--ready">
+				<div class="row form__row  is--wrap  is--aifs  is--ready  is--border">
+				<div class="cols form__cols  is--left  is--ready  is--border">
+					<div class="form__label  is--ready  is--border">Дата и время выполнения:</div>
+				</div> 
+				<div class="cols form__cols  is--center  is--ready  is--border">
+					<div class="form__item  is--ready  is--border">26.01.2017 в 19:29</div>
+					[[azbntple 
+						tpl="/src/block/site/default/form/elem-label-dropdown.html" 
+						form_id="{{form_id}}"
+						form_color="{{form_color}}"
+						block_prefix="{{block_prefix}}"
+						block_mod="{{block_mod}}" 
+						block_mod_elem="  " 
+						block_select_elem="  "
+						block_id="speakers_tutorial"
+						block_required="" 
+						block_required_symbol=" "  
+						block_attr="  "
+						block_label=" "
+						block_option_base="Не увиличивать"
+						block_option="<li><a href='#'>На 15 минут</a></li><li><a href='#'>На 30 минут</a></li><li><a href='#'>На 45 минут</a></li><li><a href='#'>На 1 час</a></li>"
+						block_info=""
+						block_info_mod="is--hidden"
+					]]
+				</div>   
+			</div> 
+			</div>
 			<div class="cols {{block_prefix}}cols  {{block_mod}}">
 				[[azbntple 
 					tpl="/src/block/site/default/form/elem-label-text.html"
@@ -107,9 +146,20 @@
 					block_mod_elem="  " 
 					block_mod_item="is--status" 
 					block_label="Статус"
-					block_text="Выполнен"
+					block_text="{{block_status}}"
 				]]
-			</div>	
+			</div>
+			<div class="cols {{block_prefix}}cols  {{block_mod}}">
+				[[azbntple 
+					tpl="/src/block/site/default/form/elem-label-text.html"
+					block_prefix="{{block_prefix}}"
+					block_mod="{{block_mod}}  is--border" 
+					block_mod_elem="  " 
+					block_mod_item="  " 
+					block_label="  "
+					block_text="{{block_status_text}}"
+				]]
+			</div>
 			<div class="cols {{block_prefix}}cols  {{block_mod}}  is--btn">
 				<div class="row {{block_prefix}}row  is--wrap  is--gutter10">
 					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--btn  is--center  is--offset-left">
@@ -135,12 +185,40 @@
 									<div class="{{block_prefix}}footer-icon  {{block_mod}}">
 										[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="clock" ]]
 									</div>
-									Сроки выполнения 1 час
+									[[azbntple 
+										tpl="/src/block/site/default/timer/.html"
+										timer_text="Заказ будет выполнен через"
+									]]
 								</div>
 							</div>
 							<div class="{{block_prefix}}footer-elem  {{block_mod}}  is--cost">
 								<div class="{{block_prefix}}footer-item  {{block_mod}}  is--cost">
 									Стоимость: 200 <span class="ruble__symbol">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="ruble" ]]</span>
+								</div>
+							</div>
+
+							<div class="{{block_prefix}}footer-elem  {{block_mod}}">
+								<div class="{{block_prefix}}footer-item  {{block_mod}}">
+									<div class="row  is--gutter  is--wrap">
+										<div class="cols">
+											[[azbntple 
+												tpl="/src/block/site/default/button/button.html"
+												button_prefix="btn__" 
+												button_mod="is--lg"
+												button_type="submit"
+												button_name="Принять"
+											]]	
+										</div>
+										<div class="cols">
+											[[azbntple 
+												tpl="/src/block/site/default/button/button.html"
+												button_prefix="btn__" 
+												button_mod="{{form_btn_mod}}  is--lg"
+												button_type="submit"
+												button_name="Отказаться"
+											]]	
+										</div>
+									</div>
 								</div>
 							</div>
 
@@ -259,7 +337,10 @@
 									<div class="{{block_prefix}}footer-icon  {{block_mod}}">
 										[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="clock" ]]
 									</div>
-									Сроки выполнения 1 час
+									[[azbntple 
+										tpl="/src/block/site/default/timer/.html"
+										timer_text="Заказ будет выполнен через"
+									]]
 								</div>
 							</div>
 							<div class="{{block_prefix}}footer-elem  {{block_mod}}  is--cost">

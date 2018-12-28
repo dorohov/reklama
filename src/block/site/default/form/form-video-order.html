@@ -13,7 +13,7 @@
 							header_level="h1" 
 							header="{{block_heading}}"
 						]]
-						<div class="{{block_prefix}}desc  {{block_mod}}">Монтаж аудиоролика от 400 <span class="ruble__symbol">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="ruble" ]]</span></div>
+						<div class="{{block_prefix}}desc  {{block_mod}}">Монтаж видеоролика от 2000 <span class="ruble__symbol">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="ruble" ]]</span></div>
 					</div> 
 				</div>
 			</div>
@@ -55,40 +55,23 @@
 						</div>	
 					</div>
 				</div>
-			</div>	
-			<div class="cols {{block_prefix}}cols  {{block_mod}}">				
-				[[azbntple 
-					tpl="/src/block/site/default/form/elem-range.html"
-					block_validate="  "
-					form_id="{{form_id}}"
-					form_color="{{form_color}}"
-					block_prefix="{{block_prefix}}"
-					block_mod="{{block_mod}}" 
-					block_mod_elem="  "
-					block_id="video_rush_order_input"
-					block_id_from="video_rush_order_from"
-					block_id_to="video_rush_order_to"
-					block_label="Срочный заказ!"
-					block_label_from="Срочный заказ! От (час.)"
-					block_label_to="Срочный заказ! До (час.)"
-				]]
 			</div>										
 			<div class="cols {{block_prefix}}cols  {{block_mod}}">
 				[[azbntple 
-					tpl="/src/block/site/default/form/elem-label-dropdown.html" 
+					tpl="/src/block/site/default/form/elem-label-dropdown-new.html" 
 					form_id="{{form_id}}"
 					form_color="{{form_color}}"
 					block_prefix="{{block_prefix}}"
 					block_mod="{{block_mod}}" 
 					block_mod_elem="  " 
 					block_select_elem="  "
-					block_id="video_tutorial"
+					block_id="scenario_tutorial"
 					block_required="required" 
 					block_required_symbol="<sup class='color--red'>*</sup>"  
 					block_attr="  "
-					block_label="Выбрать видеомонтажёра"
-					block_option_base="Антонов Антон (запись от 12 ч, стоимость от 400 руб)"
-					block_option="<li><a href='#'>Антонов Антон (запись от 12 ч, стоимость от 400 руб)</a></li><li><a href='#'>Антонов Антон (запись от 12 ч, стоимость от 400 руб)</a></li>"
+					block_label="Выбрать видеомантажёра"
+					block_option_base="<span class='new_d_l0'>Антонов Антон</span> <span class='new_d_l1'>12 час.</span> <span class='new_d_l2'>400 &#8381;</span>"
+					block_option="<li><a href='#'><span class='new_d_l0'>Антонов Антон</span> <span class='new_d_l1'>12 час.</span> <span class='new_d_l2'>400 &#8381;</span></a></li><li><a href='#'><span class='new_d_l0'>Антонов Антон</span> <span class='new_d_l1'>12 час.</span> <span class='new_d_l2'>400 &#8381;</span></a></li>"
 					block_info="Исполнитель офлайн! Рекомендуем выбрать доступного исполнителя!"
 					block_info_mod="is--warning"
 				]]
@@ -113,7 +96,7 @@
 										block_id="speakers_tutorial"
 										block_required="required" 
 										block_option_base="Информационный"
-										block_option="<li><a href='#'>Информационный</a></li><li><a href='#'>2D графика</a></li><li><a href='#'>3D графика</a></li><li><a href='#'>Политический</a></li>"
+										block_option="<li><a href='#'>Информационный</a></li><li><a>2D графика</a></li><li><a href='#'>3D графика</a></li><li><a href='#'>Политический</a></li>"
 										block_info_mod="is--warning"
 									]]
 								</div>	
@@ -154,6 +137,15 @@
 											</div>
 										</div>
 									</div>
+								</div>
+								<div class="cols"> 
+									[[azbntple 
+										tpl="/src/block/site/default/button/link.html"
+										button_prefix="btn__" 
+										button_mod=" "
+										button_link="{{page.speakers_order}}"
+										button_name=" + "
+									]]									
 								</div>	
 								<div class="cols"> 
 									[[azbntple 
@@ -168,7 +160,7 @@
 						</div>	
 					</div>
 					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--tel  is--right">
-						<div class="{{block_prefix}}info  {{block_mod}}">Начитку, пропевку можно заказать в разделе дикторы!
+						<div class="{{block_prefix}}info  {{block_mod}}">Начитку, пропевку можно заказать в разделе дикторы! <a href="#" class="urlincl">Заказать</a>
 						</div>
 					</div>
 

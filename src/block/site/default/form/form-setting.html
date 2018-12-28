@@ -60,14 +60,37 @@
 					block_mod="{{block_mod}}" 
 					block_mod_elem="  " 
 					block_id="name"
-					block_required="required" 
-					block_required_custom="onlyLetterSp" 
-					block_required_symbol="  "  
+					block_required_custom="onlyLetterSp"
 					block_type="text"
 					block_attr="  "
-					block_label="ФИО"
-					block_placeholder="Ваше ФИО"
-					block_value="Корнилов Олег"
+					block_label="Имя"
+					block_placeholder="Ваше имя"
+					block_value="Олег"
+					block_required_symbol="<sup class='color--red'>*</sup>"  
+					block_required="required" 
+					block_info=" "
+					block_info_mod="is--hidden"
+				]]
+			</div>
+			<div class="cols {{block_prefix}}cols  {{block_mod}}">
+				[[azbntple 
+					tpl="/src/block/site/default/form/elem-label-input-value.html" 
+					form_id="{{form_id}}"
+					form_color="{{form_color}}"
+					block_prefix="{{block_prefix}}"
+					block_mod="{{block_mod}}" 
+					block_mod_elem="  " 
+					block_id="lname"
+					block_required="required" 
+					block_required_custom="onlyLetterSp" 
+					block_type="text"
+					block_attr="  "
+					block_label="Фамилия"
+					block_placeholder="Ваша фамилия"
+					block_value="Корнилов"
+					block_required_symbol="<sup class='color--red'>*</sup>"  
+					block_info=" "
+					block_info_mod="is--hidden"
 				]]
 			</div>
 			<div class="cols {{block_prefix}}cols  {{block_mod}}">
@@ -81,12 +104,14 @@
 					block_id="pseudonym"
 					block_required="required" 
 					block_required_custom="  " 
-					block_required_symbol="  "  
+					block_required_symbol="<sup class='color--red'>*</sup>"    
 					block_type="text"
 					block_attr="  "
 					block_label="Творческий псевдоним"
 					block_placeholder="Ваш творческий псевдоним"
 					block_value="Корень"
+					block_info=" "
+					block_info_mod="is--hidden"
 				]]
 			</div>
 			<div class="cols {{block_prefix}}cols  {{block_mod}}">
@@ -106,6 +131,8 @@
 					block_label="Ваш город"
 					block_placeholder="Ваш город"
 					block_value="Воркута"
+					block_info=" "
+					block_info_mod="is--hidden"
 				]]
 			</div>
 			<div class="cols {{block_prefix}}cols  {{block_mod}}">
@@ -119,12 +146,13 @@
 					block_id="tel"
 					block_required="required" 
 					block_required_custom="phone" 
-					block_required_symbol="  "  
+					block_required_symbol="<sup class='color--red'>*</sup>"  
 					block_type="tel"
 					block_attr="  "
 					block_label="Ваш телефон"
 					block_placeholder="Ваш телефон"
 					block_value="+7 (999) 777-66-33"
+					block_info="Укажите номер полностью только цифрами"
 				]]
 			</div>
 			<div class="cols {{block_prefix}}cols  {{block_mod}}">
@@ -138,18 +166,19 @@
 					block_id="email"
 					block_required="required" 
 					block_required_custom="email" 
-					block_required_symbol="  "  
+					block_required_symbol="<sup class='color--red'>*</sup>"   
 					block_type="email"
 					block_attr="  "
 					block_label="Ваш E-mail"
 					block_placeholder="Ваш E-mail"
 					block_value="koren@ya.ru"
+					block_info="Эта почта будет использоваться для входа в личный кабинет и для уведомлений о заказах"
 				]]
 			</div>
 			<div class="cols {{block_prefix}}cols  {{block_mod}}  is--pass">
 				<div class="row {{block_prefix}}row  is--wrap  is--gutter10">
 					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--pass  is--left">
-						<label for="{{form_id}}[pass]" class="{{block_prefix}}label  {{block_mod}}">Новый пароль</label>
+						<label for="{{form_id}}[pass]" class="{{block_prefix}}label  {{block_mod}}"><sup class='color--red'>*</sup>Новый пароль</label>
 					</div>
 					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--pass  is--center">
 						<div class="{{block_prefix}}item">
@@ -158,12 +187,15 @@
 							<button type="button" class="{{block_prefix}}btn-pass  is--hide">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="pass-hide" ]]</button>
 						</div>	
 					</div>
+					<div class="cols {{block_prefix}}cols  is--right  {{block_mod}}  {{block_mod_elem}}">
+						<div class="{{block_prefix}}info  {{block_mod}}  {{block_info_mod}}">Используйте латинские буквы и цифры, не меньше 8 символов</div>
+					</div>
 				</div>
 			</div>
 			<div class="cols {{block_prefix}}cols  {{block_mod}}  is--pass">
 				<div class="row {{block_prefix}}row  is--wrap  is--gutter10">
 					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--pass  is--left">
-						<label for="{{form_id}}[pass-conf]" class="{{block_prefix}}label  {{block_mod}}">Подтвердить пароль</label>
+						<label for="{{form_id}}[pass-conf]" class="{{block_prefix}}label  {{block_mod}}"><sup class='color--red'>*</sup>Подтвердить пароль</label>
 					</div>
 					<div class="cols {{block_prefix}}cols  {{block_mod}}  is--pass  is--center">
 						<div class="{{block_prefix}}item">
@@ -227,19 +259,6 @@
 		</div>	
 	</div> 
 	<div class="{{block_prefix}}inner  {{block_mod}}">
-		<div class="cols {{block_prefix}}cols  {{block_mod}}  is--heading">
-			<div class="row {{block_prefix}}row  is--wrap">
-				<div class="cols {{block_prefix}}cols  {{block_mod}}  is--heading  is--center  is--offset-left">
-					[[azbntple 
-						tpl="/src/block/site/default/page-header/heading.html" 
-						header_prefix="page-header__" 
-						header_mod="{{block_heading_mod}}"
-						header_level="h2" 
-						header="Добавить исполнителя"
-					]]
-				</div> 
-			</div>
-		</div>
 		<div class="cols {{block_prefix}}cols  {{block_mod}}  is--avatar">
 			<div class="row {{block_prefix}}row  is--wrap  is--gutter10">
 				<div class="cols {{block_prefix}}cols  {{block_mod}}  is--avatar  is--left">
@@ -266,7 +285,7 @@
 						tpl="/src/block/site/default/filter/card-tabs.html" 
 						block_prefix="filter-card__"
 						block_mod="is--btn  is--xl" 
-						block_heading="Звукорежисер"
+						block_heading="Звукорежиссер"
 						block_id="tabs-audio"
 					]] 
 				</li>
